@@ -1,0 +1,10 @@
+llm_provider: openai
+embedding_provider: openai
+retrieval:
+  type: hybrid
+  top_k: 10
+reranker:
+  enabled: true
+  top_k: 5
+grounding:
+  min_retrieval_score: 0.35

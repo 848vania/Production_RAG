@@ -1,0 +1,15 @@
+[project]
+name = "enterprise-rag-assistant"
+version = "0.1.0"
+description = "Production-style RAG assistant with evaluation and monitoring"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,8 @@
+llm_provider: openai
+generation_model: gpt-4o-mini
+embedding_model: text-embedding-3-small
+retrieval:
+  type: hybrid
+  top_k: 10
+reranker:
+  enabled: true

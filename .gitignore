@@ -1,0 +1,23 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data artifacts
+data/processed_chunks/
+data/vector_store/
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+
+# Model/cache files
+.cache/
+models/

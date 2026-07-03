@@ -1,0 +1,9 @@
+llm_provider: ollama
+local_model_name: llama3.1:8b
+embedding_provider: local
+local_embedding_model: sentence-transformers/all-MiniLM-L6-v2
+retrieval:
+  type: vector
+  top_k: 5
+reranker:
+  enabled: false
