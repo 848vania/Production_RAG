@@ -21,3 +21,4 @@ logs/
 # Model/cache files
 .cache/
 models/
+chroma_db/
