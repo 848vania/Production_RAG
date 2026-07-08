@@ -3,7 +3,8 @@ from app.rag.embeddings import *
 texts= ["Remote work requires manager approval.","Expenses over $500 require pre-approval."]
 query = "Who approves remote work?"
 
-embedding = OpenAIEmbeddingProvider()
+# embedding = OpenAIEmbeddingProvider()
+embedding = FakeEmbeddingProvider()
 
 vector_texts = embedding.embed_texts(texts)
 print(f"Vectors:\n{vector_texts}")

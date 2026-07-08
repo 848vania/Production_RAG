@@ -9,7 +9,7 @@ from langchain_openai import OpenAIEmbeddings
 
 
 # TODO: Transform the chunks before sending 
-# texts = [chunk.text for text in chunks]
+# texts = [chunk.text for chunk in chunks]
 class EmbeddingProvider:
     def embed_texts(self,texts:list[str]) ->list[list[float]]:
         # returns one vector per text
@@ -19,6 +19,13 @@ class EmbeddingProvider:
         # returns one vector
         raise NotImplementedError
 
+class FakeEmbeddingProvider(EmbeddingProvider):
+    def embed_texts(self, texts):
+        return  [[0.1, 0.2, 0.3] for _ in texts]
+        
+    
+    def embed_query(self, query):
+        return [0.1, 0.2, 0.3]
 
 class OpenAIEmbeddingProvider(EmbeddingProvider):
     def __init__(self):
