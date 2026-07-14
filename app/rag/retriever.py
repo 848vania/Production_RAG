@@ -1,16 +1,17 @@
 from app.rag.embeddings import * 
 from app.rag.vector_store import get_vector_store
 
-vector_store, embedding = get_vector_store()
+#vector_store, embedding = get_vector_store()
 
-def vector_retrieve(question: str, top_k: int=5):
-    """
-    Embed the question and return top-k vector search results
-    """
-    embedded_query = embedding.embed_query(question)
-    results = vector_store.search(query_embedding=embedded_query, top_k=top_k)
+# TODO: Review logic 
+# def vector_retrieve(question: str, top_k: int=5):
+#     """
+#     Embed the question and return top-k vector search results
+#     """
+#     embedded_query = embedding.embed_query(question)
+#     results = vector_store.search(query_embedding=embedded_query, top_k=top_k)
 
-    return results
+#     return results
 
 
 def format_retrieved_context(results: dict) -> str:

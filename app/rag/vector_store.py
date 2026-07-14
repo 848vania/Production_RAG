@@ -14,7 +14,7 @@ import os
 # load environment
 load_dotenv()
 
-TOP_K = os.getenv("TOP_K")
+TOP_K = int(os.getenv("TOP_K"))
 
 class VectorStore:
     def upsert_chunks(self, chunks, embeddings):
@@ -120,7 +120,7 @@ class ChromaVectorStore(VectorStore):
 
     
 
-
+# TODO: Modify so it chooses between the models available for vector store instead of applying and using the embedding
 def get_vector_store() :
     """
     Return vector store based on settings.

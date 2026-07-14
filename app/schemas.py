@@ -24,6 +24,15 @@ class Source(BaseModel):
     text: str
     score: float
 
+class OpenAISources(BaseModel):
+    answer: str
+    document: str
+    section: str
+    chunk_id: str
+
+class OpenAIResponse(BaseModel):
+    answer: str
+    sources: list[OpenAISources]
 
 class ChatRequest(BaseModel):
     question: str
