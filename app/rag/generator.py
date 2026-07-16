@@ -9,7 +9,7 @@ def build_context_block(chunks: list[dict]) -> str:
 
     context = ""
     for i, chunk in enumerate(chunks):
-        context += f"[Source {i}]"
+        context += f"[Source {chunk['chunk_id']}]"
         context += f"\nDocument: {chunk['metadata']['document']}"
         context += f"\nSection: {chunk['metadata']['section']}"
         context += f"\nText: {chunk['text']}\n\n"
@@ -50,6 +50,6 @@ def generate_answer(question:str, chunks: list[dict]) -> dict:
     """
     query = build_rag_prompt(question, chunks)
     response = llm_model.generate(query)
-    llm_model.format_response()
+    response = llm_model.format_response()
 
     return response 

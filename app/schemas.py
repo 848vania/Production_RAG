@@ -26,9 +26,9 @@ class Source(BaseModel):
 
 class OpenAISources(BaseModel):
     answer: str
-    document: str
-    section: str
-    chunk_id: str
+    document: list[str] = []
+    section: list[str] = []
+    chunk_id: list[str] = []
 
 class OpenAIResponse(BaseModel):
     answer: str
@@ -44,3 +44,5 @@ class ChatResponse(BaseModel):
     confidence: str
     latency_ms: float
     cost_usd: Optional[float] = None
+    refused: bool
+    reason: str 

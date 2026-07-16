@@ -1,8 +1,7 @@
 # Local libraries 
 from app.schemas import Document, Chunk
 from app.rag.embeddings import * 
-from app.rag.chunking import chunk_documents
-from app.rag.ingestion import load_documents_from_folder
+from app.config import vector_db_provider
 
 # External libraries
 import chromadb
@@ -15,6 +14,7 @@ import os
 load_dotenv()
 
 TOP_K = int(os.getenv("TOP_K"))
+RETRIEVE_METRIC = os.getenv("RETRIEVE_METRIC")
 
 class VectorStore:
     def upsert_chunks(self, chunks, embeddings):
@@ -37,7 +37,8 @@ class ChromaVectorStore(VectorStore):
 
         # 2. Get or create a collection 
         self.collection = self.client.get_or_create_collection(
-            name="my_synthetic_documen"
+            name="my_synthetic_documen",
+            metadata= {"hnsw:space": RETRIEVE_METRIC}
         )
 
     def upsert_chunks(self, chunks, embeddings):
@@ -118,25 +119,20 @@ class ChromaVectorStore(VectorStore):
             ids = ids
         )
 
-    
+class QdrantVectorStore(VectorStore):
+    def __init__(self):
+        super().__init__()
 
-# TODO: Modify so it chooses between the models available for vector store instead of applying and using the embedding
+    # TODO: Implement QDRANT vector store 
+
 def get_vector_store() :
     """
     Return vector store based on settings.
     """
-
-    vector_store = ChromaVectorStore()
-    embedding = OpenAIEmbeddingProvider()
-
-    docs = load_documents_from_folder("data/synthetic_documents")
-    chunks = chunk_documents(docs)
-
-    # Embed Documents 
-    texts = [chunk.text for  chunk in chunks]
-    embeddings = embedding.embed_texts(texts)
-
-    # Add to Vector Store 
-    vector_store.upsert_chunks(chunks, embeddings)
-
-    return vector_store, embedding
+    try:
+        if vector_db_provider == 'chroma':
+            return ChromaVectorStore()
+        elif vector_db_provider == 'qdrant':
+            return QdrantVectorStore()
+    except Exception as e:
+        print(f"Define a valid VECTOR STORE provider. Current is {vector_db_provider} which raised error: {e}")
