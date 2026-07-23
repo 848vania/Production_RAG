@@ -1,21 +1,14 @@
 # Local libraries 
 from app.schemas import Document, Chunk
 from app.rag.embeddings import * 
-from app.config import vector_db_provider
+from app.config import Settings_Chat
 
 # External libraries
 import chromadb
 from chromadb.config import Settings
 from typing import List 
-from dotenv import load_dotenv
-import os 
 
-# load environment
-load_dotenv()
-
-TOP_K = int(os.getenv("TOP_K"))
-RETRIEVE_METRIC = os.getenv("RETRIEVE_METRIC")
-
+settings = Settings_Chat()
 class VectorStore:
     def upsert_chunks(self, chunks, embeddings):
         raise NotImplementedError
@@ -27,7 +20,7 @@ class VectorStore:
         raise NotImplementedError
     
 class ChromaVectorStore(VectorStore):
-    def __init__(self):
+    def __init__(self, retrieve_metric):
         super().__init__()
         # 1. Intitalize the native persistent database 
         self.client = chromadb.PersistentClient(
@@ -38,7 +31,7 @@ class ChromaVectorStore(VectorStore):
         # 2. Get or create a collection 
         self.collection = self.client.get_or_create_collection(
             name="my_synthetic_documen",
-            metadata= {"hnsw:space": RETRIEVE_METRIC}
+            metadata= {"hnsw:space": retrieve_metric}
         )
 
     def upsert_chunks(self, chunks, embeddings):
@@ -54,7 +47,7 @@ class ChromaVectorStore(VectorStore):
             ids =  ids
         )
     
-    def search(self, query_embedding, top_k:int=TOP_K):
+    def search(self, query_embedding, top_k:int=10):
         """
         Return top-k matching chunks with scores
         """
@@ -125,14 +118,14 @@ class QdrantVectorStore(VectorStore):
 
     # TODO: Implement QDRANT vector store 
 
-def get_vector_store() :
+def get_vector_store():
     """
     Return vector store based on settings.
     """
     try:
-        if vector_db_provider == 'chroma':
-            return ChromaVectorStore()
-        elif vector_db_provider == 'qdrant':
+        if settings.vector_db_provider == 'chroma':
+            return ChromaVectorStore(settings.retrieve_metric)
+        elif settings.vector_db_provider == 'qdrant':
             return QdrantVectorStore()
     except Exception as e:
-        print(f"Define a valid VECTOR STORE provider. Current is {vector_db_provider} which raised error: {e}")
+        print(f"Define a valid VECTOR STORE provider. Current is {settings.vector_db_provider} which raised error: {e}")

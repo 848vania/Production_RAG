@@ -1,12 +1,11 @@
-import os 
 import numpy as np 
-from dotenv import load_dotenv
 from app.schemas import Chunk
 
-load_dotenv()
+from app.config import Settings_Chat
 
 from langchain_openai import OpenAIEmbeddings
 
+settings = Settings_Chat()
 
 # TODO: Transform the chunks before sending 
 # texts = [chunk.text for chunk in chunks]
@@ -30,7 +29,7 @@ class FakeEmbeddingProvider(EmbeddingProvider):
 class OpenAIEmbeddingProvider(EmbeddingProvider):
     def __init__(self):
         super().__init__()
-        self.embeddings = OpenAIEmbeddings(model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small"))
+        self.embeddings = OpenAIEmbeddings(model = settings.openai_embedding_model, api_key = settings.openai_api_key)
 
     
     def embed_texts(self,texts:list[str]) ->list[list[float]]:

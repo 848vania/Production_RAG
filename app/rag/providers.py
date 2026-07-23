@@ -1,14 +1,10 @@
 # local libraries 
-from app.schemas import OpenAISources
+from app.schemas import OpenAIResponse
+from app.config import Settings_Chat
 
 from openai import OpenAI
-from dotenv import load_dotenv
-import os 
 
-load_dotenv()
-
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5-mini-2025-08-07")
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
+settings = Settings_Chat()
 
 class LLMProvider:
     def generate(self, prompt: str) -> str:
@@ -20,8 +16,8 @@ class LLMProvider:
 class OpenAIProvider(LLMProvider):
     def __init__(self):
         super().__init__()
-        self.client = OpenAI() 
-        self.model = OPENAI_MODEL
+        self.client = OpenAI(api_key=settings.openai_api_key)
+        self.model = settings.openai_model
 
     def generate(self, prompt: str) -> str:
         """
@@ -30,13 +26,14 @@ class OpenAIProvider(LLMProvider):
         self.response = self.client.responses.parse(
             model = self.model,
             input = prompt, 
-            text_format = OpenAISources,
+            text_format = OpenAIResponse,
         )
         return self.response
     
     def format_response(self):
         # Return response of type 'OpenAISources' 
-        return self.response.output_parsed 
+
+        return self.response.output_parsed.answer
 
 class OllamaProvider(LLMProvider):
     def generate(self, prompt):
@@ -64,9 +61,9 @@ def get_llm_provider() -> LLMProvider:
     Return provider based on settings
     """
     try:
-        if LLM_PROVIDER == 'openai':
+        if settings.llm_provider == 'openai':
             return OpenAIProvider()
-        elif LLM_PROVIDER == 'testing':
+        elif settings.llm_provider == 'testing':
             return FakeLLMProvider()
     except Exception as e:
-        print(f"Define a valid LLM Provider. Current is {LLM_PROVIDER} which raised error: {e}")  
+        print(f"Define a valid LLM Provider. Current is {settings.llm_provider} which raised error: {e}")  

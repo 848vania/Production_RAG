@@ -31,24 +31,25 @@ def answer_question(question: str) -> dict:
     cleaned_question = question.strip()
 
     if not cleaned_question:
-        return ChatResponse(
-            answer = "Please provide a question",
-            sources = [],
-            confidence = 'low',
-            latency_ms = _latency_ms(start_time),
-            refused = True,
-            reason = "empty_question"
-        )
+        return {
+            "answer": "Please provide a question.",
+            "sources": [],
+            "confidence": "low",
+            "latency_ms": _latency_ms(start_time),
+            "refused": True,
+            "reason": "empty question",
+        }
     
     retrieved_chunks = vector_retrieve(
         cleaned_question,
-        tok_k = settings.top_k,
+        top_k = settings.top_k,
+
     )
 
     if not has_sufficient_context(
-        retrieved_chunks,
-        min_score = settings.min_retrieval_score
-        ):
+        chunks = retrieved_chunks,
+        score_limit = settings.retrieval_score
+    ):
         return build_refusal_response(
             question=cleaned_question,
             chunks=retrieved_chunks,
@@ -85,3 +86,4 @@ def answer_question(question: str) -> dict:
         'refused': False,
         'reason': None
     }
+

@@ -4,10 +4,7 @@ from app.rag.generator import *
 from app.rag.vector_store import * 
 from app.rag.retriever import *
 
-from dotenv import load_dotenv
-import os 
 
-# LLM_PROVIDER = "testing"
 
 # Define variables 
 vector_store = ChromaVectorStore()

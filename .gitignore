@@ -22,3 +22,4 @@ logs/
 .cache/
 models/
 chroma_db/
+.vscode/

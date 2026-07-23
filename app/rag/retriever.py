@@ -22,12 +22,14 @@ def vector_retrieve(question: str, top_k: int=5):
     embedded_query = embedding.embed_query(question)
     results = vector_store.search(query_embedding=embedded_query, top_k=top_k)
 
+    results = format_retrieved_context(results)
+
     return results
 
 
 def format_retrieved_context(results: dict) -> str:
     """
-    Convert retrieved chunks into a context block for the LLM
+    Convert retrieved chunks with relevant information
     """
 
     # Dict 

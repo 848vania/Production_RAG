@@ -1,6 +1,7 @@
 from app.rag.providers import *
+from app.rag.grounding import format_sources_from_chunks
 
-llm_model = get_llm_provider()
+llm = get_llm_provider()
 
 def build_context_block(chunks: list[dict]) -> str:
     """
@@ -10,18 +11,16 @@ def build_context_block(chunks: list[dict]) -> str:
     context = ""
     for i, chunk in enumerate(chunks):
         context += f"[Source {chunk['chunk_id']}]"
-        context += f"\nDocument: {chunk['metadata']['document']}"
-        context += f"\nSection: {chunk['metadata']['section']}"
+        context += f"\nDocument: {chunk['document']}"
+        context += f"\nSection: {chunk['section']}"
         context += f"\nText: {chunk['text']}\n\n"
 
     return context
 
-def build_rag_prompt(question: str, chunks: list[dict]) -> str:
+def build_rag_prompt(question: str, context) -> str:
     """
     Build strict context-only RAG prompt
     """
-
-    context = build_context_block(chunks)
 
     prompt = f"""You are an enterprise knowledge assistant.
     Answer the user's question using only the provided context. 
@@ -29,10 +28,10 @@ def build_rag_prompt(question: str, chunks: list[dict]) -> str:
     Rules:
     1. Use only the context below.
     2. Do not invent facts.
-    3. Answer the question and cite the source ID for every factual claim. 
+    3. Answer the question and cite the source ID for every factual claim as [Source source_number]. 
     4. If the context is insufficient, say: 
         'I do not have enough information in the provided documents to answer the question.'
-    5. Be concise and clear. 
+    6. Be concise and clear. 
 
     Question:
     {question}
@@ -48,8 +47,14 @@ def generate_answer(question:str, chunks: list[dict]) -> dict:
     """
     Generate answer using LLM and return answer + sources
     """
-    query = build_rag_prompt(question, chunks)
-    response = llm_model.generate(query)
-    response = llm_model.format_response()
+    sources = format_sources_from_chunks(chunks)
+    context = build_context_block(sources)
+    prompt = build_rag_prompt(question, context)
 
-    return response 
+    answer = llm.generate(prompt)
+    answer = llm.format_response()
+
+    return {
+        'answer': answer,
+        'sources': sources,
+    }
