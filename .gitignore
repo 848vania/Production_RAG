@@ -9,6 +9,7 @@ venv/
 data/processed_chunks/
 data/vector_store/
 *.sqlite
+*.sqlite3
 *.db
 
 # Logs
