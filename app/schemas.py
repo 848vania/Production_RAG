@@ -44,6 +44,6 @@ class ChatResponse(BaseModel):
     sources: List[Source]
     confidence: str
     latency_ms: float
-    cost_usd: Optional[float] = None
+    # cost_usd: Optional[float] = None
     refused: bool
     reason: str 

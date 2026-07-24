@@ -1,5 +1,8 @@
-from pathlib import Path
+# Internal libraries
 from app.schemas import Document
+from app.rag.chunking import chunk_documents
+
+from pathlib import Path
 from pypdf import PdfReader
 import pymupdf
 import datetime
@@ -121,3 +124,15 @@ def extract_title(text: str, fallback: str = "Untitled Document") -> str:
     first_title = match.group(1) if match else fallback
     
     return first_title
+
+def ingest_documents():
+    docs = load_documents_from_folder("data/synthetic_documents")
+    chunks = chunk_documents(docs)
+
+    
+
+    return {
+        'documents_processed': len(docs),
+        'chunks_created': len(chunks),
+        'chunk_indexed': len(chunks)
+    }
