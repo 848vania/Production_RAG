@@ -11,6 +11,7 @@ data/vector_store/
 *.sqlite
 *.sqlite3
 *.db
+*.pkl
 
 # Logs
 logs/
