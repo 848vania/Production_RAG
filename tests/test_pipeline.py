@@ -85,9 +85,8 @@ def test_pipeline_refuses_invalid_citations(mock_generate, mock_retrieve):
     assert response['refused'] is True
     assert response['reason'] == 'invalid_or_missing_citations'
 
-# response = answer_question("Who approves remote work requests?")
-# print(f"RESPONSE:\n{response}")
+def test_manual_pipeline():
+    response = answer_question("Who approves remote work requests?")
+    print(f"RESPONSE:\n{response}")
 
-# test_pipeline_answerable_questions()
-# test_pipeline_refuses_low_context()
-test_pipeline_refuses_invalid_citations()
+test_manual_pipeline()

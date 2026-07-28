@@ -16,16 +16,26 @@ class Settings_Chat(BaseSettings):
     openai_embedding_model: str | None = None
     local_embedding_model: str | None = None
 
-    vector_db_provider: str = "qdrant"
     qdrant_url: str = "http://localhost:6333"
     qdrant_collection: str = "enterprise_docs"
 
     database_url: str = "sqlite:///logs.db"
 
+    vector_db_provider: str = "chroma"
+    retrieval_type: str = "hybrid"
     top_k: int = 10
-    rerank_top_k: int = 5
-    retrieval_score: float = 0.35
+    vector_top_k: int = 10
+    keyword_top_k: int = 10
+    hybrid_top_k: int = 10
+
+    retrieval_score: float = 0.6
     retrieve_metric: str | None = None
+
+    vector_weight: float = 0.6
+    keyword_weight: float = 0.4
+
+    reranker_enabled: bool = False 
+    rerank_top_k: int = 5
 
     class Config:
         env_file = ".env"

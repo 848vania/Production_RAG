@@ -33,6 +33,7 @@ class ChromaVectorStore(VectorStore):
             name="my_synthetic_documen",
             metadata= {"hnsw:space": retrieve_metric}
         )
+        self.retrieve_metric = retrieve_metric
 
     def upsert_chunks(self, chunks, embeddings):
         """
@@ -51,11 +52,31 @@ class ChromaVectorStore(VectorStore):
         """
         Return top-k matching chunks with scores
         """
-        results =  self.collection.query(
+        self.results =  self.collection.query(
             query_embeddings= [query_embedding],
             n_results= top_k
         )
-        return results 
+        self._normalize_distance() # Normalize distances to [0:1]
+        return self.results 
+
+    def _normalize_distance(self):
+        """
+        Converts raw distance to a 0.0 - 1.0 similarity score
+        """
+        norm_distances = []
+        distances = self.results['distances'][0]
+        if self.retrieve_metric == 'l2':
+            for distance in distances:
+                # Form normalized embeddings (unit vectors), max squared L2 is 4.0
+                norm_distances.append(max(0.0, 1.0 - (distance / 4.0)))
+        elif self.retrieve_metric == 'cosine':
+            for distance in distances:
+                # Cosine distance ranges from 0.0 to 2.0 
+                norm_distances.append(1.0 - (distance / 2.0))
+        elif self.retrieve_metric == 'ip':
+            norm_distances = [distance for distance in distances]  
+                            
+        self.results['distances'][0] = norm_distances
 
     def reset(self):
         self.client.reset()

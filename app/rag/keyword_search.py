@@ -1,5 +1,7 @@
 from rank_bm25 import BM25Okapi
+
 import pickle 
+import numpy as np
 
 def build_bm25_index(chunks: list):
     """
@@ -44,6 +46,8 @@ def keyword_retrieve(question:str, top_k:int=5) -> list[dict]:
     # Get scores for all chunks 
     scores = bm25.get_scores(tokenized_query)
 
+    scores = min_max_normalize(scores)
+
     # Pair chunks with scores and sort in descending order 
     scored_chunks = [
         {
@@ -54,11 +58,8 @@ def keyword_retrieve(question:str, top_k:int=5) -> list[dict]:
     ]
     scored_chunks.sort(key=lambda x: x['score'], reverse = True)
 
-    # # Fetch top results 
-    # top_chunks = bm25.get_top_n(tokenized_query, chunks, n=top_k)
-
     retrieved_chunks = []
-    for scored_chunk in scored_chunks:
+    for scored_chunk in scored_chunks[:top_k]:
         score = scored_chunk['score']
         chunk = scored_chunk['chunk']
         retrieved_chunks.append(
@@ -74,3 +75,17 @@ def keyword_retrieve(question:str, top_k:int=5) -> list[dict]:
         )
 
     return retrieved_chunks
+
+
+def min_max_normalize(scores):
+    min_score = min(scores)
+    max_score = max(scores)
+
+    # Avoid division by Zero if all scores are identical 
+    if max_score == min_score:
+        normalized_scores = [0.0 for _ in scores]
+
+    else:
+        normalized_scores = [float((s - min_score) / (max_score)) for s in scores]
+
+    return normalized_scores

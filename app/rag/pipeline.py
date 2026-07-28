@@ -1,7 +1,7 @@
 import time 
 
 from app.config import settings
-from app.rag.retriever import vector_retrieve 
+from app.rag.retriever import retrieve 
 from app.rag.generator import generate_answer
 from app.rag.grounding import (
     has_sufficient_context,
@@ -40,10 +40,8 @@ def answer_question(question: str) -> dict:
             "reason": "empty question",
         }
     
-    retrieved_chunks = vector_retrieve(
-        cleaned_question,
-        top_k = settings.top_k,
-
+    retrieved_chunks = retrieve(
+        cleaned_question
     )
 
     if not has_sufficient_context(

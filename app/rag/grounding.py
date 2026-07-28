@@ -7,7 +7,7 @@ Retrieval Score for L2:
 """
 
 
-def has_sufficient_context(chunks: list[dict], score_limit: float=0.8) -> bool:
+def has_sufficient_context(chunks: list[dict], score_limit: float=0.6) -> bool:
     """
     Check if retrieved chunks are good enough.
     """
@@ -21,9 +21,9 @@ def has_sufficient_context(chunks: list[dict], score_limit: float=0.8) -> bool:
     if not chunks:
         return False
 
-    best_score = chunks[0].get('score', 10.0)
+    best_score = chunks[0].get('score', 0.0)
 
-    return best_score <= score_limit
+    return best_score >= score_limit
 
 def build_refusal_response(question: str, chunks: list[dict], latency_ms: float) -> dict:
     """
@@ -56,12 +56,13 @@ def estimate_confidence(chunks: list[dict]) -> str:
     """
     if not chunks:
         return "low"
-    
-    best_score = chunks[0]['score']
 
-    if best_score <= 1:
+    scores = [chunk['score'] for chunk in chunks]
+    best_score = max(scores)
+
+    if best_score >= 0.7:
         return "high"
-    if best_score > 1:
+    elif 0.4 <= best_score < 0.7:
         return "medium"
     
     return "low"
