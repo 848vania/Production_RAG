@@ -35,6 +35,7 @@ class Settings_Chat(BaseSettings):
     keyword_weight: float = 0.4
 
     reranker_enabled: bool = False 
+    reranker_type: str = 'cross-encoder'
     rerank_top_k: int = 5
 
     class Config:

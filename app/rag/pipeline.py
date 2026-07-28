@@ -10,6 +10,7 @@ from app.rag.grounding import (
     validate_citations,
     build_invalid_citation_response
 )
+from app.rag.reranker import *
 from app.schemas import *
 
 def _latency_ms(start_time:float) -> float:
@@ -43,6 +44,14 @@ def answer_question(question: str) -> dict:
     retrieved_chunks = retrieve(
         cleaned_question
     )
+
+    if settings.reranker_enabled:
+        reranker = get_reranker()
+        retrieved_chunks = reranker.rerank(
+            question = cleaned_question,
+            chunks = retrieved_chunks,
+            top_k= settings.rerank_top_k
+        )
 
     if not has_sufficient_context(
         chunks = retrieved_chunks,
