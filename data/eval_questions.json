@@ -1,0 +1,690 @@
+[
+    {
+        "id": "q001",
+        "question": "Who approves remote work requests?",
+        "expected_answer": "Remote work requests must be approved by the employee's manager and People Operations.",
+        "expected_sources": [
+            "remote_work_policy.md::3. Eligibility"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q002",
+        "question": "When working remote how many days in advance should a request for a temporary location change be submitted?",
+        "expected_answer": "Temporary location changes under 20 business days don't require submission, provided the location is within United States or Canada. Extended stays or international locations must be submitted at least 30 days in advance.",
+        "expected_sources": [
+            "remote_work_policy.md::4. Approved Work Locations"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q003",
+        "question": "Can employees perform confidential work on public computers?",
+        "expected_answer": "Only if they connect through the Nexora VPN (GlobalProtect). Employees must not access Nexora systems from unsecured public Wi-Fi without the VPN active.",
+        "expected_sources": [
+            "remote_work_policy.md::6. Network Security"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q004",
+        "question": "Can employees work from Mars?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q005",
+        "question": "What is the process for new users' account?",
+        "expected_answer": "New users are based on a request from the employee's manager. It must specify:\n- The user's role and department\n- The systems required for job function\n- The access level needed\n- The expected duration",
+        "expected_sources": [
+            "access_control_policy.md::3. User Account Management"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q006",
+        "question": "How many PTO is given for a 4-year employee?",
+        "expected_answer": "An employee with 4 years of service gets 20 days of PTO with a maximum carryover of 15 days.",
+        "expected_sources":[
+            "employee_handbook.md::5. Time Off Policies"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q007",
+        "question": "How long is the retention period for website analytics?",
+        "expected_answer": "The data retention period for website analytics is 13 months.",
+        "expected_sources": [
+            "data_privacy_policy.md::6. Data Retention"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q008",
+        "question": "Where to buy a new running watch?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q009",
+        "question": "How to get a reimmbursement for office supplies?",
+        "expected_answer": "Reimbursement for office supplies under $50 require the receipt and manager approval; for supplies over 50 requires manager pre-approval and must be ordered through Nexora's preferred supplier.",
+        "expected_sources":[
+            "expense_policy.md::7. Office Supplies and Equipment"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q010",
+        "question": "How many days should a post-incident review take?",
+        "expected_answer": "For P1 and P2 incidents a post-incident review must be completed within 5 business days, for P3 incidents 15 business days",
+        "expected_sources": [
+            "incident_response_policy.md::5. Incident Response Phases"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q011",
+        "question": "What are the conditions for a new password?",
+        "expected_answer": "When setting a new password it should have at least 14 characters, mixed case, numbers, and special characters.",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q012",
+        "question": "What do I need to renew a passport?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q013",
+        "question": "How are work emails generated?",
+        "expected_answer": "User acounts follow the format *firstname.lastname@nexoratech.com*. Service accounts use a descriptive name in the format *svc-[purporse]-[environment]*",
+        "expected_sources": [
+            "access_control_policy.md::3. User Account Management"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q014",
+        "question": "How long it takes to revoke access after termination when changing roles?",
+        "expected_answer": "Access will be revoked within 1 business day",
+        "expected_sources": [
+            "access_control_policy.md::3. User Account Management"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q015",
+        "question": "How to enter the facilities?",
+        "expected_answer": "An electronic badge reader is needed to access Nexora office facilities; badges are issues by Facilities on the first day of employment.",
+        "expected_sources": [
+            "access_control_policy.md::8. Physical Access Controls"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q016",
+        "question": "Which are the access levels available?",
+        "expected_answer": "There are three access leveld: read-only, contributor, and admin",
+        "expected_sources": [
+            "access_control_policy.md::3. User Account Management"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q017",
+        "question": "How often should service account passwords be changed?",
+        "expected_answer": "Service account passwords must be rotated every 90 days.",
+        "expected_sources": [
+            "access_control_policy.md::4. Privileged Access"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q018",
+        "question": "How to add a new player to the current game?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q019",
+        "question": "What data is collected from employees?",
+        "expected_answer": "In connection with employment, Nexora collects 6 types of data; identity, contact, employment, performance, technical, and payroll and benefit data.",
+        "expected_sources": [
+            "data_privacy_policy.md::3. Personal Data We Collect"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q020",
+        "question": "Who I ask about data privacy concerns?",
+        "expected_answer": "Questions about data privacy may be sent to the Data Privacy Officer at privacy@nexora-internal.com",
+        "expected_sources": [
+            "data_privacy_policy.md::1. Introduction"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q021",
+        "question": "Can I request information about my personal data?",
+        "expected_answer": "Yes, individuals may have the right to access, correct, erase, or restrict personal data.",
+        "expected_sources": [
+            "data_privacy_policy.md::"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q022",
+        "question": "Can personal data be transfered to other countries?",
+        "expected_answer": "Nexora operates in the United States and Canada. Transfer from the European Economic Area, United Kingdom, or Switzerland must comply with Standard Contractual clauses; transfers to unapproved countries requirer Privacy team sign-off.",
+        "expected_sources": [
+            "data_privacy_policy.md::9. Cross-Border Data Transfers"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q023",
+        "question": "How is personal  data handled?",
+        "expected_answer": "Personal data must be used only for the purpose it was collected, it must not be reused for analytics, combined with datasets or used for training internal machine learning models.",
+        "expected_sources": [
+            "data_privacy_policy.md::5. Data Use and Purpose Limitation"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q024",
+        "question": "How are part-time employees different from temporary employees?",
+        "expected_answer": "Part time employees refer to employees who work fewer than 30 hours per week, while temporary employees are hired for a period of less than 12 months through a staffing agenct or direct engagement.",
+        "expected_sources":[
+            "employee_handbook.md::2. Employment Classifications"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q025",
+        "question": "Is activity monitored inside the company?",
+        "expected_answer": "The IT department may monitor activity on company networks and devices in accordance with applicable law.",
+        "expected_sources":[
+            "employee_handbook.md::8. Technology and Equipment"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q026",
+        "question": "How to modify working hours?",
+        "expected_answer": "Core hours are from 10:00 AM to 4:00 PM, outside of core hours, employees may arrange their schedules to accommodate personal needs, provided that work is complete on time. Flexible scheduling arrangements should be discussed with and approved by the direct manager.",
+        "expected_sources":[
+            "employee_handbook.md::4. Work Hours and Scheduling"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q027",
+        "question": "Where to report harrasment inside the office?",
+        "expected_answer": "Employees who experiencec or withness harassment should report to their manager, the People Operations tema, or through the anonymous Ethics Hotline at 1-888-395-7742.",
+        "expected_sources":[
+            "employee_handbook.md::3. Code of Conduct"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q028",
+        "question": "Can personal devices be used to access the system?",
+        "expected_answer": "Personal devices used to access Nexora system must have the Nexora MDM (Mobile Device Management) profile installed and comply with all requirements in the IT Onboarding Guide and Security Policy.",
+        "expected_sources":[
+            "employee_handbook.md::8. Technology and Equipment"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q029",
+        "question": "How early should travel tickets be bought?",
+        "expected_answer": "Tickets must be purchased at least 14 days in advance when possible.",
+        "expected_sources":[
+            "expense_policy.md::4. Travel Expenses"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q030",
+        "question": "Can home networks be used to access Nexora network when working remote?",
+        "expected_answer": "Home networks used for remote work must use WPA2 or WPA3 encryptation and a strong router password. Additionally default router  credentials must be changed.",
+        "expected_sources":[
+            "security_policy.md::6. Network Security"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q031",
+        "question": "Can a personal vehicle be used for business travels?",
+        "expected_answer": "Yes, when using a personal vehicle the expenses will be reimbursed at the current IRS standard mileage rate for business use. However, mileage must be logged in Expensify, including origin, destination, and business purpose.",
+        "expected_sources":[
+            "expense_policy.md::4. Travel Expenses"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q032",
+        "question": "Where to submit an expense report?",
+        "expected_answer": "Employees submit expense reports through Nexora's expense management platform, Expensify, accessible at expenses.nexora-internal.com or via the Expensify mobile app.",
+        "expected_sources":[
+            "expense_policy.md::3. Expense Submission Process"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q033",
+        "question": "How to deal with phishing emails?",
+        "expected_answer": "If an email looks suspicious do not click links or open attachments; formard the email as an attachment to phishing@nexora-internal.com and report it using the Phish Alter button in Gmail.",
+        "expected_sources":[
+            "security_policy.md::9. Phishing and Social Engineering"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q034",
+        "question": "How many times can ibuprofen be taken?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q035",
+        "question": "What should be included in the serverity report?",
+        "expected_answer": "Reports should include what was observed, when it was discovere, which systems or data may be affected, and any actions already taken.",
+        "expected_sources": [
+            "incident_response_policy.md::5. Incident Response Phases"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q036",
+        "question": "After an incident was reported, can I turn off my computer?",
+        "expected_answer": "No. Do not power off, reimage, or delete anything on a potentially affected system. Preserve logs, emails, and any evidence. Don't forget to notify your manager and the Security team.",
+        "expected_sources": [
+            "incident_response_policy.md::5. Incident Response Phases"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q037",
+        "question": "What is the email of IT On-Call?",
+        "expected_answer": "The email of IT Operations Lead is itops@nexora-internal.com",
+        "expected_sources": [
+            "incident_response_policy.md::4. Incident Response Team"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q038",
+        "question": "How to classify an incident severity?",
+        "expected_answer": "All incidents are assigned a severity level at declaration, defined as Critical (P1), High (P2), Medium (P3), and Low (P4).",
+        "expected_sources": [
+            "incident_response_policy.md::3. Incident Severity Levels"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q039",
+        "question": "Should customers be notified in case of a data breach?",
+        "expected_answer": "Affected individuals should be notified if the breach creastes risk to rights and freedoms.",
+        "expected_sources": [
+            "incident_response_policy.md::6. Notification Requirements"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q040",
+        "question": "How many kilometers from Luca's deli restaurant to the airport?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q041",
+        "question": "Where can I find my password for joining the Nexora system?",
+        "expected_answer": "The temporary password is sent via SMS to your mobile on your start date.",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q042",
+        "question": "What is the gateway needed when setting up VPN?",
+        "expected_answer": "When prompted for a gateway, enter 'vpn.nexoratech.com'.",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 6: Set Up VPN"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q043",
+        "question": "Can Nexora access the files on my phone?",
+        "expected_answer": "The MDM profile enables remote wipe of company data only (not personal data). IT cannot read personal messages or photos on your device.",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q044",
+        "question": "Who to call for a stolen device?",
+        "expected_answer": "For a lost or stolen device call IT Security immediately at 1-866-NEX-SECU",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 11: Complete Required Training"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q045",
+        "question": "What are the required applications when setting a new device?",
+        "expected_answer": "After being enrolled in Okta, required applications include Slack, Google Chrome, Google Drive for Desktop, Zoom, GlobalProtect, CrwodStrike, Okta Verify, and 1Password.",
+        "expected_sources": [
+            "it_onboarding_guide.md::Step 5: Install Required Applications"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q046",
+        "question": "Can FlowOps be deployed on-premise?",
+        "expected_answer": "FlowOps is 100% clous-based, hosted on AWS in US-East and US-West regions. There is no on-premise option at this time.",
+        "expected_sources": [
+            "product_faq.md::General Product Questions"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q047",
+        "question": "What plans are offered for Nexora FlowOps?",
+        "expected_answer": "There are three tiers offered; Standard at $2.500/month, Professional at $6500/month and Enterprise at a custom price.",
+        "expected_sources": [
+            "product_faq.md::Pricing and Plans"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q048",
+        "question": "What compliance standard is used in Nexora FlowOps?",
+        "expected_answer": "Nexora maintains SOC2 Type certification covering Security, Availability, and Confidentiality trust service criteria.",
+        "expected_sources": [
+            "product_faq.md::Security and Compliance"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q049",
+        "question": "What does the Standard plan offer?",
+        "expected_answer": "The standard plan includes Invoice processing, up to 5 approval workflows, 1 ERP integration, ACH payments, vendor portal, standard analytics & reporting, read-only api access, SLA of 99.9%, and email support.",
+        "expected_sources": [
+            "product_faq.md::Pricing and Plans"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q050",
+        "question": "How long does the free trial last?",
+        "expected_answer": "The free trial for the Professional tier is available for 14 days.",
+        "expected_sources": [
+            "product_faq.md::Pricing and Plans"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q051",
+        "question": "Where will data be stored?",
+        "expected_answer": "By default, all customer data is stored in AWS US-East-1 (Northern Virginia) with replication to US-West-2 (Oregon) for disaster recovery.",
+        "expected_sources": [
+            "product_faq.md::Security and Compliance"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q052",
+        "question": "Where do I find my recently shopping receipts?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q053",
+        "question": "Which work modalities are available?",
+        "expected_answer": "Nexora operates under three work models; hydrid as the default, fully remote and fully on-site.",
+        "expected_sources": [
+            "remote_work_policy.md::2. Work Models"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q054",
+        "question": "How many days are needed to transition into remote modality?",
+        "expected_answer": "To be eligible for any remote work arrangement, an employee must have completed at least 90 days of employment.",
+        "expected_sources": [
+            "remote_work_policy.md::3. Elegibility"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q055",
+        "question": "Can Wi-Fi be used when working remote?",
+        "expected_answer": "yes, but must use a password-protected Wi-Fi network only, and when using a unencrypted Wi-Fi use VPN.",
+        "expected_sources": [
+            "remote_work_policy.md::7. Security Requirements"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q056",
+        "question": "How many toxins are transmitted per every XR?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q057",
+        "question": "What is the difference between Confidential and Restricted data?",
+        "expected_answer": "Confidential data involves sensitive business information with limited distribution such as customer contracts, financial forecasts, or products roadmaps. Restricted data involves the highest sensitivity data, with strictly controlled access, such as customer PII, authentication credentials, audit logs, and M&A materials.",
+        "expected_sources": [
+            "security_policy.md::2. Information Classification"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q058",
+        "question": "What is the email from the Security Team?",
+        "expected_answer": "The email is security@nexora-internal.com. It receives security inquiries and incident reports.",
+        "expected_sources": [
+            "security_policy.md::1. Purpose and Scope"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q059",
+        "question": "How can access certain data from a person?",
+        "expected_answer": "Access to data is granted on a need-to-know basis. Access requests must be submitted through the IT portal and approved by the employee's manager and the Data Ownder for Restricted Data.",
+        "expected_sources": [
+            "security_policy.md::3. Access Control"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q060",
+        "question": "What devices can be used to access Nexora system?",
+        "expected_answer": "Only company-issued devices or BYOD (Bring Your Own Device) devices registered in Nexora's Mobile Device Management (MDM) system may access Nexora corporate data.",
+        "expected_sources": [
+            "security_policy.md::5. Device Security"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q061",
+        "question": "How often are security patches applied?",
+        "expected_answer": "Security patches rated Critical or High must be applied within 7 days of release. Other patches must be applied within 30 days.",
+        "expected_sources": [
+            "security_policy.md::5. Device Security"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q062",
+        "question": "Is Multi-Factor Authentication needed?",
+        "expected_answer": "Multi-Factor Authentication (MFA) is mandatory for all Nexora accounts and systems, with no exceptions.It must use and authenticator app such as Okta Verify, Google Authenticator, or Microsoft Authenticator.",
+        "expected_sources": [
+            "security_policy.md::4. Authentication Requirements"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q063",
+        "question": "How to check if my delivery passed customs?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q064",
+        "question": "What does it mean a Tier 2 vendor?",
+        "expected_answer": "Vendors tiers are based on the sensitivity of data they access and the criticality of services they provide. Tier 2 vendors known as Significant have access to Confidential data; or service disruption would significantly impair operations, such as CRM, HRIS, or employee benefits administrator.",
+        "expected_sources": [
+            "vendor_management_policy.md::2. Vendor Risk Tiers"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q065",
+        "question": "Can the manager alone approve a vendor?",
+        "expected_answer": "A Manager can only approve contracts with under $10.000/year value.",
+        "expected_sources": [
+            "vendor_management_policy.md::3. Vendor Aprroval Process"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q066",
+        "question": "Is IT security approval needed to proceed with a vendor?",
+        "expected_answer": "IT security approval is required only for vendors classified under Tier 1 - Critical or Tier 2 - Significant, for Tier 3 - Standard self-service is enough if no data access.",
+        "expected_sources": [
+            "vendor_management_policy.md::3. Vendor Aprroval Process"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q067",
+        "question": "What information is needed from the vendor?",
+        "expected_answer": "A vendor request must be submitted at the Procurement portal including vendor name and contact information, description of services to be provided, estimated annual contract value, data types and systems the vendor will access, and business justification.",
+        "expected_sources": [
+            "vendor_management_policy.md::3. Vendor Aprroval Process"
+        ],
+        "answerable": true,
+        "category": "direct_lookup"
+    },
+    {
+        "id": "q068",
+        "question": "How often should vendors' contract  be reviewed?",
+        "expected_answer": "Vendors' contract of Tier 1 & 2 should be reviewed annually, while Tier 3 vendors should be reviewed every 2 years.",
+        "expected_sources": [
+            "vendor_management_policy.md::6. Ongoing Vendor Management"
+        ],
+        "answerable": true,
+        "category": "exact_fact"
+    },
+    {
+        "id": "q069",
+        "question": "What to do with the data after a vendor's contract finished?",
+        "expected_answer": "After a vendor's contract is finished vendor  must confirm in writing (within 30 days of termination) that all Nexora data has been returned or securely deleted.",
+        "expected_sources": [
+            "vendor_management_policy.md::7. Vendor Offboarding"
+        ],
+        "answerable": true,
+        "category": "security"
+    },
+    {
+        "id": "q070",
+        "question": "How much it takes from the airport to downtown?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    },
+    {
+        "id": "q071",
+        "question": "How to print and fax all certificates?",
+        "expected_answer": null,
+        "expected_sources": [],
+        "answerable": false,
+        "category": "unanswerable"
+    }
+]
