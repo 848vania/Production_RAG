@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.evaluation.run_eval import run_evaluation
+from app.evaluation.run_retrieval_eval import run_evaluation
 
 router = APIRouter()
 

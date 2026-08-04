@@ -8,7 +8,9 @@ def load_eval_dataset(path:str = "data/eval_questions.json") -> list[dict]:
     with open(path, encoding='utf-8') as file:
         data = json.load(file)
 
-    return data
+    valid_items = [elem for elem in data if validate_eval_item(elem)]
+
+    return valid_items
 
 
 def validate_eval_item(item:dict) -> bool:

@@ -84,7 +84,7 @@ class ChromaVectorStore(VectorStore):
     def add_custom_chunks(self, chunks):
 
         if isinstance(chunks[0], Chunk):
-            print(f"It's istance")
+            # print(f"It's istance")
             texts = [chunk.text for chunk in chunks]
             ids = [chunk.chunk_id for chunk in chunks]
 

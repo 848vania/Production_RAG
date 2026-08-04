@@ -51,7 +51,8 @@ def format_retrieved_context(results: dict) -> str:
     for id, document, distance, metadata_raw in zip(ids, documents, distances, metadatas):
         metadata = {
             'document': metadata_raw['doc_title'],
-            'section': metadata_raw['section_title']
+            'section': metadata_raw['section_title'],
+            'doc_id': metadata_raw['doc_id']
         }
         result = {
             'chunk_id': id,
