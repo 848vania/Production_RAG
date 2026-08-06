@@ -117,6 +117,7 @@ def format_sources_from_chunks(chunks: list[dict]):
                 "source_number": index,
                 "chunk_id": chunk.get('chunk_id'),
                 'document': metadata.get('document'),
+                'doc_id': metadata.get('doc_id'),
                 'section': metadata.get('section'),
                 'score': chunk.get('score'), 
                 'text': chunk.get('text'),

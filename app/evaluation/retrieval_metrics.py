@@ -1,4 +1,4 @@
-def extract_source_ids(retrieved_chunks: list[dict]) -> list[str]:
+def extract_chunk_ids(retrieved_chunks: list[dict]) -> list[str]:
     return [
         f"{chunk.get('metadata', {}).get('doc_id')}::{chunk.get('metadata', {}).get('section')}"
         # f"{chunk.get("metadata", {}).get("doc_id")}::{chunk.get("metadata", {}).get("section_title")}" #TODO: REVIEW THE  SYNTAX OF PARENTEHSUS 
@@ -63,7 +63,7 @@ def evaluate_retrieval(
     Run evaluation metrics
     """
 
-    retrieved_sources = extract_source_ids(retrieved_chunks)
+    retrieved_sources = extract_chunk_ids(retrieved_chunks)
     expected_sources = eval_item['expected_sources']
 
     return {

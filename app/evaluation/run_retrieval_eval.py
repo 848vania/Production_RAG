@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from app.evaluation.retrieval_metrics import evaluate_retrieval, extract_source_ids
+from app.evaluation.retrieval_metrics import evaluate_retrieval, extract_chunk_ids
 from app.evaluation.eval_dataset import load_eval_dataset
 from app.rag.retriever import retrieve
 from app.config import settings
@@ -40,7 +40,7 @@ def summarize_retrieval_results(results: list[dict]) -> dict:
             for item in results
         ) / len(results)
 
-    output_path = RESULTS_DIR / 'retrieval_eval_summart.json'
+    output_path = RESULTS_DIR / 'retrieval_eval_summary.json'
 
     with output_path.open('w', encoding='utf-8') as file:
         json.dump(summary, file, indent=2, ensure_ascii=False)
@@ -63,7 +63,7 @@ def run_retrieval_evaluation() -> dict:
                 top_k = settings.rerank_top_k
             )
 
-        retrieved_sources = extract_source_ids(retrieved_chunks)
+        retrieved_sources = extract_chunk_ids(retrieved_chunks)
 
         retrieval_scores = evaluate_retrieval(
             retrieved_chunks = retrieved_chunks, 

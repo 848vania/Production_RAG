@@ -13,6 +13,8 @@ chunks = chunk_documents(docs)
 texts = [chunk.text for  chunk in chunks]
 embeddings = embedding.embed_texts(texts)
 
+build_bm25_index(chunks)
+
 def vector_retrieve(question: str, top_k: int=5):
     """
     Embed the question and return top-k vector search results
@@ -112,7 +114,6 @@ def hybrid_retrieve(question: str, top_k:int=10, vector_weight: float = 0.6, key
     """
     vector_results = vector_retrieve(question, top_k)
 
-    build_bm25_index(chunks)
     keyword_results = keyword_retrieve(question, top_k)
 
     results = merge_results(vector_results, keyword_results, vector_weight=vector_weight, keyword_weight=keyword_weight)

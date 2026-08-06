@@ -1,0 +1,728 @@
+[
+  {
+    "question_id": "q001",
+    "question": "Who approves remote work requests?",
+    "predicted_answer": "Standard remote work arrangements require approval from the employee’s manager and People Operations [Source 134]. Extended stays or international locations require written approval from the employee’s manager and the Legal team at least 30 days in advance [Source 135]. Short international exceptions (up to 10 consecutive business days) require Legal and People Operations approval [Source 136].",
+    "expected_answer": "Remote work requests must be approved by the employee's manager and People Operations.",
+    "confidence": "high",
+    "latency_ms": 16790.82,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::3. Eligibility"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::1. Purpose and Scope",
+      "remote_work_policy.md::9. Performance Accountability"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "136",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.7646947423303994,
+        "text": "ager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does not generally authorize employees to work from countries outside the US and Canada. Exceptions may be considered for up to 10 consecutive business days for personal reasons (e.g., visiting family) and require Legal and People Operations approval. Unauthorized international remote work may result in disciplinary action.\n\n---"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "135",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.7785200379488454,
+        "text": "## 4. Approved Work Locations\n\n### 4.1 Primary Remote Location\nEmployees must designate a primary remote work location (city and state/province) and notify People Operations of any change. Tax withholding and compliance obligations are determined by work location, and unauthorized changes can create legal and tax complications for both the employee and the Company.\n\n### 4.2 Temporary Location Changes\nEmployees may work from a location other than their primary remote location for up to 20 business days per calendar year without prior approval, provided the location is within the United States or Canada. Extended stays or international locations require written approval from the employee's manager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "134",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "3. Eligibility",
+        "score": 0.7271649258951057,
+        "text": "## 3. Eligibility\n\nTo be eligible for any remote work arrangement, an employee must:\n\n- Have completed at least 90 days of employment\n- Be in good standing (no active Performance Improvement Plan)\n- Have a role that does not require physical presence to perform essential functions\n- Have appropriate home workspace conditions (see Section 5)\n- Have manager and People Operations approval\n\nNew hires are expected to work on-site full-time for the first 90 days unless the role was explicitly designated as remote at the time of offer.\n\n---\n"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "131",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "1. Purpose and Scope",
+        "score": 0.8629915833473205,
+        "text": "## 1. Purpose and Scope\n\nThis policy establishes guidelines for remote work arrangements at Nexora Technologies, Inc. (\"Nexora\" or \"the Company\"). It applies to all full-time and part-time employees who work outside a Nexora office location on a regular or occasional basis.\n\nRemote work is a privilege, not an entitlement. Eligibility depends on role requirements, performance standing, and business needs. The Company reserves the right to modify or revoke remote work arrangements at any time.\n\n---\n"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "144",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "9. Performance Accountability",
+        "score": 0.7601555619720992,
+        "text": "## 9. Performance Accountability\n\nRemote work does not change performance expectations. Employees are evaluated on output and results, not hours logged. Managers are responsible for setting clear goals and check-in cadences for remote team members. A pattern of missed deliverables, unresponsiveness, or failure to attend required meetings may result in revocation of remote work privileges.\n\n---\n"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.25,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.5833333333333334
+    }
+  },
+  {
+    "question_id": "q002",
+    "question": "When working remote how many days in advance should a request for a temporary location change be submitted?",
+    "predicted_answer": "Employees may work from a location other than their primary remote location for up to 20 business days per calendar year without prior approval [Source 135]. Extended stays or international temporary location changes require written approval from the employee’s manager and the Legal team at least 30 days in advance [Source 135][Source 136].",
+    "expected_answer": "Temporary location changes under 20 business days don't require submission, provided the location is within United States or Canada. Extended stays or international locations must be submitted at least 30 days in advance.",
+    "confidence": "high",
+    "latency_ms": 15982.86,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::4. Approved Work Locations"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::5. Home Workspace Requirements",
+      "remote_work_policy.md::2. Work Models"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "135",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.8699139714241028,
+        "text": "## 4. Approved Work Locations\n\n### 4.1 Primary Remote Location\nEmployees must designate a primary remote work location (city and state/province) and notify People Operations of any change. Tax withholding and compliance obligations are determined by work location, and unauthorized changes can create legal and tax complications for both the employee and the Company.\n\n### 4.2 Temporary Location Changes\nEmployees may work from a location other than their primary remote location for up to 20 business days per calendar year without prior approval, provided the location is within the United States or Canada. Extended stays or international locations require written approval from the employee's manager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "136",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.7779342234134674,
+        "text": "ager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does not generally authorize employees to work from countries outside the US and Canada. Exceptions may be considered for up to 10 consecutive business days for personal reasons (e.g., visiting family) and require Legal and People Operations approval. Unauthorized international remote work may result in disciplinary action.\n\n---"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "134",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "3. Eligibility",
+        "score": 0.764009103178978,
+        "text": "## 3. Eligibility\n\nTo be eligible for any remote work arrangement, an employee must:\n\n- Have completed at least 90 days of employment\n- Be in good standing (no active Performance Improvement Plan)\n- Have a role that does not require physical presence to perform essential functions\n- Have appropriate home workspace conditions (see Section 5)\n- Have manager and People Operations approval\n\nNew hires are expected to work on-site full-time for the first 90 days unless the role was explicitly designated as remote at the time of offer.\n\n---\n"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "137",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "5. Home Workspace Requirements",
+        "score": 0.6632215629383663,
+        "text": "## 5. Home Workspace Requirements\n\nEmployees working remotely are responsible for maintaining a workspace that supports productive, secure, and professional work. The workspace must:\n\n- Have a reliable, private internet connection with minimum speeds of 25 Mbps download / 10 Mbps upload\n- Be free from excessive noise and interruptions during meetings and calls\n- Allow the employee to maintain data confidentiality (e.g., no family members or guests visible during video calls involving confidential matters)\n- Be ergonomically set up to minimize injury risk\n\nNexora provides a one-time home office stipend of $800 for employees approved for hybrid or fully remote work to purchase equipment such as a monitor, desk chair, or keyboard. This stipend must be approved in advance, spent within 90 days"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "133",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "2. Work Models",
+        "score": 0.6832366519014106,
+        "text": "### 2.3 Fully On-Site\nCertain roles—including facilities, lab operations, and select customer support functions—require full-time on-site presence. Employees in these roles are not eligible for remote work arrangements unless granted a temporary exception.\n\n---"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.25,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.5357142857142857
+    }
+  },
+  {
+    "question_id": "q003",
+    "question": "Can employees perform confidential work on public computers?",
+    "predicted_answer": "No. Employees must use only company-issued or approved devices for work [Source 141]. When accessing Internal, Confidential, or Restricted systems from outside a Nexora office network, employees must connect through the Nexora VPN (GlobalProtect) and keep it active [Source 158]. Employees also must not access Nexora systems from unsecured public Wi‑Fi without the VPN; if the VPN cannot be established they must use a personal mobile hotspot or postpone the work [Source 158]. Given the device and VPN requirements, public computers do not meet the company’s stated requirements for performing Confidential work [Source 141][Source 158].",
+    "expected_answer": "Only if they connect through the Nexora VPN (GlobalProtect). Employees must not access Nexora systems from unsecured public Wi-Fi without the VPN active.",
+    "confidence": "high",
+    "latency_ms": 24421.93,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::6. Network Security"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::6. Network Security",
+      "None::3. Access Control",
+      "employee_handbook.md::3. Code of Conduct",
+      "employee_handbook.md::3. Code of Conduct",
+      "remote_work_policy.md::7. Security Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "158",
+        "document": "Information Security Policy",
+        "doc_id": "security_policy.md",
+        "section": "6. Network Security",
+        "score": 0.840688693523407,
+        "text": "## 6. Network Security\n\n### 6.1 VPN\nEmployees must connect through the Nexora VPN (GlobalProtect) when accessing Internal, Confidential, or Restricted systems from outside a Nexora office network. VPN must remain active throughout the work session. Split-tunneling is not permitted for Restricted data access.\n\n### 6.2 Public Wi-Fi\nEmployees must not access Nexora systems from unsecured public Wi-Fi (e.g., cafes, airports, hotels) without the VPN active. If the VPN cannot be established, the employee must use a personal mobile hotspot or postpone the work.\n\n### 6.3 Home Networks\nHome networks used for remote work must use WPA2 or WPA3 encryption and a strong router password. Default router credentials must be changed. Employees must not connect company devices to networks shared with unknown"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "152",
+        "document": "security_policy.md",
+        "doc_id": null,
+        "section": "3. Access Control",
+        "score": 0.8115618614298307,
+        "text": "## 3. Access Control\n\n### 3.1 Least Privilege Principle\nAccess to Nexora systems and data is granted on a need-to-know basis. Employees receive only the minimum access required to perform their job functions. Access requests must be submitted through the IT portal and approved by the employee's manager and the Data Owner for Restricted data.\n\n### 3.2 Access Reviews\nIT conducts quarterly access reviews for all Restricted and Confidential data systems. Managers are required to certify or revoke access for their direct reports within 10 business days of receiving a review request.\n\n### 3.3 Terminated Employees\nAll system access must be revoked within 1 business hour of an employee's termination or resignation effective date. People Operations is responsible for triggering access revocation wo"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "47",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "3. Code of Conduct",
+        "score": 0.7338871359825134,
+        "text": "s are distributed each December and must be returned by January 15.\n\n### 3.4 Confidentiality\nEmployees have access to confidential business information including trade secrets, customer data, financial projections, and product roadmaps. This information must not be shared with unauthorized parties inside or outside the Company, and this obligation continues after employment ends. Refer to the Data Privacy Policy for additional requirements.\n\n---"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "46",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "3. Code of Conduct",
+        "score": 0.7234699130058289,
+        "text": "omments\n- Repeated requests for personal relationships after a clear refusal\n- Offensive jokes, slurs, or derogatory language\n- Intimidation or bullying\n- Deliberate exclusion from meetings or communications\n\nEmployees who experience or witness harassment should report it immediately to their manager, the People Operations team, or through the anonymous Ethics Hotline at 1-888-395-7742.\n\n### 3.3 Conflicts of Interest\nEmployees must disclose any potential conflict of interest to their manager and the Legal team before engaging in outside business activities, serving on boards, or entering into transactions with entities that do business with Nexora. Annual conflict-of-interest disclosure forms are distributed each December and must be returned by January 15.\n\n### 3.4 Confidentiality\nEmploye"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "141",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "7. Security Requirements",
+        "score": 0.7367529400645355,
+        "text": "## 7. Security Requirements\n\nRemote employees must follow all requirements in the Nexora Security Policy and IT Onboarding Guide. Key obligations include:\n\n- Use only company-issued or approved devices for work\n- Connect to the Nexora VPN when accessing internal systems\n- Use a password-protected Wi-Fi network; do not use public or unencrypted Wi-Fi without VPN\n- Lock device screen immediately when stepping away from the workspace\n- Do not allow household members or guests to use company devices\n- Report lost or stolen devices to IT Security immediately at security@nexora-internal.com or 1-866-NEX-SECU\n\n---\n"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.0,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 1.0
+    }
+  },
+  {
+    "question_id": "q004",
+    "question": "Can employees work from Mars?",
+    "predicted_answer": "I found potentially relevant information, but I could not generate a properly cited answer from the provided documents.",
+    "expected_answer": null,
+    "confidence": "low",
+    "latency_ms": 15344.09,
+    "refused": true,
+    "reason": "invalid_or_missing_citations",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::5. Home Workspace Requirements",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::2. Work Models"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "136",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.7177190070459543,
+        "text": "ager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does not generally authorize employees to work from countries outside the US and Canada. Exceptions may be considered for up to 10 consecutive business days for personal reasons (e.g., visiting family) and require Legal and People Operations approval. Unauthorized international remote work may result in disciplinary action.\n\n---"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "135",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.8331897377967834,
+        "text": "## 4. Approved Work Locations\n\n### 4.1 Primary Remote Location\nEmployees must designate a primary remote work location (city and state/province) and notify People Operations of any change. Tax withholding and compliance obligations are determined by work location, and unauthorized changes can create legal and tax complications for both the employee and the Company.\n\n### 4.2 Temporary Location Changes\nEmployees may work from a location other than their primary remote location for up to 20 business days per calendar year without prior approval, provided the location is within the United States or Canada. Extended stays or international locations require written approval from the employee's manager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "137",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "5. Home Workspace Requirements",
+        "score": 0.7266669869422913,
+        "text": "## 5. Home Workspace Requirements\n\nEmployees working remotely are responsible for maintaining a workspace that supports productive, secure, and professional work. The workspace must:\n\n- Have a reliable, private internet connection with minimum speeds of 25 Mbps download / 10 Mbps upload\n- Be free from excessive noise and interruptions during meetings and calls\n- Allow the employee to maintain data confidentiality (e.g., no family members or guests visible during video calls involving confidential matters)\n- Be ergonomically set up to minimize injury risk\n\nNexora provides a one-time home office stipend of $800 for employees approved for hybrid or fully remote work to purchase equipment such as a monitor, desk chair, or keyboard. This stipend must be approved in advance, spent within 90 days"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "134",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "3. Eligibility",
+        "score": 0.7264995276927948,
+        "text": "## 3. Eligibility\n\nTo be eligible for any remote work arrangement, an employee must:\n\n- Have completed at least 90 days of employment\n- Be in good standing (no active Performance Improvement Plan)\n- Have a role that does not require physical presence to perform essential functions\n- Have appropriate home workspace conditions (see Section 5)\n- Have manager and People Operations approval\n\nNew hires are expected to work on-site full-time for the first 90 days unless the role was explicitly designated as remote at the time of offer.\n\n---\n"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "133",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "2. Work Models",
+        "score": 0.716293454170227,
+        "text": "### 2.3 Fully On-Site\nCertain roles—including facilities, lab operations, and select customer support functions—require full-time on-site presence. Employees in these roles are not eligible for remote work arrangements unless granted a temporary exception.\n\n---"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.0,
+      "refusal_accuracy": 0.0,
+      "answer_correctness_simple": 0.0
+    }
+  },
+  {
+    "question_id": "q005",
+    "question": "What is the process for new users' account?",
+    "predicted_answer": "New user accounts are provisioned through Nexora’s identity management system (Okta) based on a request from the employee’s manager [Source 4]. The provisioning request must specify the user’s role and department, the systems required for the job, the access level needed (e.g., read-only, contributor, admin), and the expected duration (permanent or time-limited) [Source 4]. Accounts are not created until the provisioning request is approved by both the manager and the relevant system’s Data Owner [Source 4]. Provisioning must be completed within 1 business day of a new hire’s start date for standard access [Source 4]. User accounts follow the naming convention firstname.lastname@nexoratech.com [Source 4].",
+    "expected_answer": "New users are based on a request from the employee's manager. It must specify:\n- The user's role and department\n- The systems required for job function\n- The access level needed\n- The expected duration",
+    "confidence": "high",
+    "latency_ms": 15588.85,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_sources": [
+      "access_control_policy.md::3. User Account Management",
+      "None::Pricing and Plans",
+      "None::10. Privacy by Design",
+      "None::3. Expense Submission Process",
+      "None::Features and Capabilities"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "4",
+        "document": "Access Control Policy",
+        "doc_id": "access_control_policy.md",
+        "section": "3. User Account Management",
+        "score": 0.8275132339292655,
+        "text": "## 3. User Account Management\n\n### 3.1 Account Provisioning\nNew user accounts are provisioned through Nexora's identity management system (Okta) based on a request from the employee's manager. The request must specify:\n- The user's role and department\n- The systems required for job function\n- The access level needed (e.g., read-only, contributor, admin)\n- The expected duration (permanent or time-limited)\n\nAccounts are not created until the provisioning request is approved by both the manager and the relevant system's Data Owner. Provisioning must be completed within 1 business day of a new hire's start date for standard access.\n\n### 3.2 Account Naming Convention\nUser accounts follow the format **firstname.lastname@nexoratech.com**. Service accounts use a descriptive name in the format **sv"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "121",
+        "document": "product_faq.md",
+        "doc_id": null,
+        "section": "Pricing and Plans",
+        "score": 0.7638058457982566,
+        "text": "10–20+ weeks; scoped separately)\n\nImplementation is managed by Nexora's Professional Services team in collaboration with the customer's IT and Finance teams.\n\n### Is there a free trial?\nYes. A 14-day free trial is available for the Professional tier, with access to all features except live payment execution. Trial accounts can process up to 50 invoices. No credit card is required to start a trial. Sales-assisted POC (proof of concept) environments are also available for Enterprise prospects.\n\n---"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "37",
+        "document": "data_privacy_policy.md",
+        "doc_id": null,
+        "section": "10. Privacy by Design",
+        "score": 1.0,
+        "text": "## 10. Privacy by Design\n\nPrivacy considerations must be incorporated into all new products, features, processes, and systems from the outset—not added after the fact. Any new initiative involving personal data must complete a Privacy Impact Assessment (PIA) before launch. PIA templates are available at wiki.nexora-internal.com/privacy/pia. The Privacy team must review and approve PIAs for high-risk processing activities.\n\n---\n"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "66",
+        "document": "expense_policy.md",
+        "doc_id": null,
+        "section": "3. Expense Submission Process",
+        "score": 0.7167642623083471,
+        "text": "## 3. Expense Submission Process\n\nEmployees submit expense reports through Nexora's expense management platform, **Expensify**, accessible at expenses.nexora-internal.com or via the Expensify mobile app.\n\nEach expense submission must include:\n1. A clear, legible receipt (photo or PDF)\n2. Business purpose (who, what, why)\n3. Attendees for meal and entertainment expenses\n4. Manager approval (auto-routed in Expensify for amounts over $100)\n\nReceipts are required for all individual expenses of $25 or more. For expenses under $25, a written description in lieu of a receipt is acceptable.\n\nApproved reimbursements are processed on the 15th and last business day of each month and paid via direct deposit.\n\n---\n"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "125",
+        "document": "product_faq.md",
+        "doc_id": null,
+        "section": "Features and Capabilities",
+        "score": 0.6862510150989223,
+        "text": "o-approve after 48 hours of inactivity, escalate to manager after 24 hours) are configurable. Audit trails for all approval actions are maintained indefinitely.\n\n### Is there a mobile app?\nYes. FlowOps has iOS and Android apps that allow approvers to review and approve/reject invoices and payments on the go. The mobile app supports biometric authentication (Face ID, fingerprint). Invoice data entry and configuration changes are not available on mobile.\n\n### Does FlowOps support OCR for paper invoices?\nYes. Customers can submit physical invoices by scanning or photographing them and uploading to FlowOps via the web interface, mobile app, or email-to-invoice feature (a unique email address is provisioned per customer). OCR and AI extraction then process the invoice as normal.\n\n---"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.2,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.9130434782608695
+    }
+  },
+  {
+    "question_id": "q006",
+    "question": "How many PTO is given for a 4-year employee?",
+    "predicted_answer": "A 4-year employee accrues 20 days of PTO per year [Source 50]. The maximum carryover for that years-of-service tier (3–5 years) is 15 days [Source 50].",
+    "expected_answer": "An employee with 4 years of service gets 20 days of PTO with a maximum carryover of 15 days.",
+    "confidence": "high",
+    "latency_ms": 10607.11,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::5. Time Off Policies"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::5. Time Off Policies",
+      "employee_handbook.md::7. Benefits",
+      "employee_handbook.md::2. Employment Classifications",
+      "employee_handbook.md::5. Time Off Policies",
+      "remote_work_policy.md::4. Approved Work Locations"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "50",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "5. Time Off Policies",
+        "score": 0.8367261052131654,
+        "text": "## 5. Time Off Policies\n\n### 5.1 Paid Time Off (PTO)\nNexora uses a unified PTO bank that covers vacation, personal days, and non-medical appointments. PTO accruals are as follows:\n\n| Years of Service | Annual Accrual | Maximum Carryover |\n|-----------------|----------------|-------------------|\n| 0–2 years | 15 days | 10 days |\n| 3–5 years | 20 days | 15 days |\n| 6+ years | 25 days | 20 days |\n\nPTO requests should be submitted in Workday at least 5 business days in advance for requests of 1–3 days, and at least 15 business days in advance for requests of 4 or more consecutive days. Approval is at the manager's discretion based on business needs.\n\n### 5.2 Sick Leave\nEmployees receive 10 days of paid sick leave per calendar year. Sick leave does not roll over. For absences exceeding 3 consec"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "56",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "7. Benefits",
+        "score": 0.6776218085737183,
+        "text": "employees receive Restricted Stock Units (RSUs) as part of their total compensation. RSUs vest over a 4-year schedule with a 1-year cliff. Equity details are outlined in each employee's offer letter and the Equity Plan agreement.\n\n### 7.4 Employee Assistance Program (EAP)\nAll employees and their household members have access to confidential counseling, financial guidance, and legal consultation through the Nexora EAP, administered by ClearMind Wellness. Up to 8 free sessions per issue per year are available. Contact: 1-800-482-9100 or eap.nexora.clearmind.com.\n\n### 7.5 Wellness Reimbursement\nEmployees receive up to $600 per year for eligible wellness expenses, including gym memberships, fitness equipment, meditation apps, or mental health apps not covered by the EAP. Submit receipts throu"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "44",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "2. Employment Classifications",
+        "score": 0.5847901331481752,
+        "text": "oyees\nEmployees hired for a defined period (not to exceed 12 months) through a staffing agency or direct engagement. Temporary employees are not eligible for standard benefits.\n\n---"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "52",
+        "document": "Employee Handbook",
+        "doc_id": "employee_handbook.md",
+        "section": "5. Time Off Policies",
+        "score": 0.673676073551178,
+        "text": "lly paid parental leave following the birth, adoption, or placement of a child. Secondary caregivers receive 8 weeks of fully paid parental leave. Leave must commence within 12 months of the qualifying event and must be coordinated with the People Operations team at least 60 days in advance when possible.\n\n### 5.5 Bereavement Leave\nEmployees may take up to 5 paid bereavement days upon the death of an immediate family member (spouse, domestic partner, child, parent, sibling, or grandparent) and up to 3 days for extended family members (aunt, uncle, niece, nephew, in-law).\n\n---"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "135",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "4. Approved Work Locations",
+        "score": 0.6653969287872314,
+        "text": "## 4. Approved Work Locations\n\n### 4.1 Primary Remote Location\nEmployees must designate a primary remote work location (city and state/province) and notify People Operations of any change. Tax withholding and compliance obligations are determined by work location, and unauthorized changes can create legal and tax complications for both the employee and the Company.\n\n### 4.2 Temporary Location Changes\nEmployees may work from a location other than their primary remote location for up to 20 business days per calendar year without prior approval, provided the location is within the United States or Canada. Extended stays or international locations require written approval from the employee's manager and the Legal team at least 30 days in advance.\n\n### 4.3 International Remote Work\nNexora does"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.25,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.9090909090909091
+    }
+  },
+  {
+    "question_id": "q007",
+    "question": "How long is the retention period for website analytics?",
+    "predicted_answer": "Website analytics are retained for 13 months [Source 30].",
+    "expected_answer": "The data retention period for website analytics is 13 months.",
+    "confidence": "high",
+    "latency_ms": 10020.37,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::6. Data Retention"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::6. Data Retention",
+      "security_policy.md::7. Data Handling and Storage",
+      "incident_response_policy.md::7. Evidence Handling",
+      "access_control_policy.md::3. User Account Management",
+      "access_control_policy.md::5. Access Reviews"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "30",
+        "document": "Data Privacy Policy",
+        "doc_id": "data_privacy_policy.md",
+        "section": "6. Data Retention",
+        "score": 0.8562699586153031,
+        "text": "## 6. Data Retention\n\nPersonal data must not be retained longer than necessary for the purpose for which it was collected, or as required by law. Nexora's data retention schedule governs minimum and maximum retention periods for each data category. Key retention periods include:\n\n| Data Category | Retention Period |\n|---------------|-----------------|\n| Employee records (active) | Duration of employment + 7 years |\n| Payroll and tax records | 7 years after tax year end |\n| Recruitment records (not hired) | 2 years |\n| Customer data (post-contract) | As specified in DPA, default 90 days |\n| Security and access logs | 1 year |\n| Website analytics | 13 months |\n\nData that has reached its retention limit must be securely deleted in accordance with the Information Security Policy. Exceptions du"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "161",
+        "document": "Information Security Policy",
+        "doc_id": "security_policy.md",
+        "section": "7. Data Handling and Storage",
+        "score": 0.6565809757121678,
+        "text": "exora-internal.com.\n\n### 7.3 Data Retention and Disposal\nData must be retained per the schedule defined in the Data Retention Schedule (wiki.nexora-internal.com/legal/data-retention). When data reaches end of retention, it must be securely deleted using approved methods (cryptographic erasure for digital data, cross-cut shredding for physical documents). Unapproved deletion of data subject to legal holds is prohibited.\n\n---"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "93",
+        "document": "Incident Response Policy",
+        "doc_id": "incident_response_policy.md",
+        "section": "7. Evidence Handling",
+        "score": 0.6489214599132538,
+        "text": "## 7. Evidence Handling\n\nAll digital evidence must be collected and preserved in a forensically sound manner. Evidence handling procedures:\n- Create forensic images before analysis where possible\n- Maintain chain of custody documentation\n- Store evidence in the designated secure evidence folder on the Security team's drive\n- Retain evidence for a minimum of 3 years, or longer if subject to litigation hold\n\n---\n"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "6",
+        "document": "Access Control Policy",
+        "doc_id": "access_control_policy.md",
+        "section": "3. User Account Management",
+        "score": 0.660228818655014,
+        "text": "vendor engagement end | Within 1 business hour |\n| Role change (loss of need for certain access) | Within 1 business day |\n| Leave of absence exceeding 30 days | Within 2 business days |\n| Failed access review (recertification) | Within 3 business days |\n\nPeople Operations is responsible for triggering termination workflows in Okta, which automatically propagate to all integrated systems. IT Security must receive a termination notification on the same day.\n\n---"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "11",
+        "document": "Access Control Policy",
+        "doc_id": "access_control_policy.md",
+        "section": "5. Access Reviews",
+        "score": 0.6532198786735535,
+        "text": "ecessary and appropriate\n- Revoke any access that is no longer needed\n- Escalate any suspicious or unexplained access to IT Security\n\nReviewers who do not complete recertification within the 10-business-day window will have their own access suspended until the review is complete.\n\n---"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.2,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.5714285714285714
+    }
+  },
+  {
+    "question_id": "q008",
+    "question": "Where to buy a new running watch?",
+    "predicted_answer": "I found potentially relevant information, but I could not generate a properly cited answer from the provided documents.",
+    "expected_answer": null,
+    "confidence": "low",
+    "latency_ms": 9990.94,
+    "refused": true,
+    "reason": "invalid_or_missing_citations",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "None::Step 3: Enroll in Okta and Set Up MFA",
+      "None::6. Performance and Development",
+      "None::6. Ongoing Vendor Management",
+      "None::4. Legal Bases for Processing",
+      "None::5. Time Off Policies"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "102",
+        "document": "it_onboarding_guide.md",
+        "doc_id": null,
+        "section": "Step 3: Enroll in Okta and Set Up MFA",
+        "score": 0.8319759815218231,
+        "text": "## Step 3: Enroll in Okta and Set Up MFA\n\nNexora uses Okta as its identity provider for Single Sign-On (SSO).\n\n1. Open a browser and navigate to **nexora.okta.com**\n2. Sign in with your Nexora email and temporary password\n3. You will be prompted to change your password. Set a new password meeting the requirements in the Security Policy (minimum 14 characters, mixed case, numbers, and special characters)\n4. Enroll in Multi-Factor Authentication (MFA):\n - Download **Okta Verify** from the App Store or Google Play on your personal or company mobile device\n - Scan the QR code displayed on-screen\n - Test the MFA push notification to confirm enrollment\n5. Add your personal phone number as a backup MFA method\n\n> **Note**: SMS-based MFA is not permitted as the primary MFA method for any system. Ok"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "53",
+        "document": "employee_handbook.md",
+        "doc_id": null,
+        "section": "6. Performance and Development",
+        "score": 0.7962429932148004,
+        "text": "## 6. Performance and Development\n\n### 6.1 Performance Reviews\nFormal performance reviews are conducted twice per year—in June and December. Reviews are managed in Lattice. Employees receive written feedback from their direct manager and, where applicable, peer feedback from colleagues selected jointly by the employee and manager.\n\n### 6.2 Performance Improvement Plans\nIf an employee's performance does not meet expectations, the manager and People Operations may place the employee on a Performance Improvement Plan (PIP). A PIP defines specific, measurable objectives and a timeline (typically 30 to 90 days) for achieving them. Failure to meet PIP requirements may result in termination.\n\n### 6.3 Learning and Development\nNexora provides each full-time employee a $1,500 annual learning stipend"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "180",
+        "document": "vendor_management_policy.md",
+        "doc_id": null,
+        "section": "6. Ongoing Vendor Management",
+        "score": 1.0,
+        "text": "Change Notification\nVendors must notify Nexora's business owner and Procurement team in advance of any material changes that may affect the services or security posture, including:\n- Change in ownership or corporate structure\n- Material changes to security controls or architecture\n- Changes in sub-processors handling Nexora data\n- Security incidents or breaches involving Nexora data\n\nNexora reserves the right to re-assess or terminate a vendor relationship based on material changes.\n\n### 6.4 Sub-Processors\nTier 1 and Tier 2 vendors must disclose all sub-processors who will handle Nexora data. Nexora must approve new sub-processors before they are engaged. Vendors must update their sub-processor list and notify Nexora at least 30 days before adding a new sub-processor.\n\n---"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "28",
+        "document": "data_privacy_policy.md",
+        "doc_id": null,
+        "section": "4. Legal Bases for Processing",
+        "score": 0.7930314207789758,
+        "text": "## 4. Legal Bases for Processing\n\nNexora processes personal data only when it has a lawful basis to do so. Applicable legal bases include:\n\n- **Contract**: Processing necessary to fulfill employment obligations or customer agreements\n- **Legal Obligation**: Processing required to comply with applicable law (e.g., tax reporting, employment law)\n- **Legitimate Interests**: Processing for Nexora's operational needs that do not override individual rights (e.g., security monitoring, fraud prevention)\n- **Consent**: Processing based on clear, informed, and voluntary consent (obtained for specific purposes such as optional wellness programs)\n\nSensitive personal data is only processed where a specific additional legal basis applies (e.g., explicit consent, employment law obligations).\n\n---\n"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "51",
+        "document": "employee_handbook.md",
+        "doc_id": null,
+        "section": "5. Time Off Policies",
+        "score": 0.9414179532071436,
+        "text": "of paid sick leave per calendar year. Sick leave does not roll over. For absences exceeding 3 consecutive days, a doctor's note may be required. Sick leave may also be used to care for an ill immediate family member.\n\n### 5.3 Company Holidays\nNexora observes the following paid holidays each year:\n\n- New Year's Day\n- Martin Luther King Jr. Day\n- Memorial Day\n- Juneteenth National Independence Day\n- Independence Day\n- Labor Day\n- Thanksgiving Day\n- Day after Thanksgiving\n- Christmas Eve (half day)\n- Christmas Day\n- New Year's Eve (half day)\n\nWhen a holiday falls on a weekend, the preceding Friday or following Monday is observed.\n\n### 5.4 Parental Leave\nPrimary caregivers receive 16 weeks of fully paid parental leave following the birth, adoption, or placement of a child. Secondary caregivers"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.0,
+      "refusal_accuracy": 0.0,
+      "answer_correctness_simple": 0.0
+    }
+  },
+  {
+    "question_id": "q009",
+    "question": "How to get a reimmbursement for office supplies?",
+    "predicted_answer": "Steps to get reimbursement for office supplies:\n\n- For office supplies under $50: submit the receipt and obtain your manager’s approval to be reimbursed [Source 74].\n- For equipment or supplies over $50: get manager pre-approval and order through Nexora’s preferred supplier (OfficeSource Pro) where available before seeking reimbursement [Source 74].\n- For equipment over $500: obtain VP approval (such items are capitalized as company assets) [Source 74].",
+    "expected_answer": "Reimbursement for office supplies under $50 require the receipt and manager approval; for supplies over 50 requires manager pre-approval and must be ordered through Nexora's preferred supplier.",
+    "confidence": "high",
+    "latency_ms": 14071.16,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "expense_policy.md::7. Office Supplies and Equipment"
+    ],
+    "retrieved_sources": [
+      "expense_policy.md::7. Office Supplies and Equipment",
+      "None::Step 1: Receive and Unbox Your Equipment",
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "None::8. Physical Access Controls",
+      "None::8. Expense Reimbursement"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "74",
+        "document": "Expense Reimbursement Policy",
+        "doc_id": "expense_policy.md",
+        "section": "7. Office Supplies and Equipment",
+        "score": 0.7523105591535568,
+        "text": "## 7. Office Supplies and Equipment\n\n- Office supplies under $50: Reimbursable with receipt and manager approval.\n- Equipment or supplies over $50: Require manager pre-approval and must be ordered through Nexora's preferred supplier (OfficeSource Pro) where available.\n- Equipment over $500: Require VP approval and are capitalized as company assets.\n\n---\n"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "99",
+        "document": "it_onboarding_guide.md",
+        "doc_id": null,
+        "section": "Step 1: Receive and Unbox Your Equipment",
+        "score": 0.7671549896221553,
+        "text": "## Step 1: Receive and Unbox Your Equipment\n\nYour equipment will be shipped to your home address (for remote/hybrid hires) or available for pickup at the office IT desk (for on-site hires) before your start date. Standard equipment includes:\n\n- Apple MacBook Pro 14\" (M-series) or Dell Latitude 15\" (Windows) — based on your role\n- USB-C hub or dock\n- Wired keyboard and mouse\n- Plantronics Voyager headset\n- Monitor (for remote/hybrid roles approved for home office setup)\n\nIf any items are missing or damaged, email ithelp@nexora-internal.com immediately with your employee ID and a description.\n\n---\n"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "142",
+        "document": "Remote Work Policy",
+        "doc_id": "remote_work_policy.md",
+        "section": "8. Expense Reimbursement",
+        "score": 0.77936356205661,
+        "text": "## 8. Expense Reimbursement\n\n### 8.1 Internet\nNexora reimburses up to $60 per month for home internet service for employees in hybrid or fully remote roles. Submit receipts monthly through Workday with the \"Internet — Remote Work\" category.\n\n### 8.2 Phone\nEmployees who use their personal phone for work may claim up to $30 per month for business-related mobile use. A business-use justification is required.\n\n### 8.3 Co-Working Spaces\nEmployees who prefer to work from a co-working space rather than home may expense up to $250 per month for a co-working membership, subject to manager approval. Drop-in day passes may be expensed for up to $30 per day, up to 5 days per month.\n\n### 8.4 On-Site Travel for Remote Employees\nFully remote employees required to travel to a Nexora office for on-sites or"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "14",
+        "document": "access_control_policy.md",
+        "doc_id": null,
+        "section": "8. Physical Access Controls",
+        "score": 0.7949898574577238,
+        "text": "## 8. Physical Access Controls\n\n### 8.1 Office Access\nAccess to Nexora office facilities is controlled through electronic badge readers. Badges are issued by Facilities on the first day of employment. Badge access is tied to the employee's Workday profile and automatically deactivated upon termination.\n\n### 8.2 Restricted Physical Areas\nThe following areas require elevated badge authorization:\n- Server rooms and network closets: IT Operations staff only\n- Executive suite: Senior leadership and authorized escorts only\n- Finance and Legal areas: Department staff only, with visitor log for guests\n\nVisitors must be escorted at all times in all office areas. Tailgating through secure doors is strictly prohibited and must be reported to Facilities.\n\n### 8.3 Lost or Stolen Badges\nReport a lost or"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "143",
+        "document": "remote_work_policy.md",
+        "doc_id": null,
+        "section": "8. Expense Reimbursement",
+        "score": 1.0,
+        "text": "el for Remote Employees\nFully remote employees required to travel to a Nexora office for on-sites or business purposes are reimbursed for reasonable travel expenses in accordance with the Expense Policy.\n\n---"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.2,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 0.8
+    }
+  },
+  {
+    "question_id": "q010",
+    "question": "How many days should a post-incident review take?",
+    "predicted_answer": "A post-incident review (PIR) must be completed within 5 business days for P1 and P2 incidents [Source 90], within 15 business days for P3 incidents [Source 90], and P4 incidents may be documented in the ticket only at the Incident Commander’s discretion [Source 90].",
+    "expected_answer": "For P1 and P2 incidents a post-incident review must be completed within 5 business days, for P3 incidents 15 business days",
+    "confidence": "high",
+    "latency_ms": 10837.51,
+    "refused": false,
+    "reason": null,
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::5. Incident Response Phases"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::5. Incident Response Phases",
+      "access_control_policy.md::5. Access Reviews",
+      "access_control_policy.md::3. User Account Management",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "incident_response_policy.md::8. Communication Protocols"
+    ],
+    "retrieved_chunks": [
+      {
+        "source_number": 1,
+        "chunk_id": "90",
+        "document": "Incident Response Policy",
+        "doc_id": "incident_response_policy.md",
+        "section": "5. Incident Response Phases",
+        "score": 0.8828885853290558,
+        "text": "d by the Customer Success and Communications leads and approved by the CISO and General Counsel.\n\n### Phase 7: Post-Incident Review\n\nA post-incident review (PIR) must be completed within:\n- 5 business days: P1 and P2 incidents\n- 15 business days: P3 incidents\n- P4 incidents may be documented in the ticket only, at the IC's discretion\n\nThe PIR documents:\n- Incident timeline\n- Root cause analysis\n- Impact assessment (systems, data, customers, financial)\n- Response effectiveness\n- Corrective and preventive actions (CAPA) with owners and due dates\n\nPIR reports for P1/P2 incidents are reviewed by the CISO and presented to the Executive Team.\n\n---"
+      },
+      {
+        "source_number": 2,
+        "chunk_id": "11",
+        "document": "Access Control Policy",
+        "doc_id": "access_control_policy.md",
+        "section": "5. Access Reviews",
+        "score": 0.734551191329956,
+        "text": "ecessary and appropriate\n- Revoke any access that is no longer needed\n- Escalate any suspicious or unexplained access to IT Security\n\nReviewers who do not complete recertification within the 10-business-day window will have their own access suspended until the review is complete.\n\n---"
+      },
+      {
+        "source_number": 3,
+        "chunk_id": "6",
+        "document": "Access Control Policy",
+        "doc_id": "access_control_policy.md",
+        "section": "3. User Account Management",
+        "score": 0.6741938174900141,
+        "text": "vendor engagement end | Within 1 business hour |\n| Role change (loss of need for certain access) | Within 1 business day |\n| Leave of absence exceeding 30 days | Within 2 business days |\n| Failed access review (recertification) | Within 3 business days |\n\nPeople Operations is responsible for triggering termination workflows in Okta, which automatically propagate to all integrated systems. IT Security must receive a termination notification on the same day.\n\n---"
+      },
+      {
+        "source_number": 4,
+        "chunk_id": "89",
+        "document": "Incident Response Policy",
+        "doc_id": "incident_response_policy.md",
+        "section": "5. Incident Response Phases",
+        "score": 0.7057531476020813,
+        "text": "entials\n- Applying patches or configuration fixes that allowed the incident\n- Conducting adversary hunt to identify any remaining persistence\n\nThe Incident Commander must approve eradication completion before moving to recovery.\n\n### Phase 6: Recovery\n\nRecovery restores affected systems to normal operation:\n- Restore from clean backups where necessary\n- Reconnect isolated systems after Security sign-off\n- Monitor closely for 72 hours post-recovery for signs of recurrence\n- Validate system integrity before returning to production\n\nCustomers impacted by a service disruption are notified via the StatusPage (status.nexoratech.com) as soon as practicable. Customer-facing communications are drafted by the Customer Success and Communications leads and approved by the CISO and General Counsel.\n\n##"
+      },
+      {
+        "source_number": 5,
+        "chunk_id": "94",
+        "document": "Incident Response Policy",
+        "doc_id": "incident_response_policy.md",
+        "section": "8. Communication Protocols",
+        "score": 0.6984822750091553,
+        "text": "## 8. Communication Protocols\n\nDuring an active incident:\n- All incident communication occurs in the dedicated incident Slack channel (#inc-YYYY-MM-DD-[name])\n- Status updates are posted at minimum every hour for P1, every 4 hours for P2\n- External communication (media, customers, regulators) requires CISO, Legal, and Communications approval\n- Employees must not discuss the incident on personal social media, with family members, or with anyone outside the IRT\n- Press inquiries must be directed to communications@nexoratech.com\n\n---\n"
+      }
+    ],
+    "answer_scores": {
+      "citation_accuracy": 0.25,
+      "refusal_accuracy": 1.0,
+      "answer_correctness_simple": 1.0
+    }
+  }
+]
