@@ -1,0 +1,8 @@
+{
+  "total_questions": 71,
+  "citation_accuracy": 0.16455399061032858,
+  "refusal_accuracy": 0.8732394366197183,
+  "answer_correctness": 0.6106659739503175,
+  "average_latency_ms": 17950.17281690141,
+  "average_cost_usd": 0.0004907281690140846
+}

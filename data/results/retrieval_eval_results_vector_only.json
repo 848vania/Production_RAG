@@ -1,0 +1,4092 @@
+[
+  {
+    "question_id": "q001",
+    "question": "Who approves remote work requests?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::3. Eligibility"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::1. Purpose and Scope",
+      "remote_work_policy.md::9. Performance Accountability"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "136",
+        "score": 0.7646917293156059,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.7785185716745839,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "134",
+        "score": 0.7271710145095696,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      },
+      {
+        "chunk_id": "131",
+        "score": 0.8629867732524872,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "1. Purpose and Scope"
+      },
+      {
+        "chunk_id": "144",
+        "score": 0.7601502869610366,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "9. Performance Accountability"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 0.3333333333333333
+    }
+  },
+  {
+    "question_id": "q002",
+    "question": "When working remote how many days in advance should a request for a temporary location change be submitted?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::4. Approved Work Locations"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::5. Home Workspace Requirements",
+      "remote_work_policy.md::2. Work Models"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "135",
+        "score": 0.8699139714241028,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "136",
+        "score": 0.7779342234134674,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "134",
+        "score": 0.764009103178978,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      },
+      {
+        "chunk_id": "137",
+        "score": 0.6632215629383663,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "5. Home Workspace Requirements"
+      },
+      {
+        "chunk_id": "133",
+        "score": 0.6832366519014106,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q003",
+    "question": "Can employees perform confidential work on public computers?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::6. Network Security"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::6. Network Security",
+      "employee_handbook.md::3. Code of Conduct",
+      "employee_handbook.md::3. Code of Conduct",
+      "remote_work_policy.md::7. Security Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "158",
+        "score": 0.840688693523407,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "6. Network Security"
+      },
+      {
+        "chunk_id": "152",
+        "score": 0.8115618614298307,
+        "doc_id": null,
+        "document": "security_policy.md",
+        "section": "3. Access Control"
+      },
+      {
+        "chunk_id": "47",
+        "score": 0.7338871359825134,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "46",
+        "score": 0.7234699130058289,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.7367529400645355,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q004",
+    "question": "Can employees work from Mars?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::5. Home Workspace Requirements",
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::2. Work Models"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "136",
+        "score": 0.7177190070459543,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.8331897377967834,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "137",
+        "score": 0.7266669869422913,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "5. Home Workspace Requirements"
+      },
+      {
+        "chunk_id": "134",
+        "score": 0.7264995276927948,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      },
+      {
+        "chunk_id": "133",
+        "score": 0.716293454170227,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q005",
+    "question": "What is the process for new users' account?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "4",
+        "score": 0.8275132339292655,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "121",
+        "score": 0.7638058457982566,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Pricing and Plans"
+      },
+      {
+        "chunk_id": "37",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "10. Privacy by Design"
+      },
+      {
+        "chunk_id": "66",
+        "score": 0.7167642623083471,
+        "doc_id": null,
+        "document": "expense_policy.md",
+        "section": "3. Expense Submission Process"
+      },
+      {
+        "chunk_id": "125",
+        "score": 0.6862510150989223,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q006",
+    "question": "How many PTO is given for a 4-year employee?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::5. Time Off Policies"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::5. Time Off Policies",
+      "employee_handbook.md::7. Benefits",
+      "employee_handbook.md::2. Employment Classifications",
+      "employee_handbook.md::5. Time Off Policies",
+      "remote_work_policy.md::4. Approved Work Locations"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "50",
+        "score": 0.8367261052131654,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "5. Time Off Policies"
+      },
+      {
+        "chunk_id": "56",
+        "score": 0.6776218085737183,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "7. Benefits"
+      },
+      {
+        "chunk_id": "44",
+        "score": 0.5847901331481752,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "2. Employment Classifications"
+      },
+      {
+        "chunk_id": "52",
+        "score": 0.673676073551178,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "5. Time Off Policies"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.6653969287872314,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q007",
+    "question": "How long is the retention period for website analytics?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::6. Data Retention"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::6. Data Retention",
+      "security_policy.md::7. Data Handling and Storage",
+      "incident_response_policy.md::7. Evidence Handling",
+      "access_control_policy.md::3. User Account Management",
+      "access_control_policy.md::5. Access Reviews"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "30",
+        "score": 0.8562699586153031,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "6. Data Retention"
+      },
+      {
+        "chunk_id": "161",
+        "score": 0.6565809757121678,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "7. Data Handling and Storage"
+      },
+      {
+        "chunk_id": "93",
+        "score": 0.6489214599132538,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "7. Evidence Handling"
+      },
+      {
+        "chunk_id": "6",
+        "score": 0.660228818655014,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.6532198786735535,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "5. Access Reviews"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q008",
+    "question": "Where to buy a new running watch?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "102",
+        "score": 0.8319759815218231,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "53",
+        "score": 0.7962429932148004,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "6. Performance and Development"
+      },
+      {
+        "chunk_id": "180",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "vendor_management_policy.md",
+        "section": "6. Ongoing Vendor Management"
+      },
+      {
+        "chunk_id": "28",
+        "score": 0.7930314207789758,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "4. Legal Bases for Processing"
+      },
+      {
+        "chunk_id": "51",
+        "score": 0.9414179532071436,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "5. Time Off Policies"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q009",
+    "question": "How to get a reimmbursement for office supplies?",
+    "answerable": true,
+    "expected_sources": [
+      "expense_policy.md::7. Office Supplies and Equipment"
+    ],
+    "retrieved_sources": [
+      "expense_policy.md::7. Office Supplies and Equipment",
+      "remote_work_policy.md::8. Expense Reimbursement"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "74",
+        "score": 0.7523105591535568,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "7. Office Supplies and Equipment"
+      },
+      {
+        "chunk_id": "99",
+        "score": 0.7671549896221553,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 1: Receive and Unbox Your Equipment"
+      },
+      {
+        "chunk_id": "142",
+        "score": 0.77936356205661,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "8. Expense Reimbursement"
+      },
+      {
+        "chunk_id": "14",
+        "score": 0.7949898574577238,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "8. Physical Access Controls"
+      },
+      {
+        "chunk_id": "143",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "8. Expense Reimbursement"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q010",
+    "question": "How many days should a post-incident review take?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::5. Incident Response Phases"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::5. Incident Response Phases",
+      "access_control_policy.md::5. Access Reviews",
+      "access_control_policy.md::3. User Account Management",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "incident_response_policy.md::8. Communication Protocols"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "90",
+        "score": 0.8828990012407303,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.7345706522464752,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "5. Access Reviews"
+      },
+      {
+        "chunk_id": "6",
+        "score": 0.6742323697742547,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "89",
+        "score": 0.7057630717754364,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "94",
+        "score": 0.6985107660293579,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "8. Communication Protocols"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q011",
+    "question": "What are the conditions for a new password?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::4. Authentication Requirements",
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup",
+      "access_control_policy.md::6. Authentication Requirements",
+      "access_control_policy.md::4. Privileged Access",
+      "access_control_policy.md::4. Privileged Access"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "154",
+        "score": 0.7386257946491241,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "4. Authentication Requirements"
+      },
+      {
+        "chunk_id": "101",
+        "score": 0.6982515454292297,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 2: Power On and Complete Initial Setup"
+      },
+      {
+        "chunk_id": "12",
+        "score": 0.701702892780304,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "6. Authentication Requirements"
+      },
+      {
+        "chunk_id": "9",
+        "score": 0.7209444940090179,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "4. Privileged Access"
+      },
+      {
+        "chunk_id": "8",
+        "score": 0.6824406981468201,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "4. Privileged Access"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q012",
+    "question": "What do I need to renew a passport?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "73",
+        "score": 0.7798189090903664,
+        "doc_id": null,
+        "document": "expense_policy.md",
+        "section": "6. Software and Subscriptions"
+      },
+      {
+        "chunk_id": "28",
+        "score": 0.7277606352379162,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "4. Legal Bases for Processing"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.711590486165969,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "7. Security Requirements"
+      },
+      {
+        "chunk_id": "2",
+        "score": 0.809180666183838,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "2. Governing Principles"
+      },
+      {
+        "chunk_id": "109",
+        "score": 0.7398325503873281,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 9: Set Up 1Password"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q013",
+    "question": "How are work emails generated?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 7: Set Up Email and Calendar",
+      "security_policy.md::9. Phishing and Social Engineering"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "107",
+        "score": 0.7025121748447418,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 7: Set Up Email and Calendar"
+      },
+      {
+        "chunk_id": "124",
+        "score": 0.7095260402100607,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "163",
+        "score": 0.8156527042388917,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "9. Phishing and Social Engineering"
+      },
+      {
+        "chunk_id": "144",
+        "score": 0.8164935581786608,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "9. Performance Accountability"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.8508272758811006,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "4. Approved Work Locations"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q014",
+    "question": "How long it takes to revoke access after termination when changing roles?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_sources": [
+      "access_control_policy.md::3. User Account Management",
+      "security_policy.md::3. Access Control",
+      "access_control_policy.md::3. User Account Management",
+      "vendor_management_policy.md::7. Vendor Offboarding",
+      "access_control_policy.md::5. Access Reviews"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "6",
+        "score": 0.8031255282839622,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "152",
+        "score": 0.8503088295459748,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "3. Access Control"
+      },
+      {
+        "chunk_id": "5",
+        "score": 0.7230042299831755,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "181",
+        "score": 0.7270960807800293,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "7. Vendor Offboarding"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.8175376341447251,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "5. Access Reviews"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q015",
+    "question": "How to enter the facilities?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::8. Physical Access Controls"
+    ],
+    "retrieved_sources": [
+      "access_control_policy.md::8. Physical Access Controls",
+      "it_onboarding_guide.md::Step 10: Request Access to Core Systems",
+      "remote_work_policy.md::2. Work Models",
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup",
+      "it_onboarding_guide.md::Step 1: Receive and Unbox Your Equipment"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "14",
+        "score": 0.6999188363552094,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "8. Physical Access Controls"
+      },
+      {
+        "chunk_id": "110",
+        "score": 0.6600070297718048,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 10: Request Access to Core Systems"
+      },
+      {
+        "chunk_id": "133",
+        "score": 0.6532912850379944,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      },
+      {
+        "chunk_id": "100",
+        "score": 0.6441733241081238,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 2: Power On and Complete Initial Setup"
+      },
+      {
+        "chunk_id": "99",
+        "score": 0.6604415476322174,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 1: Receive and Unbox Your Equipment"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q016",
+    "question": "Which are the access levels available?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::3. Access Control",
+      "access_control_policy.md::8. Physical Access Controls",
+      "access_control_policy.md::9. Cloud Access Controls",
+      "it_onboarding_guide.md::Step 10: Request Access to Core Systems",
+      "access_control_policy.md::4. Privileged Access"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "152",
+        "score": 0.7370458841323853,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "3. Access Control"
+      },
+      {
+        "chunk_id": "14",
+        "score": 0.7218877673149109,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "8. Physical Access Controls"
+      },
+      {
+        "chunk_id": "16",
+        "score": 0.7158880829811096,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "9. Cloud Access Controls"
+      },
+      {
+        "chunk_id": "110",
+        "score": 0.7193098366260529,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 10: Request Access to Core Systems"
+      },
+      {
+        "chunk_id": "7",
+        "score": 0.7306184768676758,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "4. Privileged Access"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q017",
+    "question": "How often should service account passwords be changed?",
+    "answerable": true,
+    "expected_sources": [
+      "access_control_policy.md::4. Privileged Access"
+    ],
+    "retrieved_sources": [
+      "access_control_policy.md::4. Privileged Access",
+      "access_control_policy.md::4. Privileged Access",
+      "access_control_policy.md::3. User Account Management",
+      "security_policy.md::4. Authentication Requirements",
+      "access_control_policy.md::6. Authentication Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "9",
+        "score": 0.7524754064660983,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "4. Privileged Access"
+      },
+      {
+        "chunk_id": "8",
+        "score": 0.840467894077301,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "4. Privileged Access"
+      },
+      {
+        "chunk_id": "5",
+        "score": 0.6581580170741972,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "154",
+        "score": 0.6479536308078503,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "4. Authentication Requirements"
+      },
+      {
+        "chunk_id": "12",
+        "score": 0.686195433139801,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "6. Authentication Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q018",
+    "question": "How to add a new player to the current game?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "access_control_policy.md::3. User Account Management"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "102",
+        "score": 0.7505997121334076,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "37",
+        "score": 0.6330618090580628,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "10. Privacy by Design"
+      },
+      {
+        "chunk_id": "4",
+        "score": 0.5961562442870177,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "180",
+        "score": 0.7348889446778845,
+        "doc_id": null,
+        "document": "vendor_management_policy.md",
+        "section": "6. Ongoing Vendor Management"
+      },
+      {
+        "chunk_id": "22",
+        "score": 0.6427431985840034,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "1. Introduction"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q019",
+    "question": "What data is collected from employees?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::3. Personal Data We Collect"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::3. Personal Data We Collect",
+      "employee_handbook.md::3. Code of Conduct",
+      "data_privacy_policy.md::6. Data Retention",
+      "data_privacy_policy.md::12. Training and Accountability"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "26",
+        "score": 0.7780618369579315,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "3. Personal Data We Collect"
+      },
+      {
+        "chunk_id": "47",
+        "score": 0.7248872518539429,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "30",
+        "score": 0.7144854068756104,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "6. Data Retention"
+      },
+      {
+        "chunk_id": "39",
+        "score": 0.730013370513916,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "12. Training and Accountability"
+      },
+      {
+        "chunk_id": "93",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "incident_response_policy.md",
+        "section": "7. Evidence Handling"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q020",
+    "question": "Who I ask about data privacy concerns?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::1. Introduction"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::1. Introduction",
+      "data_privacy_policy.md::7. Data Subject Rights",
+      "data_privacy_policy.md::12. Training and Accountability",
+      "data_privacy_policy.md::11. Data Breach Response",
+      "data_privacy_policy.md::1. Introduction"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "23",
+        "score": 0.8580761581659317,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "1. Introduction"
+      },
+      {
+        "chunk_id": "33",
+        "score": 0.7273111045360565,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "7. Data Subject Rights"
+      },
+      {
+        "chunk_id": "39",
+        "score": 0.7281234273122139,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "12. Training and Accountability"
+      },
+      {
+        "chunk_id": "38",
+        "score": 0.724003791809082,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "11. Data Breach Response"
+      },
+      {
+        "chunk_id": "22",
+        "score": 0.7279040578259353,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "1. Introduction"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q021",
+    "question": "Can I request information about my personal data?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::7. Data Subject Rights",
+      "data_privacy_policy.md::8. Data Sharing and Disclosure",
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "data_privacy_policy.md::11. Data Breach Response",
+      "data_privacy_policy.md::12. Training and Accountability"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "32",
+        "score": 0.8443496406078339,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "7. Data Subject Rights"
+      },
+      {
+        "chunk_id": "35",
+        "score": 0.695953905582428,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "8. Data Sharing and Disclosure"
+      },
+      {
+        "chunk_id": "29",
+        "score": 0.704477071762085,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "5. Data Use and Purpose Limitation"
+      },
+      {
+        "chunk_id": "38",
+        "score": 0.7153244912624359,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "11. Data Breach Response"
+      },
+      {
+        "chunk_id": "39",
+        "score": 0.7079203128814697,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "12. Training and Accountability"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q022",
+    "question": "Can personal data be transfered to other countries?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::9. Cross-Border Data Transfers"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::9. Cross-Border Data Transfers",
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "data_privacy_policy.md::2. Definitions",
+      "data_privacy_policy.md::4. Legal Bases for Processing"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "36",
+        "score": 0.7900211215019226,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "9. Cross-Border Data Transfers"
+      },
+      {
+        "chunk_id": "29",
+        "score": 0.7331867218017578,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "5. Data Use and Purpose Limitation"
+      },
+      {
+        "chunk_id": "32",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "7. Data Subject Rights"
+      },
+      {
+        "chunk_id": "25",
+        "score": 0.7121201455593109,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "2. Definitions"
+      },
+      {
+        "chunk_id": "28",
+        "score": 0.7109672427177429,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "4. Legal Bases for Processing"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q023",
+    "question": "How is personal  data handled?",
+    "answerable": true,
+    "expected_sources": [
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation"
+    ],
+    "retrieved_sources": [
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "data_privacy_policy.md::12. Training and Accountability",
+      "data_privacy_policy.md::11. Data Breach Response",
+      "data_privacy_policy.md::3. Personal Data We Collect",
+      "data_privacy_policy.md::1. Introduction"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "29",
+        "score": 0.6928329343225332,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "5. Data Use and Purpose Limitation"
+      },
+      {
+        "chunk_id": "39",
+        "score": 0.7759557366371155,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "12. Training and Accountability"
+      },
+      {
+        "chunk_id": "38",
+        "score": 0.6666433002079059,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "11. Data Breach Response"
+      },
+      {
+        "chunk_id": "26",
+        "score": 0.66120548653247,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "3. Personal Data We Collect"
+      },
+      {
+        "chunk_id": "22",
+        "score": 0.8503553122282028,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "1. Introduction"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q024",
+    "question": "How are part-time employees different from temporary employees?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::2. Employment Classifications"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::2. Employment Classifications",
+      "employee_handbook.md::2. Employment Classifications",
+      "remote_work_policy.md::2. Work Models",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::3. Eligibility"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "43",
+        "score": 0.8640832334756852,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "2. Employment Classifications"
+      },
+      {
+        "chunk_id": "44",
+        "score": 0.6866915223063703,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "2. Employment Classifications"
+      },
+      {
+        "chunk_id": "133",
+        "score": 0.6435432531343681,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.6187949540787825,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "134",
+        "score": 0.6785793602466583,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q025",
+    "question": "Is activity monitored inside the company?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::8. Technology and Equipment"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::8. Technology and Equipment",
+      "access_control_policy.md::10. Monitoring and Enforcement",
+      "security_policy.md::8. Acceptable Use",
+      "data_privacy_policy.md::12. Training and Accountability"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "58",
+        "score": 0.7135081872559015,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "8. Technology and Equipment"
+      },
+      {
+        "chunk_id": "18",
+        "score": 0.7928189716247366,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "10. Monitoring and Enforcement"
+      },
+      {
+        "chunk_id": "162",
+        "score": 0.7029904127120972,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "8. Acceptable Use"
+      },
+      {
+        "chunk_id": "47",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "39",
+        "score": 0.692768394947052,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "12. Training and Accountability"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q026",
+    "question": "How to modify working hours?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::4. Work Hours and Scheduling"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::4. Work Hours and Scheduling"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "107",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 7: Set Up Email and Calendar"
+      },
+      {
+        "chunk_id": "48",
+        "score": 0.7684822529554367,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "4. Work Hours and Scheduling"
+      },
+      {
+        "chunk_id": "131",
+        "score": 0.9674731417225033,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "1. Purpose and Scope"
+      },
+      {
+        "chunk_id": "124",
+        "score": 0.7564509495802971,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "137",
+        "score": 0.758558309957562,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "5. Home Workspace Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q027",
+    "question": "Where to report harrasment inside the office?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::3. Code of Conduct"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::3. Code of Conduct",
+      "security_policy.md::10. Incident Reporting",
+      "access_control_policy.md::8. Physical Access Controls",
+      "employee_handbook.md::3. Code of Conduct"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "46",
+        "score": 0.7452331185340881,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "164",
+        "score": 0.7100604163447678,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "10. Incident Reporting"
+      },
+      {
+        "chunk_id": "15",
+        "score": 0.726194500770234,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "8. Physical Access Controls"
+      },
+      {
+        "chunk_id": "157",
+        "score": 0.6763005187576921,
+        "doc_id": null,
+        "document": "security_policy.md",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "45",
+        "score": 0.7178195118904114,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q028",
+    "question": "Can personal devices be used to access the system?",
+    "answerable": true,
+    "expected_sources": [
+      "employee_handbook.md::8. Technology and Equipment"
+    ],
+    "retrieved_sources": [
+      "employee_handbook.md::8. Technology and Equipment",
+      "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
+      "security_policy.md::8. Acceptable Use",
+      "security_policy.md::6. Network Security",
+      "remote_work_policy.md::7. Security Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "58",
+        "score": 0.8367843449115753,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "8. Technology and Equipment"
+      },
+      {
+        "chunk_id": "104",
+        "score": 0.759559972489738,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
+      },
+      {
+        "chunk_id": "162",
+        "score": 0.6869727510456662,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "8. Acceptable Use"
+      },
+      {
+        "chunk_id": "158",
+        "score": 0.7720220816795398,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "6. Network Security"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.7234427610860695,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q029",
+    "question": "How early should travel tickets be bought?",
+    "answerable": true,
+    "expected_sources": [
+      "expense_policy.md::4. Travel Expenses"
+    ],
+    "retrieved_sources": [
+      "expense_policy.md::4. Travel Expenses",
+      "expense_policy.md::4. Travel Expenses",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "expense_policy.md::4. Travel Expenses",
+      "expense_policy.md::4. Travel Expenses"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "67",
+        "score": 0.7970635294914246,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      },
+      {
+        "chunk_id": "69",
+        "score": 0.600249514274924,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      },
+      {
+        "chunk_id": "136",
+        "score": 0.5968597531318665,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "68",
+        "score": 0.6350247263908386,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      },
+      {
+        "chunk_id": "70",
+        "score": 0.6857221216705847,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q030",
+    "question": "Can home networks be used to access Nexora network when working remote?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::6. Network Security"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::6. Network Security",
+      "remote_work_policy.md::7. Security Requirements",
+      "access_control_policy.md::7. Remote Access",
+      "it_onboarding_guide.md::Step 6: Set Up VPN"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "158",
+        "score": 0.8867164820432663,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "6. Network Security"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.7965609133243561,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      },
+      {
+        "chunk_id": "13",
+        "score": 0.8248083740472794,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "7. Remote Access"
+      },
+      {
+        "chunk_id": "106",
+        "score": 0.6952212409688433,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 6: Set Up VPN"
+      },
+      {
+        "chunk_id": "58",
+        "score": 0.6685819215236575,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "8. Technology and Equipment"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q031",
+    "question": "Can a personal vehicle be used for business travels?",
+    "answerable": true,
+    "expected_sources": [
+      "expense_policy.md::4. Travel Expenses"
+    ],
+    "retrieved_sources": [
+      "expense_policy.md::4. Travel Expenses",
+      "expense_policy.md::8. Non-Reimbursable Expenses",
+      "expense_policy.md::4. Travel Expenses"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "69",
+        "score": 0.8269335478544235,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      },
+      {
+        "chunk_id": "75",
+        "score": 0.7081292271614075,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "8. Non-Reimbursable Expenses"
+      },
+      {
+        "chunk_id": "29",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "5. Data Use and Purpose Limitation"
+      },
+      {
+        "chunk_id": "58",
+        "score": 0.7724934689250789,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "8. Technology and Equipment"
+      },
+      {
+        "chunk_id": "67",
+        "score": 0.7061494588851929,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q032",
+    "question": "Where to submit an expense report?",
+    "answerable": true,
+    "expected_sources": [
+      "expense_policy.md::3. Expense Submission Process"
+    ],
+    "retrieved_sources": [
+      "expense_policy.md::3. Expense Submission Process",
+      "expense_policy.md::2. General Principles",
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "expense_policy.md::1. Purpose",
+      "employee_handbook.md::7. Benefits"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "66",
+        "score": 0.8756451822399529,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "3. Expense Submission Process"
+      },
+      {
+        "chunk_id": "65",
+        "score": 0.7085722182681767,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "2. General Principles"
+      },
+      {
+        "chunk_id": "142",
+        "score": 0.838509237766266,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "8. Expense Reimbursement"
+      },
+      {
+        "chunk_id": "64",
+        "score": 0.7011716365814209,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "1. Purpose"
+      },
+      {
+        "chunk_id": "57",
+        "score": 0.7283856868743896,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "7. Benefits"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q033",
+    "question": "How to deal with phishing emails?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::9. Phishing and Social Engineering"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::9. Phishing and Social Engineering",
+      "it_onboarding_guide.md::Troubleshooting Quick Reference",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "incident_response_policy.md::5. Incident Response Phases"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "163",
+        "score": 0.8625804275274277,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "9. Phishing and Social Engineering"
+      },
+      {
+        "chunk_id": "112",
+        "score": 0.6845538249476173,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Troubleshooting Quick Reference"
+      },
+      {
+        "chunk_id": "86",
+        "score": 0.6768777966499329,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "102",
+        "score": 0.6472105979919434,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "85",
+        "score": 0.6623742878437042,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q034",
+    "question": "How many times can ibuprofen be taken?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "vendor_management_policy.md::9. Exceptions",
+      "security_policy.md::5. Device Security",
+      "employee_handbook.md::5. Time Off Policies",
+      "employee_handbook.md::5. Time Off Policies",
+      "access_control_policy.md::5. Access Reviews"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "183",
+        "score": 0.5738984644412994,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "9. Exceptions"
+      },
+      {
+        "chunk_id": "157",
+        "score": 0.5739026069641113,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "51",
+        "score": 0.5771603286266327,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "5. Time Off Policies"
+      },
+      {
+        "chunk_id": "50",
+        "score": 0.5772412121295929,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "5. Time Off Policies"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.5814342200756073,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "5. Access Reviews"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q035",
+    "question": "What should be included in the serverity report?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::5. Incident Response Phases"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::10. Incident Reporting",
+      "incident_response_policy.md::3. Incident Severity Levels",
+      "vendor_management_policy.md::3. Vendor Approval Process"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "85",
+        "score": 0.7014478446585217,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "164",
+        "score": 0.6717621684074402,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "10. Incident Reporting"
+      },
+      {
+        "chunk_id": "81",
+        "score": 0.7005114555358887,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "3. Incident Severity Levels"
+      },
+      {
+        "chunk_id": "71",
+        "score": 0.7468211480731345,
+        "doc_id": null,
+        "document": "expense_policy.md",
+        "section": "5. Meals and Entertainment"
+      },
+      {
+        "chunk_id": "173",
+        "score": 0.7035146951675415,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q036",
+    "question": "After an incident was reported, can I turn off my computer?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::5. Incident Response Phases"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::10. Incident Reporting",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::5. Device Security"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "85",
+        "score": 0.8275250375270844,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "164",
+        "score": 0.7233171463012695,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "10. Incident Reporting"
+      },
+      {
+        "chunk_id": "88",
+        "score": 0.6776174306869507,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "87",
+        "score": 0.6833038926124573,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "157",
+        "score": 0.6807219088077545,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q037",
+    "question": "What is the email of IT On-Call?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::4. Incident Response Team"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::10. Equipment and Technical Support",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "access_control_policy.md::10. Monitoring and Enforcement",
+      "it_onboarding_guide.md::IT Contacts"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "145",
+        "score": 0.7275844216346741,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "10. Equipment and Technical Support"
+      },
+      {
+        "chunk_id": "86",
+        "score": 0.7109647989273071,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "18",
+        "score": 0.7428559261286444,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "10. Monitoring and Enforcement"
+      },
+      {
+        "chunk_id": "113",
+        "score": 0.7603157013654709,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "IT Contacts"
+      },
+      {
+        "chunk_id": "85",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "incident_response_policy.md",
+        "section": "5. Incident Response Phases"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q038",
+    "question": "How to classify an incident severity?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::3. Incident Severity Levels"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::3. Incident Severity Levels",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "incident_response_policy.md::2. Definitions",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::2. Information Classification"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "81",
+        "score": 0.8201153129339218,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "3. Incident Severity Levels"
+      },
+      {
+        "chunk_id": "86",
+        "score": 0.7705463693347534,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "80",
+        "score": 0.8428924143314362,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "2. Definitions"
+      },
+      {
+        "chunk_id": "85",
+        "score": 0.7207597585895278,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "151",
+        "score": 0.7328533232212067,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "2. Information Classification"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q039",
+    "question": "Should customers be notified in case of a data breach?",
+    "answerable": true,
+    "expected_sources": [
+      "incident_response_policy.md::6. Notification Requirements"
+    ],
+    "retrieved_sources": [
+      "incident_response_policy.md::6. Notification Requirements",
+      "data_privacy_policy.md::11. Data Breach Response",
+      "incident_response_policy.md::6. Notification Requirements",
+      "vendor_management_policy.md::6. Ongoing Vendor Management",
+      "vendor_management_policy.md::4. Contractual Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "92",
+        "score": 0.7683084127578041,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "6. Notification Requirements"
+      },
+      {
+        "chunk_id": "38",
+        "score": 0.7851780652999878,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "11. Data Breach Response"
+      },
+      {
+        "chunk_id": "91",
+        "score": 0.8058786541223526,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "6. Notification Requirements"
+      },
+      {
+        "chunk_id": "180",
+        "score": 0.7244969010353088,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "6. Ongoing Vendor Management"
+      },
+      {
+        "chunk_id": "176",
+        "score": 0.7168982028961182,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "4. Contractual Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q040",
+    "question": "How many kilometers from Luca's deli restaurant to the airport?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "22",
+        "score": 0.9467900548154792,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "1. Introduction"
+      },
+      {
+        "chunk_id": "89",
+        "score": 0.7239105711391789,
+        "doc_id": null,
+        "document": "incident_response_policy.md",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "106",
+        "score": 0.7464807881654654,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 6: Set Up VPN"
+      },
+      {
+        "chunk_id": "124",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "122",
+        "score": 0.9689799705695916,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q041",
+    "question": "Where can I find my password for joining the Nexora system?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "security_policy.md::4. Authentication Requirements",
+      "it_onboarding_guide.md::Step 9: Set Up 1Password",
+      "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
+      "access_control_policy.md::6. Authentication Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "102",
+        "score": 0.8341198463639767,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "154",
+        "score": 0.7969692945480347,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "4. Authentication Requirements"
+      },
+      {
+        "chunk_id": "109",
+        "score": 0.8820940297773476,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 9: Set Up 1Password"
+      },
+      {
+        "chunk_id": "104",
+        "score": 0.7764332592487335,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
+      },
+      {
+        "chunk_id": "12",
+        "score": 0.8001920431852341,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "6. Authentication Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q042",
+    "question": "What is the gateway needed when setting up VPN?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 6: Set Up VPN"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 6: Set Up VPN",
+      "it_onboarding_guide.md::Troubleshooting Quick Reference",
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "106",
+        "score": 0.8653485834598541,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 6: Set Up VPN"
+      },
+      {
+        "chunk_id": "112",
+        "score": 0.7437777431656812,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Troubleshooting Quick Reference"
+      },
+      {
+        "chunk_id": "4",
+        "score": 0.7415926413941258,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "3. User Account Management"
+      },
+      {
+        "chunk_id": "100",
+        "score": 0.7477859648376213,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 2: Power On and Complete Initial Setup"
+      },
+      {
+        "chunk_id": "91",
+        "score": 0.7578827033897376,
+        "doc_id": null,
+        "document": "incident_response_policy.md",
+        "section": "6. Notification Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q043",
+    "question": "Can Nexora access the files on my phone?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
+      "security_policy.md::5. Device Security",
+      "access_control_policy.md::7. Remote Access",
+      "security_policy.md::7. Data Handling and Storage"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "104",
+        "score": 0.7913042306900024,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
+      },
+      {
+        "chunk_id": "156",
+        "score": 0.7639477550983429,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "13",
+        "score": 0.765558585524559,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "7. Remote Access"
+      },
+      {
+        "chunk_id": "106",
+        "score": 0.8514839115278501,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 6: Set Up VPN"
+      },
+      {
+        "chunk_id": "160",
+        "score": 0.7663763910531998,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "7. Data Handling and Storage"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q044",
+    "question": "Who to call for a stolen device?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 11: Complete Required Training"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::5. Device Security",
+      "it_onboarding_guide.md::Troubleshooting Quick Reference",
+      "remote_work_policy.md::7. Security Requirements",
+      "security_policy.md::10. Incident Reporting",
+      "access_control_policy.md::8. Physical Access Controls"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "157",
+        "score": 0.7177964952213047,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "112",
+        "score": 0.7894552111625672,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Troubleshooting Quick Reference"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.6641108422709089,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      },
+      {
+        "chunk_id": "164",
+        "score": 0.667261153459549,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "10. Incident Reporting"
+      },
+      {
+        "chunk_id": "15",
+        "score": 0.741992803342781,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "8. Physical Access Controls"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q045",
+    "question": "What are the required applications when setting a new device?",
+    "answerable": true,
+    "expected_sources": [
+      "it_onboarding_guide.md::Step 5: Install Required Applications"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 5: Install Required Applications",
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup",
+      "security_policy.md::5. Device Security"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "105",
+        "score": 0.7058738943892041,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 5: Install Required Applications"
+      },
+      {
+        "chunk_id": "101",
+        "score": 0.7082242965698242,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 2: Power On and Complete Initial Setup"
+      },
+      {
+        "chunk_id": "106",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "it_onboarding_guide.md",
+        "section": "Step 6: Set Up VPN"
+      },
+      {
+        "chunk_id": "156",
+        "score": 0.6974553167819977,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "37",
+        "score": 0.7653119331877644,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "10. Privacy by Design"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q046",
+    "question": "Can FlowOps be deployed on-premise?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::General Product Questions"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::General Product Questions",
+      "product_faq.md::General Product Questions",
+      "product_faq.md::Features and Capabilities",
+      "product_faq.md::General Product Questions",
+      "product_faq.md::Features and Capabilities"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "118",
+        "score": 0.8900654082074053,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "117",
+        "score": 0.8685587844346279,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "124",
+        "score": 0.867800721526146,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "116",
+        "score": 0.649990716791281,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "123",
+        "score": 0.7747730756199707,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Features and Capabilities"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q047",
+    "question": "What plans are offered for Nexora FlowOps?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::Pricing and Plans"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::Support",
+      "product_faq.md::General Product Questions",
+      "product_faq.md::Overview",
+      "product_faq.md::General Product Questions",
+      "product_faq.md::Security and Compliance"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "129",
+        "score": 0.8480081409215927,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Support"
+      },
+      {
+        "chunk_id": "116",
+        "score": 0.922880893945694,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "115",
+        "score": 0.8555718064308167,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Overview"
+      },
+      {
+        "chunk_id": "118",
+        "score": 0.6699009695934317,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "126",
+        "score": 0.8206318467855453,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Security and Compliance"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q048",
+    "question": "What compliance standard is used in Nexora FlowOps?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::Security and Compliance"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::Security and Compliance",
+      "product_faq.md::General Product Questions",
+      "product_faq.md::Overview",
+      "product_faq.md::General Product Questions",
+      "vendor_management_policy.md::4. Contractual Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "126",
+        "score": 0.7297879575524834,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Security and Compliance"
+      },
+      {
+        "chunk_id": "116",
+        "score": 0.8552234336863942,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "115",
+        "score": 0.8212961554527283,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Overview"
+      },
+      {
+        "chunk_id": "118",
+        "score": 0.793656684108997,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "176",
+        "score": 0.7563642263412476,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "4. Contractual Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q049",
+    "question": "What does the Standard plan offer?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::Pricing and Plans"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::Pricing and Plans",
+      "employee_handbook.md::7. Benefits",
+      "product_faq.md::General Product Questions"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "119",
+        "score": 0.7634768260319487,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Pricing and Plans"
+      },
+      {
+        "chunk_id": "55",
+        "score": 0.7551492091707783,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "7. Benefits"
+      },
+      {
+        "chunk_id": "53",
+        "score": 0.7831066658420399,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "6. Performance and Development"
+      },
+      {
+        "chunk_id": "122",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "118",
+        "score": 0.6882636590328755,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "General Product Questions"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q050",
+    "question": "How long does the free trial last?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::Pricing and Plans"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::Pricing and Plans",
+      "access_control_policy.md::5. Access Reviews",
+      "security_policy.md::5. Device Security",
+      "data_privacy_policy.md::6. Data Retention",
+      "it_onboarding_guide.md::Step 11: Complete Required Training"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "121",
+        "score": 0.82490975856781,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Pricing and Plans"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.6125567853450775,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "5. Access Reviews"
+      },
+      {
+        "chunk_id": "157",
+        "score": 0.6205691695213318,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "30",
+        "score": 0.6213489770889282,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "6. Data Retention"
+      },
+      {
+        "chunk_id": "111",
+        "score": 0.6131080985069275,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 11: Complete Required Training"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q051",
+    "question": "Where will data be stored?",
+    "answerable": true,
+    "expected_sources": [
+      "product_faq.md::Security and Compliance"
+    ],
+    "retrieved_sources": [
+      "product_faq.md::Security and Compliance",
+      "security_policy.md::7. Data Handling and Storage",
+      "security_policy.md::7. Data Handling and Storage",
+      "data_privacy_policy.md::2. Definitions",
+      "data_privacy_policy.md::6. Data Retention"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "127",
+        "score": 0.8348779201507568,
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
+        "section": "Security and Compliance"
+      },
+      {
+        "chunk_id": "160",
+        "score": 0.7353229522705078,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "7. Data Handling and Storage"
+      },
+      {
+        "chunk_id": "161",
+        "score": 0.6858436465263367,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "7. Data Handling and Storage"
+      },
+      {
+        "chunk_id": "25",
+        "score": 0.6778026223182678,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "2. Definitions"
+      },
+      {
+        "chunk_id": "30",
+        "score": 0.6840033531188965,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "6. Data Retention"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q052",
+    "question": "Where do I find my recently shopping receipts?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "expense_policy.md::3. Expense Submission Process",
+      "employee_handbook.md::7. Benefits",
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "expense_policy.md::2. General Principles"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "66",
+        "score": 0.670586496591568,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "3. Expense Submission Process"
+      },
+      {
+        "chunk_id": "57",
+        "score": 0.6632475852966309,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "7. Benefits"
+      },
+      {
+        "chunk_id": "142",
+        "score": 0.6264641284942627,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "8. Expense Reimbursement"
+      },
+      {
+        "chunk_id": "28",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "4. Legal Bases for Processing"
+      },
+      {
+        "chunk_id": "65",
+        "score": 0.6237068474292755,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "2. General Principles"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q053",
+    "question": "Which work modalities are available?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::2. Work Models"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::2. Work Models",
+      "employee_handbook.md::4. Work Hours and Scheduling"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "119",
+        "score": 0.9777900886027768,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Pricing and Plans"
+      },
+      {
+        "chunk_id": "131",
+        "score": 0.9767040709127581,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "1. Purpose and Scope"
+      },
+      {
+        "chunk_id": "133",
+        "score": 0.7296650710396154,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      },
+      {
+        "chunk_id": "144",
+        "score": 0.9596466654564119,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "9. Performance Accountability"
+      },
+      {
+        "chunk_id": "48",
+        "score": 0.7471174112885715,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "4. Work Hours and Scheduling"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q054",
+    "question": "How many days are needed to transition into remote modality?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::3. Elegibility"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::3. Eligibility",
+      "remote_work_policy.md::4. Approved Work Locations",
+      "remote_work_policy.md::2. Work Models",
+      "remote_work_policy.md::4. Approved Work Locations"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "134",
+        "score": 0.8500738775927478,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      },
+      {
+        "chunk_id": "136",
+        "score": 0.8198602676391602,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "132",
+        "score": 0.8026555039277479,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "2. Work Models"
+      },
+      {
+        "chunk_id": "135",
+        "score": 0.7620525181207243,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "4. Approved Work Locations"
+      },
+      {
+        "chunk_id": "11",
+        "score": 0.8021440324733871,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "5. Access Reviews"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q055",
+    "question": "Can Wi-Fi be used when working remote?",
+    "answerable": true,
+    "expected_sources": [
+      "remote_work_policy.md::7. Security Requirements"
+    ],
+    "retrieved_sources": [
+      "remote_work_policy.md::7. Security Requirements",
+      "security_policy.md::6. Network Security",
+      "remote_work_policy.md::5. Home Workspace Requirements",
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "remote_work_policy.md::3. Eligibility"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "141",
+        "score": 0.7769819883897129,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      },
+      {
+        "chunk_id": "158",
+        "score": 0.8285338878631592,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "6. Network Security"
+      },
+      {
+        "chunk_id": "137",
+        "score": 0.7364664971828461,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "5. Home Workspace Requirements"
+      },
+      {
+        "chunk_id": "142",
+        "score": 0.6975464224815369,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "8. Expense Reimbursement"
+      },
+      {
+        "chunk_id": "134",
+        "score": 0.7212013602256775,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "3. Eligibility"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q056",
+    "question": "How many toxins are transmitted per every XR?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "security_policy.md::2. Information Classification",
+      "employee_handbook.md::7. Benefits",
+      "incident_response_policy.md::8. Communication Protocols"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "151",
+        "score": 0.6387290060520172,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "2. Information Classification"
+      },
+      {
+        "chunk_id": "56",
+        "score": 0.6298332837520306,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "7. Benefits"
+      },
+      {
+        "chunk_id": "142",
+        "score": 0.6680863221514057,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "8. Expense Reimbursement"
+      },
+      {
+        "chunk_id": "94",
+        "score": 0.7731160700321198,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "8. Communication Protocols"
+      },
+      {
+        "chunk_id": "8",
+        "score": 0.6278418546988793,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "4. Privileged Access"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q057",
+    "question": "What is the difference between Confidential and Restricted data?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::2. Information Classification"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::7. Data Handling and Storage",
+      "security_policy.md::3. Access Control",
+      "security_policy.md::2. Information Classification",
+      "data_privacy_policy.md::8. Data Sharing and Disclosure",
+      "employee_handbook.md::3. Code of Conduct"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "160",
+        "score": 0.8072267163244065,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "7. Data Handling and Storage"
+      },
+      {
+        "chunk_id": "152",
+        "score": 0.7478358530746091,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "3. Access Control"
+      },
+      {
+        "chunk_id": "150",
+        "score": 0.7590003311634064,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "2. Information Classification"
+      },
+      {
+        "chunk_id": "34",
+        "score": 0.6976284384727478,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "8. Data Sharing and Disclosure"
+      },
+      {
+        "chunk_id": "47",
+        "score": 0.6899062859408357,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "3. Code of Conduct"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 0.3333333333333333
+    }
+  },
+  {
+    "question_id": "q058",
+    "question": "What is the email from the Security Team?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::1. Purpose and Scope"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::10. Incident Reporting",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::9. Phishing and Social Engineering",
+      "access_control_policy.md::10. Monitoring and Enforcement"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "164",
+        "score": 0.7772265912740375,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "10. Incident Reporting"
+      },
+      {
+        "chunk_id": "85",
+        "score": 0.7837728066631837,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "163",
+        "score": 0.8495113015174867,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "9. Phishing and Social Engineering"
+      },
+      {
+        "chunk_id": "18",
+        "score": 0.8339077008138294,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "10. Monitoring and Enforcement"
+      },
+      {
+        "chunk_id": "40",
+        "score": 0.8211159232014926,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "13. Policy Updates"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q059",
+    "question": "How can access certain data from a person?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::3. Access Control"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::3. Access Control",
+      "data_privacy_policy.md::2. Definitions",
+      "data_privacy_policy.md::8. Data Sharing and Disclosure",
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "data_privacy_policy.md::3. Personal Data We Collect"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "152",
+        "score": 0.7046808004379272,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "3. Access Control"
+      },
+      {
+        "chunk_id": "24",
+        "score": 0.7001234591007233,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "2. Definitions"
+      },
+      {
+        "chunk_id": "34",
+        "score": 0.6999709606170654,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "8. Data Sharing and Disclosure"
+      },
+      {
+        "chunk_id": "29",
+        "score": 0.7018705904483795,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "5. Data Use and Purpose Limitation"
+      },
+      {
+        "chunk_id": "26",
+        "score": 0.7028173804283142,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "3. Personal Data We Collect"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q060",
+    "question": "What devices can be used to access Nexora system?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::5. Device Security"
+    ],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
+      "employee_handbook.md::8. Technology and Equipment",
+      "remote_work_policy.md::7. Security Requirements",
+      "access_control_policy.md::7. Remote Access"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "104",
+        "score": 0.751998811983136,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
+      },
+      {
+        "chunk_id": "58",
+        "score": 0.8595268934965133,
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
+        "section": "8. Technology and Equipment"
+      },
+      {
+        "chunk_id": "141",
+        "score": 0.7917982141983746,
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
+        "section": "7. Security Requirements"
+      },
+      {
+        "chunk_id": "158",
+        "score": 0.8651557457861393,
+        "doc_id": null,
+        "document": "security_policy.md",
+        "section": "6. Network Security"
+      },
+      {
+        "chunk_id": "13",
+        "score": 0.8070563077926636,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "7. Remote Access"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q061",
+    "question": "How often are security patches applied?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::5. Device Security"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::5. Device Security",
+      "security_policy.md::5. Device Security",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "security_policy.md::11. Security Awareness Training"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "156",
+        "score": 0.8437220931053162,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "157",
+        "score": 0.7198242009607526,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "5. Device Security"
+      },
+      {
+        "chunk_id": "89",
+        "score": 0.6505801438238654,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "5. Incident Response Phases"
+      },
+      {
+        "chunk_id": "165",
+        "score": 0.6811503171920776,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "11. Security Awareness Training"
+      },
+      {
+        "chunk_id": "88",
+        "score": 0.6080543093957278,
+        "doc_id": null,
+        "document": "incident_response_policy.md",
+        "section": "5. Incident Response Phases"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q062",
+    "question": "Is Multi-Factor Authentication needed?",
+    "answerable": true,
+    "expected_sources": [
+      "security_policy.md::4. Authentication Requirements"
+    ],
+    "retrieved_sources": [
+      "security_policy.md::4. Authentication Requirements",
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "access_control_policy.md::6. Authentication Requirements",
+      "security_policy.md::4. Authentication Requirements"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "154",
+        "score": 0.871168977022171,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "4. Authentication Requirements"
+      },
+      {
+        "chunk_id": "102",
+        "score": 0.7555634164965895,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "12",
+        "score": 0.6777218515361219,
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
+        "section": "6. Authentication Requirements"
+      },
+      {
+        "chunk_id": "13",
+        "score": 0.47453620700489396,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "7. Remote Access"
+      },
+      {
+        "chunk_id": "155",
+        "score": 0.7521976828575134,
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
+        "section": "4. Authentication Requirements"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q063",
+    "question": "How to check if my delivery passed customs?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "data_privacy_policy.md::9. Cross-Border Data Transfers",
+      "incident_response_policy.md::6. Notification Requirements",
+      "it_onboarding_guide.md::Step 1: Receive and Unbox Your Equipment",
+      "vendor_management_policy.md::3. Vendor Approval Process"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "36",
+        "score": 0.6065223515033722,
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
+        "section": "9. Cross-Border Data Transfers"
+      },
+      {
+        "chunk_id": "92",
+        "score": 0.5835917340167841,
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
+        "section": "6. Notification Requirements"
+      },
+      {
+        "chunk_id": "99",
+        "score": 0.6148617267608643,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 1: Receive and Unbox Your Equipment"
+      },
+      {
+        "chunk_id": "173",
+        "score": 0.6715321536257054,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "22",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "1. Introduction"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q064",
+    "question": "What does it mean a Tier 2 vendor?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::2. Vendor Risk Tiers"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::2. Vendor Risk Tiers",
+      "vendor_management_policy.md::2. Vendor Risk Tiers",
+      "vendor_management_policy.md::5. Vendor Onboarding",
+      "vendor_management_policy.md::6. Ongoing Vendor Management",
+      "vendor_management_policy.md::3. Vendor Approval Process"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "171",
+        "score": 0.8959165371529099,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "2. Vendor Risk Tiers"
+      },
+      {
+        "chunk_id": "170",
+        "score": 0.8315083980560303,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "2. Vendor Risk Tiers"
+      },
+      {
+        "chunk_id": "178",
+        "score": 0.766624143419656,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "5. Vendor Onboarding"
+      },
+      {
+        "chunk_id": "179",
+        "score": 0.7720737333340733,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "6. Ongoing Vendor Management"
+      },
+      {
+        "chunk_id": "173",
+        "score": 0.8614095085643524,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q065",
+    "question": "Can the manager alone approve a vendor?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::3. Vendor Aprroval Process"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "vendor_management_policy.md::2. Vendor Risk Tiers",
+      "vendor_management_policy.md::5. Vendor Onboarding",
+      "vendor_management_policy.md::8. Prohibited Vendor Practices"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "172",
+        "score": 0.7870128154754639,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "124",
+        "score": 0.8368384826535997,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "171",
+        "score": 0.7398015260696411,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "2. Vendor Risk Tiers"
+      },
+      {
+        "chunk_id": "178",
+        "score": 0.7430539131164551,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "5. Vendor Onboarding"
+      },
+      {
+        "chunk_id": "182",
+        "score": 0.73740154504776,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "8. Prohibited Vendor Practices"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q066",
+    "question": "Is IT security approval needed to proceed with a vendor?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::3. Vendor Aprroval Process"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "vendor_management_policy.md::5. Vendor Onboarding",
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "vendor_management_policy.md::2. Vendor Risk Tiers"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "172",
+        "score": 0.8778868962678823,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "178",
+        "score": 0.7557064890861511,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "5. Vendor Onboarding"
+      },
+      {
+        "chunk_id": "174",
+        "score": 0.8280384838581085,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "173",
+        "score": 0.8295971900224686,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "171",
+        "score": 0.7962410897016525,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "2. Vendor Risk Tiers"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q067",
+    "question": "What information is needed from the vendor?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::3. Vendor Aprroval Process"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::4. Contractual Requirements",
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "vendor_management_policy.md::2. Vendor Risk Tiers",
+      "vendor_management_policy.md::3. Vendor Approval Process"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "177",
+        "score": 0.7622972130775452,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "4. Contractual Requirements"
+      },
+      {
+        "chunk_id": "172",
+        "score": 0.7769634127616882,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "170",
+        "score": 0.751862034201622,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "2. Vendor Risk Tiers"
+      },
+      {
+        "chunk_id": "47",
+        "score": 0.7826352291700032,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "3. Code of Conduct"
+      },
+      {
+        "chunk_id": "173",
+        "score": 0.7557746022939682,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q068",
+    "question": "How often should vendors' contract  be reviewed?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::6. Ongoing Vendor Management"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::6. Ongoing Vendor Management",
+      "vendor_management_policy.md::5. Vendor Onboarding",
+      "vendor_management_policy.md::10. Policy Ownership and Review",
+      "vendor_management_policy.md::7. Vendor Offboarding",
+      "vendor_management_policy.md::6. Ongoing Vendor Management"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "179",
+        "score": 0.7795297354459763,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "6. Ongoing Vendor Management"
+      },
+      {
+        "chunk_id": "178",
+        "score": 0.7298196256160736,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "5. Vendor Onboarding"
+      },
+      {
+        "chunk_id": "184",
+        "score": 0.7356655597686768,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "10. Policy Ownership and Review"
+      },
+      {
+        "chunk_id": "181",
+        "score": 0.8383535444736481,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "7. Vendor Offboarding"
+      },
+      {
+        "chunk_id": "180",
+        "score": 0.7333728671073914,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "6. Ongoing Vendor Management"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q069",
+    "question": "What to do with the data after a vendor's contract finished?",
+    "answerable": true,
+    "expected_sources": [
+      "vendor_management_policy.md::7. Vendor Offboarding"
+    ],
+    "retrieved_sources": [
+      "vendor_management_policy.md::7. Vendor Offboarding",
+      "vendor_management_policy.md::3. Vendor Approval Process"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "181",
+        "score": 0.8722935289144516,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "7. Vendor Offboarding"
+      },
+      {
+        "chunk_id": "172",
+        "score": 0.7625288700094361,
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
+        "section": "3. Vendor Approval Process"
+      },
+      {
+        "chunk_id": "28",
+        "score": 0.8024341109213502,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "4. Legal Bases for Processing"
+      },
+      {
+        "chunk_id": "125",
+        "score": 0.7994406019507487,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "46",
+        "score": 0.8974707951316455,
+        "doc_id": null,
+        "document": "employee_handbook.md",
+        "section": "3. Code of Conduct"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 1,
+      "recall_at_3": 1,
+      "recall_at_5": 1,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0
+    }
+  },
+  {
+    "question_id": "q070",
+    "question": "How much it takes from the airport to downtown?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "expense_policy.md::4. Travel Expenses"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "69",
+        "score": 0.7415312321802752,
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
+        "section": "4. Travel Expenses"
+      },
+      {
+        "chunk_id": "22",
+        "score": 0.9467900548154792,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "1. Introduction"
+      },
+      {
+        "chunk_id": "117",
+        "score": 0.7494185393980265,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "General Product Questions"
+      },
+      {
+        "chunk_id": "73",
+        "score": 0.9249861910972208,
+        "doc_id": null,
+        "document": "expense_policy.md",
+        "section": "6. Software and Subscriptions"
+      },
+      {
+        "chunk_id": "145",
+        "score": 0.8134442768044328,
+        "doc_id": null,
+        "document": "remote_work_policy.md",
+        "section": "10. Equipment and Technical Support"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  },
+  {
+    "question_id": "q071",
+    "question": "How to print and fax all certificates?",
+    "answerable": false,
+    "expected_sources": [],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "102",
+        "score": 0.6247217059135437,
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
+        "section": "Step 3: Enroll in Okta and Set Up MFA"
+      },
+      {
+        "chunk_id": "22",
+        "score": 1.0,
+        "doc_id": null,
+        "document": "data_privacy_policy.md",
+        "section": "1. Introduction"
+      },
+      {
+        "chunk_id": "124",
+        "score": 0.695426861943484,
+        "doc_id": null,
+        "document": "product_faq.md",
+        "section": "Features and Capabilities"
+      },
+      {
+        "chunk_id": "1",
+        "score": 0.6885295002337557,
+        "doc_id": null,
+        "document": "access_control_policy.md",
+        "section": "1. Purpose and Scope"
+      },
+      {
+        "chunk_id": "149",
+        "score": 0.6370635725902807,
+        "doc_id": null,
+        "document": "security_policy.md",
+        "section": "1. Purpose and Scope"
+      }
+    ],
+    "retrieval": {
+      "recall_at_1": 0,
+      "recall_at_3": 0,
+      "recall_at_5": 0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  }
+]

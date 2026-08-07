@@ -40,6 +40,7 @@ def build_refusal_response(question: str, chunks: list[dict], latency_ms: float)
         "latency_ms": latency_ms,
         "refused": True,
         "reason": "insufficient_retrieved_context",
+        'cost_usd': 0.0
     }
 
 def extract_cited_source_numbers(answer: str) -> list[int]:
@@ -103,6 +104,7 @@ def build_invalid_citation_response(
         "latency_ms": latency_ms,
         "refused": True,
         "reason": "invalid_or_missing_citations",
+        'cost_usd': 0.0
     }
     
 

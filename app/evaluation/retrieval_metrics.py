@@ -36,6 +36,9 @@ def reciprocal_rank(retrieved_sources:list[str], expected_sources:list[str]) -> 
     """
     1/rank of first relevant source
     """
+    if not  expected_sources:
+        return 0.0
+    
     expected_set = set(expected_sources)
 
     for rank, src in enumerate(retrieved_sources, start=1):

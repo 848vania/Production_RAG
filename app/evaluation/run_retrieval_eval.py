@@ -48,7 +48,10 @@ def summarize_retrieval_results(results: list[dict]) -> dict:
     return summary
     
 
-def run_retrieval_evaluation() -> dict:
+def run_retrieval_evaluation(
+        save: bool = True, 
+        output_suffix: str | None = None,    
+    ) -> dict:
     dataset = load_eval_dataset()
     results = []
 
@@ -80,7 +83,7 @@ def run_retrieval_evaluation() -> dict:
                 {
                     'chunk_id': chunk.get('chunk_id'),
                     'score': chunk.get('score'),
-                    'source_id': chunk.get('metadata', {}).get('source_id'),
+                    'doc_id': chunk.get('metadata', {}).get('doc_id'),
                     'document': chunk.get('metadata', {}).get('document'),
                     'section': chunk.get('metadata', {}).get('section')
                 }
@@ -89,9 +92,23 @@ def run_retrieval_evaluation() -> dict:
             'retrieval': retrieval_scores,
         })
 
-    save_results(results)
-    return summarize_retrieval_results(results)
+    summary = summarize_retrieval_results(results)
 
-# if __name__ == "__main__":
-#     summary = run_retrieval_evaluation()
-#     print(json.dumps(summary, indent=2))
+    if save:
+        suffix = f"_{output_suffix}" if output_suffix else ""
+        save_json(results, RESULTS_DIR / f'retrieval_eval_results{suffix}.json')
+        save_json(summary, RESULTS_DIR / f'retrieval_eval_summary{suffix}.json')
+
+    return {
+        'summary': summary,
+        'results': results
+    }
+
+def save_json(data: dict| list, output_path: Path) -> None:
+    """
+    Save JSON output.
+    """
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_path.open('w', encoding='utf-8') as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)

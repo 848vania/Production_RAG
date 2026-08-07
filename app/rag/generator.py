@@ -53,8 +53,10 @@ def generate_answer(question:str, chunks: list[dict]) -> dict:
 
     answer = llm.generate(prompt)
     answer = llm.format_response()
+    cost = llm.calculate_cost()
 
     return {
         'answer': answer,
         'sources': sources,
+        'cost_usd': cost,
     }

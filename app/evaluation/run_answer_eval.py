@@ -19,12 +19,18 @@ def save_results(results: list[dict]) -> None:
 
 def summarize_answer_results(results: list[dict]) -> dict:
     if not results:
-        return {}
+        return {
+            'total_questions': 0.0,
+            'citation_accuracy': 0.0,
+            'refusal_accuracy': 0.0,
+            'answer_correctness': 0.0,
+            'average_latency_ms': 0.0
+        }
 
     metric_names = [
         'citation_accuracy',
         'refusal_accuracy',
-        'answer_correctness_simple'
+        'answer_correctness'
     ]
 
     summary = {
@@ -37,19 +43,31 @@ def summarize_answer_results(results: list[dict]) -> dict:
             for item in results
         ) / len(results)
 
-    output_path = RESULTS_DIR / 'answer_eval_summary.json'
+    summary['average_latency_ms'] = sum(item.get('latency_ms', 0.0) for item in results) / len(results)
 
-    with output_path.open('w', encoding='utf-8') as file:
-        json.dump(summary, file, indent=2, ensure_ascii=False)
+    costs = [
+        item.get('cost_usd')
+        for item in results
+    ]
+
+    summary['average_cost_usd'] = sum(costs) / len(costs) if costs else None
+
+    # output_path = RESULTS_DIR / 'answer_eval_summary.json'
+
+    # with output_path.open('w', encoding='utf-8') as file:
+    #     json.dump(summary, file, indent=2, ensure_ascii=False)
 
     return summary
 
 
-def run_answer_evaluation() -> dict:
+def run_answer_evaluation(
+        save: bool = True,
+        output_suffix: str | None = None,
+    ) -> dict:
     dataset = load_eval_dataset()
     results = []
 
-    for item in dataset[:10]:
+    for item in dataset:
         response = answer_question(item['question'])
 
         retrieved_sources = extract_source_ids(response['sources'])
@@ -69,6 +87,7 @@ def run_answer_evaluation() -> dict:
             'latency_ms': response['latency_ms'],
             'refused': response['refused'],
             'reason': response['reason'],
+            'cost_usd': response['cost_usd'],
             'answerable': item['answerable'],
             'expected_sources': item['expected_sources'],
             'retrieved_sources': retrieved_sources,
@@ -76,5 +95,21 @@ def run_answer_evaluation() -> dict:
             'answer_scores': answer_scores
         })
 
-    save_results(results)
-    return summarize_answer_results(results)
+    summary = summarize_answer_results(results)
+
+    if save:
+        suffix = f"_{output_suffix}" if output_suffix else ""
+        save_json(results, RESULTS_DIR / f'answer_eval_results{suffix}.json')
+        save_json(summary, RESULTS_DIR / f'answer_eval_summary{suffix}.json')
+
+    return {
+        'summary': summary,
+        'results': results,
+    }
+
+
+def save_json(data: dict | list, output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_path.open('w', encoding='utf-8') as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)

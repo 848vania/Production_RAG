@@ -1,0 +1,41 @@
+{
+  "experiment_name": "hybrid_reranker",
+  "started_at": "2026-08-07T08:23:28.931082+00:00",
+  "finished_at": "2026-08-07T08:56:29.719592+00:00",
+  "config": {
+    "name": "hybrid_reranker",
+    "config_path": "configs\\hybrid_reranker.yaml",
+    "retrieval": {
+      "type": "hybrid",
+      "top_k": 10,
+      "vector_top_k": 10,
+      "keyword_top_k": 10,
+      "vector_weight": 0.6,
+      "keyword_weight": 0.4
+    },
+    "reranker": {
+      "enabled": true,
+      "top_k": 5
+    },
+    "generation": {
+      "provider": "openai",
+      "model": "gpt-5-mini-2025-08-07"
+    }
+  },
+  "retrieval": {
+    "total_questions": 71,
+    "recall_at_1": 0.6056338028169014,
+    "recall_at_3": 0.6338028169014085,
+    "recall_at_5": 0.6338028169014085,
+    "precision_at_5": 0.1859154929577464,
+    "reciprocal_rank": 0.6150234741784038
+  },
+  "answer": {
+    "total_questions": 71,
+    "citation_accuracy": 0.16455399061032858,
+    "refusal_accuracy": 0.9154929577464789,
+    "answer_correctness": 0.6506144847811222,
+    "average_latency_ms": 20897.598732394366,
+    "average_cost_usd": 0.0005118126760563379
+  }
+}

@@ -39,6 +39,7 @@ def answer_question(question: str) -> dict:
             "latency_ms": _latency_ms(start_time),
             "refused": True,
             "reason": "empty question",
+            'cost_usd': 0.0
         }
     
     retrieved_chunks = retrieve(
@@ -72,6 +73,7 @@ def answer_question(question: str) -> dict:
 
     answer = generation_result['answer']
     sources = generation_result['sources']
+    cost_usd = generation_result['cost_usd']
 
     citations_are_valid = validate_citations(
         answer = answer,
@@ -91,6 +93,7 @@ def answer_question(question: str) -> dict:
         'confidence': confidence,
         'latency_ms': _latency_ms(start_time),
         'refused': False,
-        'reason': None
+        'reason': None,
+        'cost_usd': cost_usd,
     }
 

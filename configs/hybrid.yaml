@@ -1,0 +1,17 @@
+name: hybrid
+
+retrieval:
+  type: hybrid
+  top_k: 10
+  vector_top_k: 10
+  keyword_top_k: 10
+  vector_weight: 0.6
+  keyword_weight: 0.4
+
+reranker:
+  enabled: false 
+  top_k: 5
+
+generation:
+  provider: openai
+  model: gpt-5-mini-2025-08-07

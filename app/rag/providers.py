@@ -12,6 +12,9 @@ class LLMProvider:
     
     def format_response(self, response):
         raise NotImplementedError
+
+    def calculate_cost(self):
+        raise NotImplementedError
     
 class OpenAIProvider(LLMProvider):
     def __init__(self):
@@ -35,6 +38,19 @@ class OpenAIProvider(LLMProvider):
 
         return self.response.output_parsed.answer
 
+    def calculate_cost(self):
+        INPUT_PRICE_PER_1M = 0.15
+        OUTPUT_PRICE_PER_1M = 0.60
+
+        input_tokens = self.response.usage.input_tokens
+        output_tokens = self.response.usage.output_tokens 
+
+        input_cost = (input_tokens / 1_000_000) * INPUT_PRICE_PER_1M
+        output_cost  = (output_tokens / 1_000_000) * OUTPUT_PRICE_PER_1M
+        total_cost = input_cost + output_cost
+
+        return total_cost
+
 class OllamaProvider(LLMProvider):
     def generate(self, prompt):
         """
@@ -43,6 +59,10 @@ class OllamaProvider(LLMProvider):
 
     def format_response(self):
         return
+
+    def calculate_cost(self):
+        return
+
 
 class FakeLLMProvider(LLMProvider):
     def __init__(self):
@@ -53,8 +73,13 @@ class FakeLLMProvider(LLMProvider):
         Used for tests
         """
         return 
+    
     def format_response(self):
         return 
+
+    def calculate_cost(self):
+        return
+    
 
 def get_llm_provider() -> LLMProvider:
     """

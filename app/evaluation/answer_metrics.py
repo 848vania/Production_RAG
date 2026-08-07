@@ -105,5 +105,5 @@ def evaluate_answers(
     return {
         'citation_accuracy': citation_accuracy(predicted_sources, expected_sources),
         'refusal_accuracy': refusal_accuracy(predicted_answer, answerable=answerable),
-        'answer_correctness_simple': answer_correctness_simple(predicted_answer, expected_answer)
+        'answer_correctness': answer_correctness_simple(predicted_answer, expected_answer)
     }

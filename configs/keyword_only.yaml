@@ -1,0 +1,17 @@
+name: keyword_only
+
+retrieval:
+  type: keyword
+  top_k: 10
+  vector_top_k: 0
+  keyword_top_k: 10
+  vector_weight: 0.0
+  keyword_weight: 1.0
+
+reranker: 
+  enabled: false 
+  top_k: 5
+
+generation:
+  provider: openai
+  model: gpt-5-mini-2025-08-07
