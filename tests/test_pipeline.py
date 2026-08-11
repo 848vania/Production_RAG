@@ -31,7 +31,7 @@ def test_pipeline_answerable_questions(mock_generate, mock_retrieve):
         ],
     }
 
-    response = answer_question("Who approves remote work requests?")
+    response = answer_question("Who approves remote work requests?", config=None, log=False)
 
     assert response['refused'] is False
     assert response['confidence'] == "high"
@@ -53,7 +53,7 @@ def test_pipeline_refuses_low_context(mock_generate, mock_retrieve):
         }
     ]
 
-    response = answer_question("Can employees work from Mars")
+    response = answer_question("Can employees work from Mars", config=None, log=False)
 
     assert response['refused'] is True
     assert response['reason'] == "insufficient_retrieved_context"
@@ -80,13 +80,13 @@ def test_pipeline_refuses_invalid_citations(mock_generate, mock_retrieve):
         "sources": [{"chunk_id": '5'}],
     }
 
-    response = answer_question("Who approves remote work requests?")
+    response = answer_question("Who approves remote work requests?", config=None, log=False)
 
     assert response['refused'] is True
     assert response['reason'] == 'invalid_or_missing_citations'
 
 def test_manual_pipeline():
-    response = answer_question("Who approves remote work requests?")
+    response = answer_question("Who approves remote work requests?", config=None, log=False)
     print(f"RESPONSE:\n{response}")
 
 test_manual_pipeline()

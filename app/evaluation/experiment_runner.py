@@ -35,6 +35,7 @@ def run_experiment(config: ExperimentConfig) -> dict:
     answer_eval = run_answer_evaluation(
         save=True,
         output_suffix=config.name,
+        config=config,
     )
 
     finished_at = datetime.now(timezone.utc).isoformat()

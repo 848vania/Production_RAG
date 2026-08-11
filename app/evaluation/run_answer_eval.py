@@ -62,13 +62,18 @@ def summarize_answer_results(results: list[dict]) -> dict:
 
 def run_answer_evaluation(
         save: bool = True,
+        config = None,
         output_suffix: str | None = None,
     ) -> dict:
     dataset = load_eval_dataset()
     results = []
 
     for item in dataset:
-        response = answer_question(item['question'])
+        response = answer_question(
+            question = item['question'],
+            config=config,
+            log = False
+        )
 
         retrieved_sources = extract_source_ids(response['sources'])
 

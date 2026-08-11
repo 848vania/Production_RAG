@@ -3,6 +3,7 @@ import time
 from app.config import settings
 from app.rag.retriever import retrieve 
 from app.rag.generator import generate_answer
+from app.monitoring.logger import log_interaction
 from app.rag.grounding import (
     has_sufficient_context,
     estimate_confidence,
@@ -16,7 +17,34 @@ from app.schemas import *
 def _latency_ms(start_time:float) -> float:
     return round((time.perf_counter() - start_time) * 1000, 2)
 
-def answer_question(question: str) -> dict:
+
+def _with_metadata(response:dict, config=None) -> dict:
+    """
+    Add shared metadata to all pipeline responses
+    """
+    retrieval_type = (
+        config.retrieval_type
+        if config is not None 
+        else settings.retrieval_type
+    )
+
+    model_provider = (
+        config.generation.provider
+        if config is not None 
+        else settings.llm_provider
+    )
+
+    response['retrieval_type'] = retrieval_type
+    response['model_provider'] = model_provider
+
+    return response
+
+
+def answer_question(
+        question: str,
+        config = None,
+        log: bool = True,
+) -> dict:
     """
     Full RAG pipeline.
     
@@ -32,7 +60,7 @@ def answer_question(question: str) -> dict:
     cleaned_question = question.strip()
 
     if not cleaned_question:
-        return {
+        response = {
             "answer": "Please provide a question.",
             "sources": [],
             "confidence": "low",
@@ -41,6 +69,13 @@ def answer_question(question: str) -> dict:
             "reason": "empty question",
             'cost_usd': 0.0
         }
+
+        response = _with_metadata(response=response, config=config)
+
+        if log:
+            log_interaction(cleaned_question, response)
+
+        return response
     
     retrieved_chunks = retrieve(
         cleaned_question
@@ -58,11 +93,18 @@ def answer_question(question: str) -> dict:
         chunks = retrieved_chunks,
         score_limit = settings.retrieval_score
     ):
-        return build_refusal_response(
+        response = build_refusal_response(
             question=cleaned_question,
             chunks=retrieved_chunks,
             latency_ms = _latency_ms(start_time),
         )
+
+        response = _with_metadata(response, config=config)
+
+        if log:
+            log_interaction(cleaned_question, response)
+
+        return response
     
     confidence = estimate_confidence(retrieved_chunks)
 
@@ -81,13 +123,20 @@ def answer_question(question: str) -> dict:
     )
 
     if not citations_are_valid:
-        return build_invalid_citation_response(
+        response = build_invalid_citation_response(
             question = cleaned_question,
             chunks = retrieved_chunks,
             latency_ms= _latency_ms(start_time),
         )
+
+        response = _with_metadata(response, config=config)
+
+        if log:
+            log_interaction(cleaned_question, response)
+
+        return response
     
-    return {
+    response = {
         'answer': answer,
         'sources': sources,
         'confidence': confidence,
@@ -97,3 +146,9 @@ def answer_question(question: str) -> dict:
         'cost_usd': cost_usd,
     }
 
+    response = _with_metadata(response, config=config)
+
+    if log:
+        log_interaction(cleaned_question, response)
+
+    return response
