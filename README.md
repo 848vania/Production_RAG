@@ -192,20 +192,4 @@ pytest
 
 ~40 tests across chunking, ingestion, embeddings, retrieval, keyword search, reranking, grounding/refusal logic, the end-to-end pipeline, the API, the database layer, monitoring, and the evaluation metrics.
 
-## Limitations & Known Gaps
 
-Documented deliberately, since being explicit about what's a prototype vs. production-ready is the point of this section:
-
-- **Synthetic corpus** — the 10 documents in `data/synthetic_documents` are generated policy/handbook content, not real enterprise data.
-- **No auth or multi-tenancy** — single-user, no access control or per-document permissions.
-- **No real Ollama/Anthropic/Gemini support yet** — `OllamaProvider` and the local embedding provider are stubbed (`app/rag/providers.py`, `app/rag/embeddings.py::LocalEmbeddingProvider`); only OpenAI is fully wired end-to-end.
-- **Qdrant is not implemented** — `QdrantVectorStore` is a placeholder; Chroma is the only working vector store despite `docker-compose.yml` provisioning a Qdrant container.
-- **Indexing is eager, not incremental** — the vector and BM25 indexes are rebuilt from the full document folder on module import (`app/rag/retriever.py`), rather than persisted and updated incrementally; `/documents/ingest` chunks an upload but doesn't index it yet.
-
-## Roadmap
-
-- Real embedding-based access control / document-level permissions
-- Incremental ingestion instead of full re-index on startup
-- Finish the Ollama/Anthropic provider implementations for a fully local or multi-provider setup
-- A smarter hybrid fusion strategy (the current fixed 0.6/0.4 score blend can underperform vector-only retrieval alone, per the evaluation results above)
-- Wire up Qdrant as a real alternative to Chroma
