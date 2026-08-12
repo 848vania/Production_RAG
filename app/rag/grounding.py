@@ -69,6 +69,14 @@ def estimate_confidence(chunks: list[dict]) -> str:
     return "low"
 
 
+def filter_cited_sources(answer: str, sources: list[dict]) -> list[dict]:
+    """
+    Return only the sources actually cited (via [Source chunk_id]) in the answer.
+    """
+    cited_ids = {str(number) for number in extract_cited_source_numbers(answer)}
+    return [source for source in sources if str(source.get("chunk_id")) in cited_ids]
+
+
 def validate_citations(answer: str, sources: list) -> bool:
     """
     Check whether the answer cites only available sources 

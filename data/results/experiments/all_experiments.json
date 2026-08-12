@@ -1,8 +1,8 @@
 [
   {
     "experiment_name": "vector_only",
-    "started_at": "2026-08-07T06:56:44.341161+00:00",
-    "finished_at": "2026-08-07T07:25:05.398407+00:00",
+    "started_at": "2026-08-12T02:51:12.192200+00:00",
+    "finished_at": "2026-08-12T03:04:31.536338+00:00",
     "config": {
       "name": "vector_only",
       "config_path": "configs\\vector_only.yaml",
@@ -25,25 +25,25 @@
     },
     "retrieval": {
       "total_questions": 71,
-      "recall_at_1": 0.6056338028169014,
-      "recall_at_3": 0.6338028169014085,
+      "recall_at_1": 0.49295774647887325,
+      "recall_at_3": 0.6056338028169014,
       "recall_at_5": 0.6338028169014085,
-      "precision_at_5": 0.1859154929577464,
-      "reciprocal_rank": 0.6150234741784038
+      "precision_at_5": 0.21126760563380276,
+      "reciprocal_rank": 0.5590710932260228
     },
     "answer": {
       "total_questions": 71,
-      "citation_accuracy": 0.16455399061032858,
+      "citation_accuracy": 0.49894366197183093,
       "refusal_accuracy": 0.9014084507042254,
-      "answer_correctness": 0.659475371631905,
-      "average_latency_ms": 17062.173661971825,
-      "average_cost_usd": 0.0005209014084507042
+      "answer_correctness": 0.7045796995439605,
+      "average_latency_ms": 10900.645492957745,
+      "average_cost_usd": 0.0006914514084507041
     }
   },
   {
     "experiment_name": "keyword_only",
-    "started_at": "2026-08-07T07:25:05.400413+00:00",
-    "finished_at": "2026-08-07T07:54:32.606106+00:00",
+    "started_at": "2026-08-12T03:04:31.537341+00:00",
+    "finished_at": "2026-08-12T03:14:27.315659+00:00",
     "config": {
       "name": "keyword_only",
       "config_path": "configs\\keyword_only.yaml",
@@ -66,25 +66,25 @@
     },
     "retrieval": {
       "total_questions": 71,
-      "recall_at_1": 0.6056338028169014,
-      "recall_at_3": 0.6338028169014085,
-      "recall_at_5": 0.6338028169014085,
-      "precision_at_5": 0.1859154929577464,
-      "reciprocal_rank": 0.6150234741784038
+      "recall_at_1": 0.2676056338028169,
+      "recall_at_3": 0.4084507042253521,
+      "recall_at_5": 0.4788732394366197,
+      "precision_at_5": 0.11267605633802821,
+      "reciprocal_rank": 0.3617091437513973
     },
     "answer": {
       "total_questions": 71,
-      "citation_accuracy": 0.16455399061032858,
-      "refusal_accuracy": 0.8732394366197183,
-      "answer_correctness": 0.6106659739503175,
-      "average_latency_ms": 17950.17281690141,
-      "average_cost_usd": 0.0004907281690140846
+      "citation_accuracy": 0.4977867203219315,
+      "refusal_accuracy": 0.8169014084507042,
+      "answer_correctness": 0.4958754174152464,
+      "average_latency_ms": 8388.52563380282,
+      "average_cost_usd": 0.0005611246478873238
     }
   },
   {
     "experiment_name": "hybrid",
-    "started_at": "2026-08-07T07:54:32.609127+00:00",
-    "finished_at": "2026-08-07T08:23:28.929082+00:00",
+    "started_at": "2026-08-12T03:14:27.317660+00:00",
+    "finished_at": "2026-08-12T03:24:40.964093+00:00",
     "config": {
       "name": "hybrid",
       "config_path": "configs\\hybrid.yaml",
@@ -107,25 +107,25 @@
     },
     "retrieval": {
       "total_questions": 71,
-      "recall_at_1": 0.6056338028169014,
-      "recall_at_3": 0.6338028169014085,
-      "recall_at_5": 0.6338028169014085,
-      "precision_at_5": 0.1859154929577464,
-      "reciprocal_rank": 0.6150234741784038
+      "recall_at_1": 0.23943661971830985,
+      "recall_at_3": 0.4225352112676056,
+      "recall_at_5": 0.5492957746478874,
+      "precision_at_5": 0.16338028169014082,
+      "reciprocal_rank": 0.3650570087189805
     },
     "answer": {
       "total_questions": 71,
-      "citation_accuracy": 0.16455399061032858,
+      "citation_accuracy": 0.5411971830985915,
       "refusal_accuracy": 0.8732394366197183,
-      "answer_correctness": 0.6387352441597267,
-      "average_latency_ms": 17479.550563380275,
-      "average_cost_usd": 0.000495500704225352
+      "answer_correctness": 0.6474682702544744,
+      "average_latency_ms": 8278.536056338027,
+      "average_cost_usd": 0.0006005767605633802
     }
   },
   {
     "experiment_name": "hybrid_reranker",
-    "started_at": "2026-08-07T08:23:28.931082+00:00",
-    "finished_at": "2026-08-07T08:56:29.719592+00:00",
+    "started_at": "2026-08-12T03:24:40.965086+00:00",
+    "finished_at": "2026-08-12T03:52:48.834854+00:00",
     "config": {
       "name": "hybrid_reranker",
       "config_path": "configs\\hybrid_reranker.yaml",
@@ -148,19 +148,19 @@
     },
     "retrieval": {
       "total_questions": 71,
-      "recall_at_1": 0.6056338028169014,
+      "recall_at_1": 0.5774647887323944,
       "recall_at_3": 0.6338028169014085,
       "recall_at_5": 0.6338028169014085,
       "precision_at_5": 0.1859154929577464,
-      "reciprocal_rank": 0.6150234741784038
+      "reciprocal_rank": 0.5985915492957746
     },
     "answer": {
       "total_questions": 71,
-      "citation_accuracy": 0.16455399061032858,
+      "citation_accuracy": 0.5215962441314552,
       "refusal_accuracy": 0.9154929577464789,
-      "answer_correctness": 0.6506144847811222,
-      "average_latency_ms": 20897.598732394366,
-      "average_cost_usd": 0.0005118126760563379
+      "answer_correctness": 0.6760175301247457,
+      "average_latency_ms": 16876.214647887326,
+      "average_cost_usd": 0.0005220781690140845
     }
   }
 ]

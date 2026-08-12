@@ -68,7 +68,8 @@ def keyword_retrieve(question:str, top_k:int=5) -> list[dict]:
                 "text": chunk.text,
                 "score": score,
                 "metadata":{
-                    "document": chunk.doc_id,
+                    "document": chunk.doc_title,
+                    "doc_id": chunk.doc_id,
                     "section": chunk.section_title
                 }
             }

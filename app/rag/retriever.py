@@ -1,8 +1,9 @@
-from app.rag.embeddings import * 
+from app.rag.embeddings import *
 from app.rag.vector_store import get_vector_store
 from app.rag.chunking import chunk_documents
 from app.rag.ingestion import load_documents_from_folder
 from app.rag.keyword_search import *
+from app.config import settings
 
 embedding = OpenAIEmbeddingProvider()
 
@@ -122,22 +123,36 @@ def hybrid_retrieve(question: str, top_k:int=10, vector_weight: float = 0.6, key
 
     return results[:top_k]
 
-def retrieve(question:str) -> list[dict]:
-    retrieval_type = settings.retrieval_type.lower()
+def retrieve(
+    question: str,
+    retrieval_type: str | None = None,
+    vector_top_k: int | None = None,
+    keyword_top_k: int | None = None,
+    hybrid_top_k: int | None = None,
+    vector_weight: float | None = None,
+    keyword_weight: float | None = None,
+) -> list[dict]:
+    resolved_type = (retrieval_type if retrieval_type is not None else settings.retrieval_type).lower()
 
-    if retrieval_type == 'vector':
-        return vector_retrieve(question, top_k = settings.vector_top_k)
+    if resolved_type == 'vector':
+        return vector_retrieve(
+            question,
+            top_k = vector_top_k if vector_top_k is not None else settings.vector_top_k,
+        )
 
-    elif retrieval_type == 'keyword':
-        return keyword_retrieve(question, top_k=settings.keyword_top_k)
+    elif resolved_type == 'keyword':
+        return keyword_retrieve(
+            question,
+            top_k = keyword_top_k if keyword_top_k is not None else settings.keyword_top_k,
+        )
 
-    elif retrieval_type == 'hybrid':
+    elif resolved_type == 'hybrid':
         return hybrid_retrieve(
             question= question,
-            top_k = settings.hybrid_top_k,
-            vector_weight= settings.vector_weight,
-            keyword_weight= settings.keyword_weight
+            top_k = hybrid_top_k if hybrid_top_k is not None else settings.hybrid_top_k,
+            vector_weight= vector_weight if vector_weight is not None else settings.vector_weight,
+            keyword_weight= keyword_weight if keyword_weight is not None else settings.keyword_weight,
         )
 
     else:
-        raise ValueError(f"Unsupported retrieval type: {settings.retrieval_type}")
+        raise ValueError(f"Unsupported retrieval type: {resolved_type}")

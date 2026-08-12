@@ -23,8 +23,8 @@ def _with_metadata(response:dict, config=None) -> dict:
     Add shared metadata to all pipeline responses
     """
     retrieval_type = (
-        config.retrieval_type
-        if config is not None 
+        config.retrieval.type
+        if config is not None
         else settings.retrieval_type
     )
 
@@ -77,16 +77,28 @@ def answer_question(
 
         return response
     
-    retrieved_chunks = retrieve(
-        cleaned_question
-    )
+    if config is not None:
+        retrieved_chunks = retrieve(
+            cleaned_question,
+            retrieval_type=config.retrieval.type,
+            vector_top_k=config.retrieval.top_k,
+            keyword_top_k=config.retrieval.top_k,
+            hybrid_top_k=config.retrieval.top_k,
+            vector_weight=config.retrieval.vector_weight,
+            keyword_weight=config.retrieval.keyword_weight,
+        )
+    else:
+        retrieved_chunks = retrieve(cleaned_question)
 
-    if settings.reranker_enabled:
+    reranker_enabled = config.reranker.enabled if config is not None else settings.reranker_enabled
+    reranker_top_k = config.reranker.top_k if config is not None else settings.rerank_top_k
+
+    if reranker_enabled:
         reranker = get_reranker()
         retrieved_chunks = reranker.rerank(
             question = cleaned_question,
             chunks = retrieved_chunks,
-            top_k= settings.rerank_top_k
+            top_k= reranker_top_k
         )
 
     if not has_sufficient_context(
@@ -110,7 +122,8 @@ def answer_question(
 
     generation_result = generate_answer(
         question=cleaned_question,
-        chunks = retrieved_chunks
+        chunks = retrieved_chunks,
+        config = config,
     )
 
     answer = generation_result['answer']

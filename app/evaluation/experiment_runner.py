@@ -30,6 +30,7 @@ def run_experiment(config: ExperimentConfig) -> dict:
     retrieval_eval = run_retrieval_evaluation(
         save = True,
         output_suffix=  config.name,
+        config = config,
     )
 
     answer_eval = run_answer_evaluation(

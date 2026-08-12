@@ -53,5 +53,18 @@ def test_building_bm25():
     top_chunks = keyword_retrieve("What is the purpose", 2)
     print(f"Top chunks:\n{top_chunks}")
 
+
+def test_keyword_retrieve_metadata_has_doc_id():
+    chunks = chunk_document(document=document, chunk_size=800, overlap=100)
+    build_bm25_index(chunks)
+
+    top_chunks = keyword_retrieve("What is the purpose", 2)
+
+    for chunk in top_chunks:
+        assert chunk["metadata"]["doc_id"] == document.doc_id
+        assert chunk["metadata"]["document"] == document.title
+
+
 test_building_bm25()
+test_keyword_retrieve_metadata_has_doc_id()
     

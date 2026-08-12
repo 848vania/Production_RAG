@@ -1,7 +1,7 @@
 {
   "experiment_name": "keyword_only",
-  "started_at": "2026-08-07T07:25:05.400413+00:00",
-  "finished_at": "2026-08-07T07:54:32.606106+00:00",
+  "started_at": "2026-08-12T03:04:31.537341+00:00",
+  "finished_at": "2026-08-12T03:14:27.315659+00:00",
   "config": {
     "name": "keyword_only",
     "config_path": "configs\\keyword_only.yaml",
@@ -24,18 +24,18 @@
   },
   "retrieval": {
     "total_questions": 71,
-    "recall_at_1": 0.6056338028169014,
-    "recall_at_3": 0.6338028169014085,
-    "recall_at_5": 0.6338028169014085,
-    "precision_at_5": 0.1859154929577464,
-    "reciprocal_rank": 0.6150234741784038
+    "recall_at_1": 0.2676056338028169,
+    "recall_at_3": 0.4084507042253521,
+    "recall_at_5": 0.4788732394366197,
+    "precision_at_5": 0.11267605633802821,
+    "reciprocal_rank": 0.3617091437513973
   },
   "answer": {
     "total_questions": 71,
-    "citation_accuracy": 0.16455399061032858,
-    "refusal_accuracy": 0.8732394366197183,
-    "answer_correctness": 0.6106659739503175,
-    "average_latency_ms": 17950.17281690141,
-    "average_cost_usd": 0.0004907281690140846
+    "citation_accuracy": 0.4977867203219315,
+    "refusal_accuracy": 0.8169014084507042,
+    "answer_correctness": 0.4958754174152464,
+    "average_latency_ms": 8388.52563380282,
+    "average_cost_usd": 0.0005611246478873238
   }
 }

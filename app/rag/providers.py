@@ -17,10 +17,10 @@ class LLMProvider:
         raise NotImplementedError
     
 class OpenAIProvider(LLMProvider):
-    def __init__(self):
+    def __init__(self, model: str | None = None):
         super().__init__()
         self.client = OpenAI(api_key=settings.openai_api_key)
-        self.model = settings.openai_model
+        self.model = model or settings.openai_model
 
     def generate(self, prompt: str) -> str:
         """
@@ -81,14 +81,15 @@ class FakeLLMProvider(LLMProvider):
         return
     
 
-def get_llm_provider() -> LLMProvider:
+def get_llm_provider(provider: str | None = None, model: str | None = None) -> LLMProvider:
     """
-    Return provider based on settings
+    Return provider based on settings, optionally overridden per call
     """
+    provider_name = provider or settings.llm_provider
     try:
-        if settings.llm_provider == 'openai':
-            return OpenAIProvider()
-        elif settings.llm_provider == 'testing':
+        if provider_name == 'openai':
+            return OpenAIProvider(model=model)
+        elif provider_name == 'testing':
             return FakeLLMProvider()
     except Exception as e:
-        print(f"Define a valid LLM Provider. Current is {settings.llm_provider} which raised error: {e}")  
+        print(f"Define a valid LLM Provider. Current is {provider_name} which raised error: {e}")

@@ -4,6 +4,7 @@ from pathlib import Path
 from app.evaluation.answer_metrics import *
 from app.evaluation.eval_dataset import load_eval_dataset
 from app.rag.pipeline import answer_question
+from app.rag.grounding import filter_cited_sources
 
 
 RESULTS_DIR = Path('data/results')
@@ -75,7 +76,8 @@ def run_answer_evaluation(
             log = False
         )
 
-        retrieved_sources = extract_source_ids(response['sources'])
+        cited_sources = filter_cited_sources(response['answer'], response['sources'])
+        retrieved_sources = extract_source_ids(cited_sources)
 
         answer_scores = evaluate_answers(
             predicted_answer= response['answer'],

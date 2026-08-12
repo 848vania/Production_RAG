@@ -16,35 +16,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "136",
-        "score": 0.7646947423303994,
+        "score": 0.7646917293156059,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "4. Approved Work Locations"
       },
       {
         "chunk_id": "135",
-        "score": 0.7785200379488454,
+        "score": 0.7785185716745839,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "4. Approved Work Locations"
       },
       {
         "chunk_id": "134",
-        "score": 0.7271649258951057,
+        "score": 0.7271710145095696,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "3. Eligibility"
       },
       {
         "chunk_id": "131",
-        "score": 0.8629915833473205,
+        "score": 0.8629867732524872,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "1. Purpose and Scope"
       },
       {
         "chunk_id": "144",
-        "score": 0.7601555619720992,
+        "score": 0.7601502869610366,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "9. Performance Accountability"
@@ -126,6 +126,7 @@
     ],
     "retrieved_sources": [
       "security_policy.md::6. Network Security",
+      "security_policy.md::3. Access Control",
       "employee_handbook.md::3. Code of Conduct",
       "employee_handbook.md::3. Code of Conduct",
       "remote_work_policy.md::7. Security Requirements"
@@ -133,7 +134,7 @@
     "retrieved_chunks": [
       {
         "chunk_id": "158",
-        "score": 0.8406567215919495,
+        "score": 0.840688693523407,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "6. Network Security"
@@ -141,27 +142,27 @@
       {
         "chunk_id": "152",
         "score": 0.8115618614298307,
-        "doc_id": null,
-        "document": "security_policy.md",
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
         "section": "3. Access Control"
       },
       {
         "chunk_id": "47",
-        "score": 0.7338533401489258,
+        "score": 0.7338871359825134,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "3. Code of Conduct"
       },
       {
         "chunk_id": "46",
-        "score": 0.7234237194061279,
+        "score": 0.7234699130058289,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "3. Code of Conduct"
       },
       {
         "chunk_id": "141",
-        "score": 0.736724276190863,
+        "score": 0.7367529400645355,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "7. Security Requirements"
@@ -240,12 +241,16 @@
       "access_control_policy.md::3. User Account Management"
     ],
     "retrieved_sources": [
-      "access_control_policy.md::3. User Account Management"
+      "access_control_policy.md::3. User Account Management",
+      "product_faq.md::Pricing and Plans",
+      "data_privacy_policy.md::10. Privacy by Design",
+      "expense_policy.md::3. Expense Submission Process",
+      "product_faq.md::Features and Capabilities"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "4",
-        "score": 0.8275143246942648,
+        "score": 0.8275175433450827,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "3. User Account Management"
@@ -253,29 +258,29 @@
       {
         "chunk_id": "121",
         "score": 0.7638058457982566,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Pricing and Plans"
       },
       {
         "chunk_id": "37",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "10. Privacy by Design"
       },
       {
         "chunk_id": "66",
         "score": 0.7167642623083471,
-        "doc_id": null,
-        "document": "expense_policy.md",
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
         "section": "3. Expense Submission Process"
       },
       {
         "chunk_id": "125",
         "score": 0.6862510150989223,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       }
     ],
@@ -410,41 +415,47 @@
     "question": "Where to buy a new running watch?",
     "answerable": false,
     "expected_sources": [],
-    "retrieved_sources": [],
+    "retrieved_sources": [
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "employee_handbook.md::6. Performance and Development",
+      "vendor_management_policy.md::6. Ongoing Vendor Management",
+      "data_privacy_policy.md::4. Legal Bases for Processing",
+      "employee_handbook.md::5. Time Off Policies"
+    ],
     "retrieved_chunks": [
       {
         "chunk_id": "102",
         "score": 0.8319759815218231,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
       },
       {
         "chunk_id": "53",
         "score": 0.7962429932148004,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "6. Performance and Development"
       },
       {
         "chunk_id": "180",
         "score": 1.0,
-        "doc_id": null,
-        "document": "vendor_management_policy.md",
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
         "section": "6. Ongoing Vendor Management"
       },
       {
         "chunk_id": "28",
         "score": 0.7930314207789758,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "4. Legal Bases for Processing"
       },
       {
         "chunk_id": "51",
         "score": 0.9414179532071436,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "5. Time Off Policies"
       }
     ],
@@ -465,12 +476,15 @@
     ],
     "retrieved_sources": [
       "expense_policy.md::7. Office Supplies and Equipment",
+      "it_onboarding_guide.md::Step 1: Receive and Unbox Your Equipment",
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "access_control_policy.md::8. Physical Access Controls",
       "remote_work_policy.md::8. Expense Reimbursement"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "74",
-        "score": 0.7523103058338165,
+        "score": 0.7523105591535568,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "7. Office Supplies and Equipment"
@@ -478,13 +492,13 @@
       {
         "chunk_id": "99",
         "score": 0.7671549896221553,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 1: Receive and Unbox Your Equipment"
       },
       {
         "chunk_id": "142",
-        "score": 0.779357071110794,
+        "score": 0.77936356205661,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "8. Expense Reimbursement"
@@ -492,15 +506,15 @@
       {
         "chunk_id": "14",
         "score": 0.7949898574577238,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "8. Physical Access Controls"
       },
       {
         "chunk_id": "143",
         "score": 1.0,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "8. Expense Reimbursement"
       }
     ],
@@ -529,35 +543,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "90",
-        "score": 0.8828990012407303,
+        "score": 0.8828885853290558,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "11",
-        "score": 0.7345706522464752,
+        "score": 0.734551191329956,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "5. Access Reviews"
       },
       {
         "chunk_id": "6",
-        "score": 0.6742323697742547,
+        "score": 0.6741938174900141,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "3. User Account Management"
       },
       {
         "chunk_id": "89",
-        "score": 0.7057630717754364,
+        "score": 0.7057531476020813,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "94",
-        "score": 0.6985107660293579,
+        "score": 0.6984822750091553,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "8. Communication Protocols"
@@ -588,35 +602,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "154",
-        "score": 0.7386152744293213,
+        "score": 0.7386257946491241,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "4. Authentication Requirements"
       },
       {
         "chunk_id": "101",
-        "score": 0.6982325613498688,
+        "score": 0.6982515454292297,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 2: Power On and Complete Initial Setup"
       },
       {
         "chunk_id": "12",
-        "score": 0.7016859650611877,
+        "score": 0.701702892780304,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "6. Authentication Requirements"
       },
       {
         "chunk_id": "9",
-        "score": 0.7209173738956451,
+        "score": 0.7209444940090179,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "4. Privileged Access"
       },
       {
         "chunk_id": "8",
-        "score": 0.682447612285614,
+        "score": 0.6824406981468201,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "4. Privileged Access"
@@ -635,41 +649,47 @@
     "question": "What do I need to renew a passport?",
     "answerable": false,
     "expected_sources": [],
-    "retrieved_sources": [],
+    "retrieved_sources": [
+      "expense_policy.md::6. Software and Subscriptions",
+      "data_privacy_policy.md::4. Legal Bases for Processing",
+      "remote_work_policy.md::7. Security Requirements",
+      "access_control_policy.md::2. Governing Principles",
+      "it_onboarding_guide.md::Step 9: Set Up 1Password"
+    ],
     "retrieved_chunks": [
       {
         "chunk_id": "73",
         "score": 0.7798189090903664,
-        "doc_id": null,
-        "document": "expense_policy.md",
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
         "section": "6. Software and Subscriptions"
       },
       {
         "chunk_id": "28",
         "score": 0.7277606352379162,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "4. Legal Bases for Processing"
       },
       {
         "chunk_id": "141",
         "score": 0.711590486165969,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "7. Security Requirements"
       },
       {
         "chunk_id": "2",
         "score": 0.809180666183838,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "2. Governing Principles"
       },
       {
         "chunk_id": "109",
         "score": 0.7398325503873281,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 9: Set Up 1Password"
       }
     ],
@@ -690,7 +710,10 @@
     ],
     "retrieved_sources": [
       "it_onboarding_guide.md::Step 7: Set Up Email and Calendar",
-      "security_policy.md::9. Phishing and Social Engineering"
+      "product_faq.md::Features and Capabilities",
+      "security_policy.md::9. Phishing and Social Engineering",
+      "remote_work_policy.md::9. Performance Accountability",
+      "remote_work_policy.md::4. Approved Work Locations"
     ],
     "retrieved_chunks": [
       {
@@ -703,8 +726,8 @@
       {
         "chunk_id": "124",
         "score": 0.7095260402100607,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
@@ -717,15 +740,15 @@
       {
         "chunk_id": "144",
         "score": 0.8164935581786608,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "9. Performance Accountability"
       },
       {
         "chunk_id": "135",
         "score": 0.8508272758811006,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "4. Approved Work Locations"
       }
     ],
@@ -754,35 +777,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "6",
-        "score": 0.8031255282839622,
+        "score": 0.8030400105198707,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "3. User Account Management"
       },
       {
         "chunk_id": "152",
-        "score": 0.8503088295459748,
+        "score": 0.8502046883106231,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "3. Access Control"
       },
       {
         "chunk_id": "5",
-        "score": 0.7230042299831755,
+        "score": 0.7229161551798231,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "3. User Account Management"
       },
       {
         "chunk_id": "181",
-        "score": 0.7270960807800293,
+        "score": 0.7269175052642822,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "7. Vendor Offboarding"
       },
       {
         "chunk_id": "11",
-        "score": 0.8175376341447251,
+        "score": 0.8174519554480928,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "5. Access Reviews"
@@ -872,35 +895,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "152",
-        "score": 0.7370591759681702,
+        "score": 0.7370458841323853,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "3. Access Control"
       },
       {
         "chunk_id": "14",
-        "score": 0.7218863070011139,
+        "score": 0.7218877673149109,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "8. Physical Access Controls"
       },
       {
         "chunk_id": "16",
-        "score": 0.7158703207969666,
+        "score": 0.7158880829811096,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "9. Cloud Access Controls"
       },
       {
         "chunk_id": "110",
-        "score": 0.7192737758159637,
+        "score": 0.7193098366260529,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 10: Request Access to Core Systems"
       },
       {
         "chunk_id": "7",
-        "score": 0.7306239008903503,
+        "score": 0.7306184768676758,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "4. Privileged Access"
@@ -980,12 +1003,15 @@
     "expected_sources": [],
     "retrieved_sources": [
       "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
-      "access_control_policy.md::3. User Account Management"
+      "data_privacy_policy.md::10. Privacy by Design",
+      "access_control_policy.md::3. User Account Management",
+      "vendor_management_policy.md::6. Ongoing Vendor Management",
+      "data_privacy_policy.md::1. Introduction"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "102",
-        "score": 0.7505997121334076,
+        "score": 0.7506353855133057,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
@@ -993,13 +1019,13 @@
       {
         "chunk_id": "37",
         "score": 0.6330618090580628,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "10. Privacy by Design"
       },
       {
         "chunk_id": "4",
-        "score": 0.5961562442870177,
+        "score": 0.5962018954844512,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "3. User Account Management"
@@ -1007,15 +1033,15 @@
       {
         "chunk_id": "180",
         "score": 0.7348889446778845,
-        "doc_id": null,
-        "document": "vendor_management_policy.md",
+        "doc_id": "vendor_management_policy.md",
+        "document": "Vendor Management Policy",
         "section": "6. Ongoing Vendor Management"
       },
       {
         "chunk_id": "22",
         "score": 0.6427431985840034,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "1. Introduction"
       }
     ],
@@ -1038,7 +1064,8 @@
       "data_privacy_policy.md::3. Personal Data We Collect",
       "employee_handbook.md::3. Code of Conduct",
       "data_privacy_policy.md::6. Data Retention",
-      "data_privacy_policy.md::12. Training and Accountability"
+      "data_privacy_policy.md::12. Training and Accountability",
+      "incident_response_policy.md::7. Evidence Handling"
     ],
     "retrieved_chunks": [
       {
@@ -1072,8 +1099,8 @@
       {
         "chunk_id": "93",
         "score": 1.0,
-        "doc_id": null,
-        "document": "incident_response_policy.md",
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
         "section": "7. Evidence Handling"
       }
     ],
@@ -1102,35 +1129,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "23",
-        "score": 0.8580997973680496,
+        "score": 0.8580761581659317,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "1. Introduction"
       },
       {
         "chunk_id": "33",
-        "score": 0.7273509204387665,
+        "score": 0.7273111045360565,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "7. Data Subject Rights"
       },
       {
         "chunk_id": "39",
-        "score": 0.728135711829502,
+        "score": 0.7281234273122139,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "12. Training and Accountability"
       },
       {
         "chunk_id": "38",
-        "score": 0.724016398191452,
+        "score": 0.724003791809082,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "11. Data Breach Response"
       },
       {
         "chunk_id": "22",
-        "score": 0.7279327574623946,
+        "score": 0.7279040578259353,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "1. Introduction"
@@ -1161,35 +1188,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "32",
-        "score": 0.8443496406078339,
+        "score": 0.8443629264831543,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "7. Data Subject Rights"
       },
       {
         "chunk_id": "35",
-        "score": 0.695953905582428,
+        "score": 0.695973664522171,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "8. Data Sharing and Disclosure"
       },
       {
         "chunk_id": "29",
-        "score": 0.704477071762085,
+        "score": 0.704521119594574,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "5. Data Use and Purpose Limitation"
       },
       {
         "chunk_id": "38",
-        "score": 0.7153244912624359,
+        "score": 0.7153804898262024,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "11. Data Breach Response"
       },
       {
         "chunk_id": "39",
-        "score": 0.7079203128814697,
+        "score": 0.7079626023769379,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "12. Training and Accountability"
@@ -1213,20 +1240,21 @@
     "retrieved_sources": [
       "data_privacy_policy.md::9. Cross-Border Data Transfers",
       "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "data_privacy_policy.md::7. Data Subject Rights",
       "data_privacy_policy.md::2. Definitions",
       "data_privacy_policy.md::4. Legal Bases for Processing"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "36",
-        "score": 0.7900338172912598,
+        "score": 0.7900211215019226,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "9. Cross-Border Data Transfers"
       },
       {
         "chunk_id": "29",
-        "score": 0.7331739962100983,
+        "score": 0.7331867218017578,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "5. Data Use and Purpose Limitation"
@@ -1234,20 +1262,20 @@
       {
         "chunk_id": "32",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "7. Data Subject Rights"
       },
       {
         "chunk_id": "25",
-        "score": 0.7121163904666901,
+        "score": 0.7121201455593109,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "2. Definitions"
       },
       {
         "chunk_id": "28",
-        "score": 0.7109631299972534,
+        "score": 0.7109672427177429,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "4. Legal Bases for Processing"
@@ -1390,6 +1418,7 @@
       "employee_handbook.md::8. Technology and Equipment",
       "access_control_policy.md::10. Monitoring and Enforcement",
       "security_policy.md::8. Acceptable Use",
+      "employee_handbook.md::3. Code of Conduct",
       "data_privacy_policy.md::12. Training and Accountability"
     ],
     "retrieved_chunks": [
@@ -1417,8 +1446,8 @@
       {
         "chunk_id": "47",
         "score": 1.0,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "3. Code of Conduct"
       },
       {
@@ -1445,19 +1474,23 @@
       "employee_handbook.md::4. Work Hours and Scheduling"
     ],
     "retrieved_sources": [
-      "employee_handbook.md::4. Work Hours and Scheduling"
+      "it_onboarding_guide.md::Step 7: Set Up Email and Calendar",
+      "employee_handbook.md::4. Work Hours and Scheduling",
+      "remote_work_policy.md::1. Purpose and Scope",
+      "product_faq.md::Features and Capabilities",
+      "remote_work_policy.md::5. Home Workspace Requirements"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "107",
         "score": 1.0,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 7: Set Up Email and Calendar"
       },
       {
         "chunk_id": "48",
-        "score": 0.768435925245285,
+        "score": 0.7684822529554367,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "4. Work Hours and Scheduling"
@@ -1465,31 +1498,31 @@
       {
         "chunk_id": "131",
         "score": 0.9674731417225033,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "1. Purpose and Scope"
       },
       {
         "chunk_id": "124",
         "score": 0.7564509495802971,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "137",
         "score": 0.758558309957562,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "5. Home Workspace Requirements"
       }
     ],
     "retrieval": {
-      "recall_at_1": 1,
+      "recall_at_1": 0,
       "recall_at_3": 1,
       "recall_at_5": 1,
       "precision_at_5": 0.2,
-      "reciprocal_rank": 1.0
+      "reciprocal_rank": 0.5
     }
   },
   {
@@ -1503,6 +1536,7 @@
       "employee_handbook.md::3. Code of Conduct",
       "security_policy.md::10. Incident Reporting",
       "access_control_policy.md::8. Physical Access Controls",
+      "security_policy.md::5. Device Security",
       "employee_handbook.md::3. Code of Conduct"
     ],
     "retrieved_chunks": [
@@ -1530,8 +1564,8 @@
       {
         "chunk_id": "157",
         "score": 0.6763005187576921,
-        "doc_id": null,
-        "document": "security_policy.md",
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
         "section": "5. Device Security"
       },
       {
@@ -1679,7 +1713,8 @@
       "security_policy.md::6. Network Security",
       "remote_work_policy.md::7. Security Requirements",
       "access_control_policy.md::7. Remote Access",
-      "it_onboarding_guide.md::Step 6: Set Up VPN"
+      "it_onboarding_guide.md::Step 6: Set Up VPN",
+      "employee_handbook.md::8. Technology and Equipment"
     ],
     "retrieved_chunks": [
       {
@@ -1713,8 +1748,8 @@
       {
         "chunk_id": "58",
         "score": 0.6685819215236575,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "8. Technology and Equipment"
       }
     ],
@@ -1736,6 +1771,8 @@
     "retrieved_sources": [
       "expense_policy.md::4. Travel Expenses",
       "expense_policy.md::8. Non-Reimbursable Expenses",
+      "data_privacy_policy.md::5. Data Use and Purpose Limitation",
+      "employee_handbook.md::8. Technology and Equipment",
       "expense_policy.md::4. Travel Expenses"
     ],
     "retrieved_chunks": [
@@ -1756,15 +1793,15 @@
       {
         "chunk_id": "29",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "5. Data Use and Purpose Limitation"
       },
       {
         "chunk_id": "58",
         "score": 0.7724934689250789,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "8. Technology and Equipment"
       },
       {
@@ -1800,35 +1837,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "66",
-        "score": 0.8756538457750709,
+        "score": 0.8756451822399529,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "3. Expense Submission Process"
       },
       {
         "chunk_id": "65",
-        "score": 0.7085834388425557,
+        "score": 0.7085722182681767,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "2. General Principles"
       },
       {
         "chunk_id": "142",
-        "score": 0.8385203242301942,
+        "score": 0.838509237766266,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "8. Expense Reimbursement"
       },
       {
         "chunk_id": "64",
-        "score": 0.701210081577301,
+        "score": 0.7011716365814209,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "1. Purpose"
       },
       {
         "chunk_id": "57",
-        "score": 0.7284131348133087,
+        "score": 0.7283856868743896,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "7. Benefits"
@@ -1859,35 +1896,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "163",
-        "score": 0.8626136600971221,
+        "score": 0.8625876784324646,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "9. Phishing and Social Engineering"
       },
       {
         "chunk_id": "112",
-        "score": 0.6846019616587378,
+        "score": 0.6845490684969642,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Troubleshooting Quick Reference"
       },
       {
         "chunk_id": "86",
-        "score": 0.6769374907016754,
+        "score": 0.6768680810928345,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "102",
-        "score": 0.6472897529602051,
+        "score": 0.6472009420394897,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
       },
       {
         "chunk_id": "85",
-        "score": 0.6624488830566406,
+        "score": 0.662371039390564,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
@@ -1916,35 +1953,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "183",
-        "score": 0.5738984644412994,
+        "score": 0.5739043056964874,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "9. Exceptions"
       },
       {
         "chunk_id": "157",
-        "score": 0.5739026069641113,
+        "score": 0.5738976001739502,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "5. Device Security"
       },
       {
         "chunk_id": "51",
-        "score": 0.5771603286266327,
+        "score": 0.5771704018115997,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "5. Time Off Policies"
       },
       {
         "chunk_id": "50",
-        "score": 0.5772412121295929,
+        "score": 0.57725590467453,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "5. Time Off Policies"
       },
       {
         "chunk_id": "11",
-        "score": 0.5814342200756073,
+        "score": 0.5814405083656311,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "5. Access Reviews"
@@ -1969,6 +2006,7 @@
       "incident_response_policy.md::5. Incident Response Phases",
       "security_policy.md::10. Incident Reporting",
       "incident_response_policy.md::3. Incident Severity Levels",
+      "expense_policy.md::5. Meals and Entertainment",
       "vendor_management_policy.md::3. Vendor Approval Process"
     ],
     "retrieved_chunks": [
@@ -1996,8 +2034,8 @@
       {
         "chunk_id": "71",
         "score": 0.7468211480731345,
-        "doc_id": null,
-        "document": "expense_policy.md",
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
         "section": "5. Meals and Entertainment"
       },
       {
@@ -2086,7 +2124,8 @@
       "remote_work_policy.md::10. Equipment and Technical Support",
       "incident_response_policy.md::5. Incident Response Phases",
       "access_control_policy.md::10. Monitoring and Enforcement",
-      "it_onboarding_guide.md::IT Contacts"
+      "it_onboarding_guide.md::IT Contacts",
+      "incident_response_policy.md::5. Incident Response Phases"
     ],
     "retrieved_chunks": [
       {
@@ -2120,8 +2159,8 @@
       {
         "chunk_id": "85",
         "score": 1.0,
-        "doc_id": null,
-        "document": "incident_response_policy.md",
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       }
     ],
@@ -2150,35 +2189,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "81",
-        "score": 0.8200872242450714,
+        "score": 0.8201153129339218,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "3. Incident Severity Levels"
       },
       {
         "chunk_id": "86",
-        "score": 0.7705142543521484,
+        "score": 0.7705463693347534,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "80",
-        "score": 0.8428696155548097,
+        "score": 0.8428924143314362,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "2. Definitions"
       },
       {
         "chunk_id": "85",
-        "score": 0.7207295747974134,
+        "score": 0.7207597585895278,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "151",
-        "score": 0.7328091859817505,
+        "score": 0.7328533232212067,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "2. Information Classification"
@@ -2209,35 +2248,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "92",
-        "score": 0.7683071610602639,
+        "score": 0.768323200670173,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "6. Notification Requirements"
       },
       {
         "chunk_id": "38",
-        "score": 0.7852078378200531,
+        "score": 0.7852128744125366,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "11. Data Breach Response"
       },
       {
         "chunk_id": "91",
-        "score": 0.8058763742446899,
+        "score": 0.8058990091085434,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "6. Notification Requirements"
       },
       {
         "chunk_id": "180",
-        "score": 0.7245025038719177,
+        "score": 0.7245339751243591,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "6. Ongoing Vendor Management"
       },
       {
         "chunk_id": "176",
-        "score": 0.7169157564640045,
+        "score": 0.716945230960846,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "4. Contractual Requirements"
@@ -2256,41 +2295,47 @@
     "question": "How many kilometers from Luca's deli restaurant to the airport?",
     "answerable": false,
     "expected_sources": [],
-    "retrieved_sources": [],
+    "retrieved_sources": [
+      "data_privacy_policy.md::1. Introduction",
+      "incident_response_policy.md::5. Incident Response Phases",
+      "it_onboarding_guide.md::Step 6: Set Up VPN",
+      "product_faq.md::Features and Capabilities",
+      "product_faq.md::Features and Capabilities"
+    ],
     "retrieved_chunks": [
       {
         "chunk_id": "22",
         "score": 0.9467900548154792,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "1. Introduction"
       },
       {
         "chunk_id": "89",
         "score": 0.7239105711391789,
-        "doc_id": null,
-        "document": "incident_response_policy.md",
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "106",
         "score": 0.7464807881654654,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 6: Set Up VPN"
       },
       {
         "chunk_id": "124",
         "score": 1.0,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "122",
         "score": 0.9689799705695916,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       }
     ],
@@ -2319,35 +2364,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "102",
-        "score": 0.8341094304523022,
+        "score": 0.8341198463639767,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
       },
       {
         "chunk_id": "154",
-        "score": 0.7969744056463242,
+        "score": 0.7969692945480347,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "4. Authentication Requirements"
       },
       {
         "chunk_id": "109",
-        "score": 0.8820896220138665,
+        "score": 0.8820940297773476,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 9: Set Up 1Password"
       },
       {
         "chunk_id": "104",
-        "score": 0.776403397321701,
+        "score": 0.7764332592487335,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
       },
       {
         "chunk_id": "12",
-        "score": 0.8001874089241028,
+        "score": 0.8001920431852341,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "6. Authentication Requirements"
@@ -2371,7 +2416,9 @@
     "retrieved_sources": [
       "it_onboarding_guide.md::Step 6: Set Up VPN",
       "it_onboarding_guide.md::Troubleshooting Quick Reference",
-      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup"
+      "access_control_policy.md::3. User Account Management",
+      "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup",
+      "incident_response_policy.md::6. Notification Requirements"
     ],
     "retrieved_chunks": [
       {
@@ -2391,8 +2438,8 @@
       {
         "chunk_id": "4",
         "score": 0.7415926413941258,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "3. User Account Management"
       },
       {
@@ -2405,8 +2452,8 @@
       {
         "chunk_id": "91",
         "score": 0.7578827033897376,
-        "doc_id": null,
-        "document": "incident_response_policy.md",
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
         "section": "6. Notification Requirements"
       }
     ],
@@ -2429,6 +2476,7 @@
       "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
       "security_policy.md::5. Device Security",
       "access_control_policy.md::7. Remote Access",
+      "it_onboarding_guide.md::Step 6: Set Up VPN",
       "security_policy.md::7. Data Handling and Storage"
     ],
     "retrieved_chunks": [
@@ -2456,8 +2504,8 @@
       {
         "chunk_id": "106",
         "score": 0.8514839115278501,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 6: Set Up VPN"
       },
       {
@@ -2493,35 +2541,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "157",
-        "score": 0.7177964952213047,
+        "score": 0.7177701559287786,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "5. Device Security"
       },
       {
         "chunk_id": "112",
-        "score": 0.7894552111625672,
+        "score": 0.7894264578819274,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Troubleshooting Quick Reference"
       },
       {
         "chunk_id": "141",
-        "score": 0.6641108422709089,
+        "score": 0.6640906005335432,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "7. Security Requirements"
       },
       {
         "chunk_id": "164",
-        "score": 0.667261153459549,
+        "score": 0.6672168374061584,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "10. Incident Reporting"
       },
       {
         "chunk_id": "15",
-        "score": 0.741992803342781,
+        "score": 0.741958041913948,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "8. Physical Access Controls"
@@ -2545,7 +2593,9 @@
     "retrieved_sources": [
       "it_onboarding_guide.md::Step 5: Install Required Applications",
       "it_onboarding_guide.md::Step 2: Power On and Complete Initial Setup",
-      "security_policy.md::5. Device Security"
+      "it_onboarding_guide.md::Step 6: Set Up VPN",
+      "security_policy.md::5. Device Security",
+      "data_privacy_policy.md::10. Privacy by Design"
     ],
     "retrieved_chunks": [
       {
@@ -2565,8 +2615,8 @@
       {
         "chunk_id": "106",
         "score": 1.0,
-        "doc_id": null,
-        "document": "it_onboarding_guide.md",
+        "doc_id": "it_onboarding_guide.md",
+        "document": "IT Onboarding Guide",
         "section": "Step 6: Set Up VPN"
       },
       {
@@ -2579,8 +2629,8 @@
       {
         "chunk_id": "37",
         "score": 0.7653119331877644,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "10. Privacy by Design"
       }
     ],
@@ -2609,35 +2659,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "118",
-        "score": 0.8900661681666262,
+        "score": 0.8900654082074053,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "117",
-        "score": 0.868549611279797,
+        "score": 0.8685587844346279,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "124",
-        "score": 0.8677774131298065,
+        "score": 0.867800721526146,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "116",
-        "score": 0.6499807389737455,
+        "score": 0.649990716791281,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "123",
-        "score": 0.774752672950064,
+        "score": 0.7747730756199707,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
@@ -2668,35 +2718,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "129",
-        "score": 0.8480081409215927,
+        "score": 0.8480300903320312,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Support"
       },
       {
         "chunk_id": "116",
-        "score": 0.922880893945694,
+        "score": 0.9228854715824127,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "115",
-        "score": 0.8555718064308167,
+        "score": 0.8555863946676254,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Overview"
       },
       {
         "chunk_id": "118",
-        "score": 0.6699009695934317,
+        "score": 0.6698834547685646,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "126",
-        "score": 0.8206318467855453,
+        "score": 0.8206254988908768,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Security and Compliance"
@@ -2727,35 +2777,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "126",
-        "score": 0.7297879575524834,
+        "score": 0.7297982840571907,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Security and Compliance"
       },
       {
         "chunk_id": "116",
-        "score": 0.8552234336863942,
+        "score": 0.8552255168687292,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "115",
-        "score": 0.8212961554527283,
+        "score": 0.8212920129299164,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Overview"
       },
       {
         "chunk_id": "118",
-        "score": 0.793656684108997,
+        "score": 0.7936676275217778,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "176",
-        "score": 0.7563642263412476,
+        "score": 0.7563873678445816,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "4. Contractual Requirements"
@@ -2779,19 +2829,21 @@
     "retrieved_sources": [
       "product_faq.md::Pricing and Plans",
       "employee_handbook.md::7. Benefits",
+      "employee_handbook.md::6. Performance and Development",
+      "product_faq.md::Features and Capabilities",
       "product_faq.md::General Product Questions"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "119",
-        "score": 0.7634768260319487,
+        "score": 0.7635489595730558,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Pricing and Plans"
       },
       {
         "chunk_id": "55",
-        "score": 0.7551492091707783,
+        "score": 0.7552337523989278,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "7. Benefits"
@@ -2799,20 +2851,20 @@
       {
         "chunk_id": "53",
         "score": 0.7831066658420399,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "6. Performance and Development"
       },
       {
         "chunk_id": "122",
         "score": 1.0,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "118",
-        "score": 0.6882636590328755,
+        "score": 0.6883262260284962,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
@@ -2843,35 +2895,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "121",
-        "score": 0.82490975856781,
+        "score": 0.8249356329441071,
         "doc_id": "product_faq.md",
         "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Pricing and Plans"
       },
       {
         "chunk_id": "11",
-        "score": 0.6125567853450775,
+        "score": 0.6128575205802917,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "5. Access Reviews"
       },
       {
         "chunk_id": "157",
-        "score": 0.6205691695213318,
+        "score": 0.6209418177604675,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "5. Device Security"
       },
       {
         "chunk_id": "30",
-        "score": 0.6213489770889282,
+        "score": 0.6211570203304291,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "6. Data Retention"
       },
       {
         "chunk_id": "111",
-        "score": 0.6131080985069275,
+        "score": 0.6130841970443726,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 11: Complete Required Training"
@@ -2953,26 +3005,27 @@
       "expense_policy.md::3. Expense Submission Process",
       "employee_handbook.md::7. Benefits",
       "remote_work_policy.md::8. Expense Reimbursement",
+      "data_privacy_policy.md::4. Legal Bases for Processing",
       "expense_policy.md::2. General Principles"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "66",
-        "score": 0.670586496591568,
+        "score": 0.6706423759460449,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "3. Expense Submission Process"
       },
       {
         "chunk_id": "57",
-        "score": 0.6632475852966309,
+        "score": 0.6632994115352631,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "7. Benefits"
       },
       {
         "chunk_id": "142",
-        "score": 0.6264641284942627,
+        "score": 0.626517653465271,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "8. Expense Reimbursement"
@@ -2980,13 +3033,13 @@
       {
         "chunk_id": "28",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "4. Legal Bases for Processing"
       },
       {
         "chunk_id": "65",
-        "score": 0.6237068474292755,
+        "score": 0.6237774789333344,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "2. General Principles"
@@ -3008,27 +3061,30 @@
       "remote_work_policy.md::2. Work Models"
     ],
     "retrieved_sources": [
+      "product_faq.md::Pricing and Plans",
+      "remote_work_policy.md::1. Purpose and Scope",
       "remote_work_policy.md::2. Work Models",
+      "remote_work_policy.md::9. Performance Accountability",
       "employee_handbook.md::4. Work Hours and Scheduling"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "119",
         "score": 0.9777900886027768,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Pricing and Plans"
       },
       {
         "chunk_id": "131",
         "score": 0.9767040709127581,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "1. Purpose and Scope"
       },
       {
         "chunk_id": "133",
-        "score": 0.7296650710396154,
+        "score": 0.7296680929951056,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "2. Work Models"
@@ -3036,24 +3092,24 @@
       {
         "chunk_id": "144",
         "score": 0.9596466654564119,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "9. Performance Accountability"
       },
       {
         "chunk_id": "48",
-        "score": 0.7471174112885715,
+        "score": 0.747115819844556,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "4. Work Hours and Scheduling"
       }
     ],
     "retrieval": {
-      "recall_at_1": 1,
+      "recall_at_1": 0,
       "recall_at_3": 1,
       "recall_at_5": 1,
       "precision_at_5": 0.2,
-      "reciprocal_rank": 1.0
+      "reciprocal_rank": 0.3333333333333333
     }
   },
   {
@@ -3067,7 +3123,8 @@
       "remote_work_policy.md::3. Eligibility",
       "remote_work_policy.md::4. Approved Work Locations",
       "remote_work_policy.md::2. Work Models",
-      "remote_work_policy.md::4. Approved Work Locations"
+      "remote_work_policy.md::4. Approved Work Locations",
+      "access_control_policy.md::5. Access Reviews"
     ],
     "retrieved_chunks": [
       {
@@ -3101,8 +3158,8 @@
       {
         "chunk_id": "11",
         "score": 0.8021440324733871,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "5. Access Reviews"
       }
     ],
@@ -3181,7 +3238,9 @@
     "retrieved_sources": [
       "security_policy.md::2. Information Classification",
       "employee_handbook.md::7. Benefits",
-      "incident_response_policy.md::8. Communication Protocols"
+      "remote_work_policy.md::8. Expense Reimbursement",
+      "incident_response_policy.md::8. Communication Protocols",
+      "access_control_policy.md::4. Privileged Access"
     ],
     "retrieved_chunks": [
       {
@@ -3201,8 +3260,8 @@
       {
         "chunk_id": "142",
         "score": 0.6680863221514057,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "8. Expense Reimbursement"
       },
       {
@@ -3215,8 +3274,8 @@
       {
         "chunk_id": "8",
         "score": 0.6278418546988793,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "4. Privileged Access"
       }
     ],
@@ -3245,35 +3304,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "160",
-        "score": 0.8073298919645127,
+        "score": 0.8072267163244065,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "7. Data Handling and Storage"
       },
       {
         "chunk_id": "152",
-        "score": 0.7479394757495511,
+        "score": 0.7478358530746091,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "3. Access Control"
       },
       {
         "chunk_id": "150",
-        "score": 0.7591542601585388,
+        "score": 0.7590003311634064,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "2. Information Classification"
       },
       {
         "chunk_id": "34",
-        "score": 0.6978147625923157,
+        "score": 0.6976284384727478,
         "doc_id": "data_privacy_policy.md",
         "document": "Data Privacy Policy",
         "section": "8. Data Sharing and Disclosure"
       },
       {
         "chunk_id": "47",
-        "score": 0.6900060998789765,
+        "score": 0.6899062859408357,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "3. Code of Conduct"
@@ -3298,33 +3357,34 @@
       "security_policy.md::10. Incident Reporting",
       "incident_response_policy.md::5. Incident Response Phases",
       "security_policy.md::9. Phishing and Social Engineering",
-      "access_control_policy.md::10. Monitoring and Enforcement"
+      "access_control_policy.md::10. Monitoring and Enforcement",
+      "data_privacy_policy.md::13. Policy Updates"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "164",
-        "score": 0.7772452058046009,
+        "score": 0.7772265912740375,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "10. Incident Reporting"
       },
       {
         "chunk_id": "85",
-        "score": 0.783790223140387,
+        "score": 0.7837728066631837,
         "doc_id": "incident_response_policy.md",
         "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       },
       {
         "chunk_id": "163",
-        "score": 0.8495081901550293,
+        "score": 0.8495113015174867,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "9. Phishing and Social Engineering"
       },
       {
         "chunk_id": "18",
-        "score": 0.8339213979611988,
+        "score": 0.8339077008138294,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "10. Monitoring and Enforcement"
@@ -3332,8 +3392,8 @@
       {
         "chunk_id": "40",
         "score": 0.8211159232014926,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "13. Policy Updates"
       }
     ],
@@ -3415,26 +3475,27 @@
       "it_onboarding_guide.md::Step 4: Install Nexora MDM (If Using a Personal Device)",
       "employee_handbook.md::8. Technology and Equipment",
       "remote_work_policy.md::7. Security Requirements",
+      "security_policy.md::6. Network Security",
       "access_control_policy.md::7. Remote Access"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "104",
-        "score": 0.751998811983136,
+        "score": 0.7519913554420746,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 4: Install Nexora MDM (If Using a Personal Device)"
       },
       {
         "chunk_id": "58",
-        "score": 0.8595268934965133,
+        "score": 0.8595261514186859,
         "doc_id": "employee_handbook.md",
         "document": "Employee Handbook",
         "section": "8. Technology and Equipment"
       },
       {
         "chunk_id": "141",
-        "score": 0.7917982141983746,
+        "score": 0.7917861084950207,
         "doc_id": "remote_work_policy.md",
         "document": "Remote Work Policy",
         "section": "7. Security Requirements"
@@ -3442,13 +3503,13 @@
       {
         "chunk_id": "158",
         "score": 0.8651557457861393,
-        "doc_id": null,
-        "document": "security_policy.md",
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
         "section": "6. Network Security"
       },
       {
         "chunk_id": "13",
-        "score": 0.8070563077926636,
+        "score": 0.8070439994335175,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "7. Remote Access"
@@ -3473,7 +3534,8 @@
       "security_policy.md::5. Device Security",
       "security_policy.md::5. Device Security",
       "incident_response_policy.md::5. Incident Response Phases",
-      "security_policy.md::11. Security Awareness Training"
+      "security_policy.md::11. Security Awareness Training",
+      "incident_response_policy.md::5. Incident Response Phases"
     ],
     "retrieved_chunks": [
       {
@@ -3507,8 +3569,8 @@
       {
         "chunk_id": "88",
         "score": 0.6080543093957278,
-        "doc_id": null,
-        "document": "incident_response_policy.md",
+        "doc_id": "incident_response_policy.md",
+        "document": "Incident Response Policy",
         "section": "5. Incident Response Phases"
       }
     ],
@@ -3531,26 +3593,27 @@
       "security_policy.md::4. Authentication Requirements",
       "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
       "access_control_policy.md::6. Authentication Requirements",
+      "access_control_policy.md::7. Remote Access",
       "security_policy.md::4. Authentication Requirements"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "154",
-        "score": 0.8711621463298798,
+        "score": 0.871168977022171,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "4. Authentication Requirements"
       },
       {
         "chunk_id": "102",
-        "score": 0.7555562102950362,
+        "score": 0.7555634164965895,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
       },
       {
         "chunk_id": "12",
-        "score": 0.6777200276339916,
+        "score": 0.6777218515361219,
         "doc_id": "access_control_policy.md",
         "document": "Access Control Policy",
         "section": "6. Authentication Requirements"
@@ -3558,13 +3621,13 @@
       {
         "chunk_id": "13",
         "score": 0.47453620700489396,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "7. Remote Access"
       },
       {
         "chunk_id": "155",
-        "score": 0.7521890550851822,
+        "score": 0.7521976828575134,
         "doc_id": "security_policy.md",
         "document": "Information Security Policy",
         "section": "4. Authentication Requirements"
@@ -3587,7 +3650,8 @@
       "data_privacy_policy.md::9. Cross-Border Data Transfers",
       "incident_response_policy.md::6. Notification Requirements",
       "it_onboarding_guide.md::Step 1: Receive and Unbox Your Equipment",
-      "vendor_management_policy.md::3. Vendor Approval Process"
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "data_privacy_policy.md::1. Introduction"
     ],
     "retrieved_chunks": [
       {
@@ -3621,8 +3685,8 @@
       {
         "chunk_id": "22",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "1. Introduction"
       }
     ],
@@ -3702,6 +3766,7 @@
     ],
     "retrieved_sources": [
       "vendor_management_policy.md::3. Vendor Approval Process",
+      "product_faq.md::Features and Capabilities",
       "vendor_management_policy.md::2. Vendor Risk Tiers",
       "vendor_management_policy.md::5. Vendor Onboarding",
       "vendor_management_policy.md::8. Prohibited Vendor Practices"
@@ -3709,7 +3774,7 @@
     "retrieved_chunks": [
       {
         "chunk_id": "172",
-        "score": 0.7870128154754639,
+        "score": 0.7870191186666489,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "3. Vendor Approval Process"
@@ -3717,27 +3782,27 @@
       {
         "chunk_id": "124",
         "score": 0.8368384826535997,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "171",
-        "score": 0.7398015260696411,
+        "score": 0.7397899925708771,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "2. Vendor Risk Tiers"
       },
       {
         "chunk_id": "178",
-        "score": 0.7430539131164551,
+        "score": 0.7430516481399536,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "5. Vendor Onboarding"
       },
       {
         "chunk_id": "182",
-        "score": 0.73740154504776,
+        "score": 0.7373971045017242,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "8. Prohibited Vendor Practices"
@@ -3821,6 +3886,7 @@
       "vendor_management_policy.md::4. Contractual Requirements",
       "vendor_management_policy.md::3. Vendor Approval Process",
       "vendor_management_policy.md::2. Vendor Risk Tiers",
+      "employee_handbook.md::3. Code of Conduct",
       "vendor_management_policy.md::3. Vendor Approval Process"
     ],
     "retrieved_chunks": [
@@ -3848,8 +3914,8 @@
       {
         "chunk_id": "47",
         "score": 0.7826352291700032,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "3. Code of Conduct"
       },
       {
@@ -3885,35 +3951,35 @@
     "retrieved_chunks": [
       {
         "chunk_id": "179",
-        "score": 0.7795319855213165,
+        "score": 0.7795297354459763,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "6. Ongoing Vendor Management"
       },
       {
         "chunk_id": "178",
-        "score": 0.7298032939434052,
+        "score": 0.7298196256160736,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "5. Vendor Onboarding"
       },
       {
         "chunk_id": "184",
-        "score": 0.7356686592102051,
+        "score": 0.7356655597686768,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "10. Policy Ownership and Review"
       },
       {
         "chunk_id": "181",
-        "score": 0.8383612155914306,
+        "score": 0.8383535444736481,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "7. Vendor Offboarding"
       },
       {
         "chunk_id": "180",
-        "score": 0.7333756387233734,
+        "score": 0.7333728671073914,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "6. Ongoing Vendor Management"
@@ -3936,19 +4002,22 @@
     ],
     "retrieved_sources": [
       "vendor_management_policy.md::7. Vendor Offboarding",
-      "vendor_management_policy.md::3. Vendor Approval Process"
+      "vendor_management_policy.md::3. Vendor Approval Process",
+      "data_privacy_policy.md::4. Legal Bases for Processing",
+      "product_faq.md::Features and Capabilities",
+      "employee_handbook.md::3. Code of Conduct"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "181",
-        "score": 0.8723108381032944,
+        "score": 0.8723064929246902,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "7. Vendor Offboarding"
       },
       {
         "chunk_id": "172",
-        "score": 0.7625323032369753,
+        "score": 0.7625444625845095,
         "doc_id": "vendor_management_policy.md",
         "document": "Vendor Management Policy",
         "section": "3. Vendor Approval Process"
@@ -3956,22 +4025,22 @@
       {
         "chunk_id": "28",
         "score": 0.8024341109213502,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "4. Legal Bases for Processing"
       },
       {
         "chunk_id": "125",
         "score": 0.7994406019507487,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "46",
         "score": 0.8974707951316455,
-        "doc_id": null,
-        "document": "employee_handbook.md",
+        "doc_id": "employee_handbook.md",
+        "document": "Employee Handbook",
         "section": "3. Code of Conduct"
       }
     ],
@@ -3989,12 +4058,16 @@
     "answerable": false,
     "expected_sources": [],
     "retrieved_sources": [
-      "expense_policy.md::4. Travel Expenses"
+      "expense_policy.md::4. Travel Expenses",
+      "data_privacy_policy.md::1. Introduction",
+      "product_faq.md::General Product Questions",
+      "expense_policy.md::6. Software and Subscriptions",
+      "remote_work_policy.md::10. Equipment and Technical Support"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "69",
-        "score": 0.7415306242128985,
+        "score": 0.7415312321802752,
         "doc_id": "expense_policy.md",
         "document": "Expense Reimbursement Policy",
         "section": "4. Travel Expenses"
@@ -4002,29 +4075,29 @@
       {
         "chunk_id": "22",
         "score": 0.9467900548154792,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "1. Introduction"
       },
       {
         "chunk_id": "117",
         "score": 0.7494185393980265,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "General Product Questions"
       },
       {
         "chunk_id": "73",
         "score": 0.9249861910972208,
-        "doc_id": null,
-        "document": "expense_policy.md",
+        "doc_id": "expense_policy.md",
+        "document": "Expense Reimbursement Policy",
         "section": "6. Software and Subscriptions"
       },
       {
         "chunk_id": "145",
         "score": 0.8134442768044328,
-        "doc_id": null,
-        "document": "remote_work_policy.md",
+        "doc_id": "remote_work_policy.md",
+        "document": "Remote Work Policy",
         "section": "10. Equipment and Technical Support"
       }
     ],
@@ -4042,12 +4115,16 @@
     "answerable": false,
     "expected_sources": [],
     "retrieved_sources": [
-      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA"
+      "it_onboarding_guide.md::Step 3: Enroll in Okta and Set Up MFA",
+      "data_privacy_policy.md::1. Introduction",
+      "product_faq.md::Features and Capabilities",
+      "access_control_policy.md::1. Purpose and Scope",
+      "security_policy.md::1. Purpose and Scope"
     ],
     "retrieved_chunks": [
       {
         "chunk_id": "102",
-        "score": 0.6249041855335236,
+        "score": 0.6247217059135437,
         "doc_id": "it_onboarding_guide.md",
         "document": "IT Onboarding Guide",
         "section": "Step 3: Enroll in Okta and Set Up MFA"
@@ -4055,29 +4132,29 @@
       {
         "chunk_id": "22",
         "score": 1.0,
-        "doc_id": null,
-        "document": "data_privacy_policy.md",
+        "doc_id": "data_privacy_policy.md",
+        "document": "Data Privacy Policy",
         "section": "1. Introduction"
       },
       {
         "chunk_id": "124",
         "score": 0.695426861943484,
-        "doc_id": null,
-        "document": "product_faq.md",
+        "doc_id": "product_faq.md",
+        "document": "Product FAQ — Nexora FlowOps Platform",
         "section": "Features and Capabilities"
       },
       {
         "chunk_id": "1",
         "score": 0.6885295002337557,
-        "doc_id": null,
-        "document": "access_control_policy.md",
+        "doc_id": "access_control_policy.md",
+        "document": "Access Control Policy",
         "section": "1. Purpose and Scope"
       },
       {
         "chunk_id": "149",
         "score": 0.6370635725902807,
-        "doc_id": null,
-        "document": "security_policy.md",
+        "doc_id": "security_policy.md",
+        "document": "Information Security Policy",
         "section": "1. Purpose and Scope"
       }
     ],

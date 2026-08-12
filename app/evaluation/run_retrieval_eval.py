@@ -49,21 +49,36 @@ def summarize_retrieval_results(results: list[dict]) -> dict:
     
 
 def run_retrieval_evaluation(
-        save: bool = True, 
-        output_suffix: str | None = None,    
+        save: bool = True,
+        output_suffix: str | None = None,
+        config = None,
     ) -> dict:
     dataset = load_eval_dataset()
     results = []
 
     for item in dataset:
-        retrieved_chunks = retrieve(item["question"])
+        if config is not None:
+            retrieved_chunks = retrieve(
+                item["question"],
+                retrieval_type=config.retrieval.type,
+                vector_top_k=config.retrieval.top_k,
+                keyword_top_k=config.retrieval.top_k,
+                hybrid_top_k=config.retrieval.top_k,
+                vector_weight=config.retrieval.vector_weight,
+                keyword_weight=config.retrieval.keyword_weight,
+            )
+        else:
+            retrieved_chunks = retrieve(item["question"])
 
-        if settings.reranker_enabled:
+        reranker_enabled = config.reranker.enabled if config is not None else settings.reranker_enabled
+        reranker_top_k = config.reranker.top_k if config is not None else settings.rerank_top_k
+
+        if reranker_enabled:
             reranker = get_reranker()
             retrieved_chunks = reranker.rerank(
                 question = item['question'],
                 chunks = retrieved_chunks,
-                top_k = settings.rerank_top_k
+                top_k = reranker_top_k
             )
 
         retrieved_sources = extract_chunk_ids(retrieved_chunks)

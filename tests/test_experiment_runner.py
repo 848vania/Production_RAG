@@ -34,3 +34,5 @@ def test_run_experiment(mock_answer_eval, mock_retrieval_eval):
     assert result['experiment_name'] == 'hybrid'
     assert result['retrieval']['recall_at_5'] == 0.9
     assert result['answer']['citation_accuracy'] == 0.85
+
+    mock_retrieval_eval.assert_called_once_with(save=True, output_suffix='hybrid', config=config)

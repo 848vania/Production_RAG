@@ -1,7 +1,7 @@
 {
   "experiment_name": "vector_only",
-  "started_at": "2026-08-07T06:56:44.341161+00:00",
-  "finished_at": "2026-08-07T07:25:05.398407+00:00",
+  "started_at": "2026-08-12T02:51:12.192200+00:00",
+  "finished_at": "2026-08-12T03:04:31.536338+00:00",
   "config": {
     "name": "vector_only",
     "config_path": "configs\\vector_only.yaml",
@@ -24,18 +24,18 @@
   },
   "retrieval": {
     "total_questions": 71,
-    "recall_at_1": 0.6056338028169014,
-    "recall_at_3": 0.6338028169014085,
+    "recall_at_1": 0.49295774647887325,
+    "recall_at_3": 0.6056338028169014,
     "recall_at_5": 0.6338028169014085,
-    "precision_at_5": 0.1859154929577464,
-    "reciprocal_rank": 0.6150234741784038
+    "precision_at_5": 0.21126760563380276,
+    "reciprocal_rank": 0.5590710932260228
   },
   "answer": {
     "total_questions": 71,
-    "citation_accuracy": 0.16455399061032858,
+    "citation_accuracy": 0.49894366197183093,
     "refusal_accuracy": 0.9014084507042254,
-    "answer_correctness": 0.659475371631905,
-    "average_latency_ms": 17062.173661971825,
-    "average_cost_usd": 0.0005209014084507042
+    "answer_correctness": 0.7045796995439605,
+    "average_latency_ms": 10900.645492957745,
+    "average_cost_usd": 0.0006914514084507041
   }
 }

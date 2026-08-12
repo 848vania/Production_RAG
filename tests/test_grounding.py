@@ -56,6 +56,27 @@ def test_validate_citations_false_when_no_citations():
 
     assert validate_citations(answer, sources) is False
 
+
+def test_filter_cited_sources_returns_only_cited():
+    answer = "Remote work requires manager approval. [Source 1]"
+    sources = [{"chunk_id": '1'}, {"chunk_id": '2'}]
+
+    assert filter_cited_sources(answer, sources) == [{"chunk_id": '1'}]
+
+
+def test_filter_cited_sources_empty_when_no_citations():
+    answer = "Remote work requires manager approval"
+    sources = [{"chunk_id": '1'}]
+
+    assert filter_cited_sources(answer, sources) == []
+
+
+def test_filter_cited_sources_empty_when_cited_id_not_in_sources():
+    answer = "Remote work requires manager approval. [Source 3]"
+    sources = [{"chunk_id": '1'}, {"chunk_id": '2'}]
+
+    assert filter_cited_sources(answer, sources) == []
+
 # test_has_sufficient_context_true()
 # test_has_sufficient_context_false_for_high_score()
 # test_has_sufficient_context_false_for_empty_chunks()

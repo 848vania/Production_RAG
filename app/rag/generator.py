@@ -1,8 +1,6 @@
 from app.rag.providers import *
 from app.rag.grounding import format_sources_from_chunks
 
-llm = get_llm_provider()
-
 def build_context_block(chunks: list[dict]) -> str:
     """
     Format chunks with source labels
@@ -43,10 +41,14 @@ def build_rag_prompt(question: str, context) -> str:
     """
     return prompt
 
-def generate_answer(question:str, chunks: list[dict]) -> dict:
+def generate_answer(question:str, chunks: list[dict], config=None) -> dict:
     """
     Generate answer using LLM and return answer + sources
     """
+    provider = config.generation.provider if config is not None else None
+    model = config.generation.model if config is not None else None
+    llm = get_llm_provider(provider=provider, model=model)
+
     sources = format_sources_from_chunks(chunks)
     context = build_context_block(sources)
     prompt = build_rag_prompt(question, context)
