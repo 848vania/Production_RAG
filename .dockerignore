@@ -1,0 +1,21 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__
+**/__pycache__
+*.pyc
+.pytest_cache
+.vscode
+
+# Secrets — passed at runtime via env_file, never baked into the image
+.env
+
+# Local runtime artifacts — rebuilt/recreated inside the container
+chroma_db
+bm25_index.pkl
+*.db
+*.sqlite
+*.sqlite3
+
+notebooks/.ipynb_checkpoints

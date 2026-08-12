@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 import streamlit as st
 from frontend.utils import ask_question, format_cost, format_latency_ms
 
@@ -10,19 +15,22 @@ st.set_page_config(
 
 st.title("AI Assistant Chat")
 
-question = st.text_input(
-    "Ask a question",
-    placeholder="Who approves remote work requests?",
-)
+with st.form("chat_form"):
+    question = st.text_input(
+        "Ask a question",
+        placeholder="Who approves remote work requests?",
+    )
+    submitted = st.form_submit_button("Ask")
 
-if st.button("Ask") and question.strip():
+if submitted and question.strip():
     with st.spinner("Retrieving sources and generating answer..."):
         try:
             response = ask_question(question)
         except Exception as e:
             st.error(f"Failed to connect to FastAPI server: {e}")
+            st.stop()
 
-        # Display the response components cleanly 
+        # Display the response components cleanly
         st.subheader("Answer")
         st.write(response['answer'])
 

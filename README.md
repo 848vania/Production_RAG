@@ -144,11 +144,18 @@ Then open the Streamlit app and use the **Chat** page to ask a question, **Evalu
 
 ### Run with Docker
 
+Make sure `.env` exists first (`cp .env.example .env` with a real `OPENAI_API_KEY`) — Compose fails immediately if it's missing.
+
 ```bash
 docker-compose up --build
 ```
 
-This starts the API (`:8000`), the Streamlit frontend (`:8501`), and a Qdrant container (currently unused by default — the app ships with Chroma as the active vector store).
+This builds one shared image (`docker/Dockerfile`) for both services and starts:
+- **API** at `http://localhost:8000` — the `frontend` container waits on the API's `/health` check before starting, so `docker-compose up` brings up a frontend that can actually reach a ready API rather than racing it.
+- **Frontend** at `http://localhost:8501` — configured via `API_BASE_URL=http://api:8000` (container-to-container, not `localhost`) so Chat works out of the box under Compose.
+- A **Qdrant** container (currently unused by default — the app ships with Chroma as the active vector store).
+
+The first build installs the full ML dependency set (torch via `sentence-transformers`, `chromadb`, etc.), so it takes a few minutes and produces a multi-GB image — normal for this stack, not a hang.
 
 ### Local models (optional)
 

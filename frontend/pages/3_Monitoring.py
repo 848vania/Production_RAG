@@ -1,8 +1,13 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 import pandas as pd
 import streamlit as st
 
 from app.monitoring.metrics import get_monitoring_summary
-from  frontend.utils import format_cost, format_latency_ms, format_percent
+from frontend.utils import format_cost, format_latency_ms, format_percent
 
 
 st.set_page_config(
