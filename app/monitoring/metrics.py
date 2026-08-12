@@ -103,7 +103,7 @@ def get_monitoring_summary(
             'average_latency_ms': average_latency_ms(all_logs),
             'total_estimated_cost_usd': total_estimated_cost_usd(all_logs),
             'refusal_rate': refusal_rate(all_logs),
-            'low_confidene_rate': low_confidence_rate(all_logs),
+            'low_confidence_rate': low_confidence_rate(all_logs),
             'recent_queries': [
                 query_log_to_dict(log)
                 for log in recent_logs

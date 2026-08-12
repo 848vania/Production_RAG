@@ -2,5 +2,5 @@
   "total_questions": 3,
   "citation_accuracy": 0.16666666666666666,
   "refusal_accuracy": 1.0,
-  "answer_correctness_simple": 0.765079365079365
+  "answer_correctness": 0.765079365079365
 }

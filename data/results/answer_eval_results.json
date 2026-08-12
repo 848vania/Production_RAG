@@ -69,7 +69,7 @@
     "answer_scores": {
       "citation_accuracy": 0.25,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.5833333333333334
+      "answer_correctness": 0.5833333333333334
     }
   },
   {
@@ -142,7 +142,7 @@
     "answer_scores": {
       "citation_accuracy": 0.25,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.5357142857142857
+      "answer_correctness": 0.5357142857142857
     }
   },
   {
@@ -215,7 +215,7 @@
     "answer_scores": {
       "citation_accuracy": 0.0,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 1.0
+      "answer_correctness": 1.0
     }
   },
   {
@@ -286,7 +286,7 @@
     "answer_scores": {
       "citation_accuracy": 0.0,
       "refusal_accuracy": 0.0,
-      "answer_correctness_simple": 0.0
+      "answer_correctness": 0.0
     }
   },
   {
@@ -359,7 +359,7 @@
     "answer_scores": {
       "citation_accuracy": 0.2,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.9130434782608695
+      "answer_correctness": 0.9130434782608695
     }
   },
   {
@@ -432,7 +432,7 @@
     "answer_scores": {
       "citation_accuracy": 0.25,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.9090909090909091
+      "answer_correctness": 0.9090909090909091
     }
   },
   {
@@ -505,7 +505,7 @@
     "answer_scores": {
       "citation_accuracy": 0.2,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.5714285714285714
+      "answer_correctness": 0.5714285714285714
     }
   },
   {
@@ -576,7 +576,7 @@
     "answer_scores": {
       "citation_accuracy": 0.0,
       "refusal_accuracy": 0.0,
-      "answer_correctness_simple": 0.0
+      "answer_correctness": 0.0
     }
   },
   {
@@ -649,7 +649,7 @@
     "answer_scores": {
       "citation_accuracy": 0.2,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 0.8
+      "answer_correctness": 0.8
     }
   },
   {
@@ -722,7 +722,7 @@
     "answer_scores": {
       "citation_accuracy": 0.25,
       "refusal_accuracy": 1.0,
-      "answer_correctness_simple": 1.0
+      "answer_correctness": 1.0
     }
   }
 ]

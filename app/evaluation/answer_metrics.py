@@ -69,7 +69,7 @@ def contains_expected_terms(predicted_answer: str, expected_answer: str) -> floa
     return match_count / len(exp_words)
 
 
-def answer_correctness_simple(predicted_answer: str, expected_answer: str | None) -> float:
+def answer_correctness(predicted_answer: str, expected_answer: str | None) -> float:
     """
     Rule-based approximate correctness
     Combines refusal checking and keyword overlap into a single metric
@@ -105,5 +105,5 @@ def evaluate_answers(
     return {
         'citation_accuracy': citation_accuracy(predicted_sources, expected_sources),
         'refusal_accuracy': refusal_accuracy(predicted_answer, answerable=answerable),
-        'answer_correctness': answer_correctness_simple(predicted_answer, expected_answer)
+        'answer_correctness': answer_correctness(predicted_answer, expected_answer)
     }
